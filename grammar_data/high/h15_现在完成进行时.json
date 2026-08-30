@@ -1,0 +1,104 @@
+{
+  "id": "h15",
+  "level": "high",
+  "grade": "必修一 ~ 选修",
+  "unit": "时态进阶 · 现在完成进行时",
+  "topic": "现在完成进行时",
+  "summary": "have/has been + 现在分词：动作从过去持续到现在、强调「一直在做」，且可能继续下去。",
+  "signals": ["for + 时间段", "since + 过去时间点", "all day / all morning", "recently / lately", "have been doing"],
+  "rules": [
+    {
+      "title": "结构与含义：一直在做",
+      "detail": "have/has been + 现在分词。强调动作从过去开始持续到现在（且可能继续），突出过程与持续性，常与 all day、for hours、since 连用。",
+      "examples": [
+        {"en": "It has been raining since morning.", "zh": "从早上开始一直在下雨。", "highlight": "has been raining"},
+        {"en": "I have been waiting for you for two hours.", "zh": "我已经等了你两个小时了。", "highlight": "have been waiting"}
+      ]
+    },
+    {
+      "title": "与现在完成时的区别：过程 vs 结果",
+      "detail": "完成时强调结果（已完成 / 已发生几次）；完成进行时强调过程（一直在做，可能未完成）。延续性动词两者常可互换，但含义侧重不同。",
+      "examples": [
+        {"en": "I have read the book.", "zh": "我把这本书读完了。（强调结果）", "highlight": "have read"},
+        {"en": "I have been reading the book.", "zh": "我一直在读这本书。（强调过程，可能还没读完）", "highlight": "have been reading"}
+      ]
+    },
+    {
+      "title": "since 从句用一般过去时",
+      "detail": "主句用完成时或完成进行时，since 引导的从句用一般过去时；since + 过去时间点同理。",
+      "examples": [
+        {"en": "She has been working here since she graduated.", "zh": "她毕业后就一直在这里工作。", "highlight": "has been working,since she graduated"},
+        {"en": "They have been living in Beijing since 2015.", "zh": "从 2015 年起他们就一直在北京生活。", "highlight": "have been living"}
+      ]
+    }
+  ],
+  "pitfalls": [
+    "瞬间动词不能用完成进行：❌ He has been dying for a week. → die 不能持续，应说 has been dead for a week",
+    "状态动词不用进行：❌ I have been knowing her for years. → ✓ I have known her for years.",
+    "强调「已完成几个」用完成时：I have written three reports this morning.（写完了三份）↔ I have been writing reports all morning.（一上午都在写）"
+  ],
+  "compare": {
+    "left": "现在完成时 have/has done",
+    "right": "现在完成进行时 have/has been doing",
+    "rows": [
+      {"l": "强调结果：已完成、已发生几次", "r": "强调过程：一直在做，可能继续"},
+      {"l": "I have written three letters.（写完了三封）", "r": "I have been writing letters all morning.（一上午都在写）"},
+      {"l": "常与 already / yet / just / ever 连用", "r": "常与 for / since / all day / recently 连用"},
+      {"l": "瞬间动词可用：has left / has lost", "r": "瞬间动词不可用：❌ has been leaving"}
+    ]
+  },
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "— Why are your hands so dirty? — I ___ the car for the whole morning.",
+      "options": ["repaired", "have been repairing", "was repairing", "will repair"],
+      "answer": 1,
+      "explain": "for the whole morning + 手现在脏（结果延续），强调「一直在修」，用现在完成进行时。"
+    },
+    {
+      "type": "choice",
+      "stem": "— I'm sure Andrew will win the first prize in the final. — I think so. He ___ for it for months.",
+      "options": ["is preparing", "was preparing", "had been preparing", "has been preparing"],
+      "answer": 3,
+      "explain": "for months 表示从过去持续到现在，且「获奖在望」说明仍在准备，用现在完成进行时。"
+    },
+    {
+      "type": "choice",
+      "stem": "— Have you finished your homework? — Not yet. I ___ it.",
+      "options": ["have done", "have been doing", "was doing", "had done"],
+      "answer": 1,
+      "explain": "Not yet 说明还没做完、动作仍在进行，用现在完成进行时 have been doing。"
+    },
+    {
+      "type": "choice",
+      "stem": "He has been playing football since he ___ a child.",
+      "options": ["has been", "was", "is", "had been"],
+      "answer": 1,
+      "explain": "since 引导的从句用一般过去时 was（主句是完成进行时）。"
+    },
+    {
+      "type": "fill",
+      "stem": "It ___ (rain) since last night, and the streets are still wet.",
+      "answer": ["has been raining"],
+      "explain": "since last night + 街还湿着（可能仍在下），强调持续，用 has been raining。"
+    },
+    {
+      "type": "fill",
+      "stem": "— Why are you so tired? — I ___ (play) basketball all afternoon.",
+      "answer": ["have been playing"],
+      "explain": "all afternoon 持续到现在且人已累，强调「一下午一直在打」，用 have been playing。"
+    },
+    {
+      "type": "correct",
+      "stem": "I have been knowing her since we were at school together.",
+      "answer": "have been knowing → have known",
+      "explain": "know 是状态动词，不能用进行形式，改用现在完成时 have known。"
+    },
+    {
+      "type": "translate",
+      "stem": "我学英语已经学了十年了，现在还在学。（翻译整句）",
+      "answer": ["i have been learning english for ten years.", "i have been studying english for ten years."],
+      "explain": "「学了十年且还在学」强调动作持续，用现在完成进行时 have been learning。"
+    }
+  ]
+}

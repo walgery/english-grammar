@@ -1,0 +1,119 @@
+{
+  "id": "h16",
+  "level": "high",
+  "grade": "必修一 ~ 选修",
+  "unit": "语态进阶 · 各时态的被动语态",
+  "topic": "被动语态进阶",
+  "summary": "高中聚焦各时态的被动：将来时被动 will be done、进行时被动 is being done、完成时被动 has been done，以及不定式被动与主动表被动。",
+  "signals": ["will be done（将被）", "is/are being done（正被）", "has/have been done（已被）", "to be done（有待被）", "by + 执行者"],
+  "rules": [
+    {
+      "title": "将来时被动：will be + 过去分词",
+      "detail": "will be done（am/is/are going to be done 同理）。主语是将来的动作承受者时使用。",
+      "examples": [
+        {"en": "The plan will be discussed at the meeting tomorrow afternoon.", "zh": "这个计划将在明天下午的会上被讨论。", "highlight": "will be discussed"},
+        {"en": "A new library will be built in our school next year.", "zh": "明年我们学校将建一座新图书馆。", "highlight": "will be built"}
+      ]
+    },
+    {
+      "title": "进行时被动：is/are being + 过去分词",
+      "detail": "表示「正在被做」。结构中的 being 千万不能丢。",
+      "examples": [
+        {"en": "The road is being repaired now, so we have to take another way.", "zh": "道路正在维修，我们得绕路走。", "highlight": "is being repaired"},
+        {"en": "The environment problem is being discussed at the meeting.", "zh": "环境问题正在会上被讨论。", "highlight": "is being discussed"}
+      ]
+    },
+    {
+      "title": "完成时被动：has/have been + 过去分词",
+      "detail": "表示「已经被做」。have/has 和 been 缺一不可。",
+      "examples": [
+        {"en": "The work has been finished already.", "zh": "工作已经完成了。", "highlight": "has been finished"},
+        {"en": "Many trees have been planted along the river since last year.", "zh": "去年以来河边种了许多树。", "highlight": "have been planted"}
+      ]
+    },
+    {
+      "title": "不定式被动与主动表被动",
+      "detail": "不定式被动 to be done：There is a lot of work to be done.；sell / write / wash / read 等动词与 well、easily 等副词连用时主动表被动：The pen writes smoothly.（这支笔写起来顺滑）",
+      "examples": [
+        {"en": "There are many problems to be solved.", "zh": "有许多问题有待解决。", "highlight": "to be solved"},
+        {"en": "This kind of cloth washes well and sells well.", "zh": "这种布好洗也好卖。", "highlight": "washes well,sells well"}
+      ]
+    }
+  ],
+  "pitfalls": [
+    "进行时被动丢 being：❌ The road is repaired now.（正被修）→ ✓ The road is being repaired now.",
+    "完成时被动丢 been：❌ The work has finished already.（工作「被」完成）→ ✓ The work has been finished already.",
+    "主动表被动误加被动：❌ The pen is written smoothly. → ✓ The pen writes smoothly."
+  ],
+  "compare": {
+    "left": "时态",
+    "right": "被动形式（以 do 为例）",
+    "rows": [
+      {"l": "一般现在 / 一般过去时", "r": "am/is/are done · was/were done"},
+      {"l": "进行时", "r": "am/is/are being done"},
+      {"l": "完成时", "r": "has/have been done"},
+      {"l": "将来时", "r": "will be done"}
+    ]
+  },
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "The plan ___ at the meeting tomorrow afternoon.",
+      "options": ["will discuss", "will be discussed", "has discussed", "is discussing"],
+      "answer": 1,
+      "explain": "plan 是「被讨论」，tomorrow 是将来，用将来时被动 will be discussed。"
+    },
+    {
+      "type": "choice",
+      "stem": "— Can I take my bike back now? — Sorry, it ___ at the moment.",
+      "options": ["is repaired", "is being repaired", "has been repaired", "was repaired"],
+      "answer": 1,
+      "explain": "at the moment 表示「此刻正被修理」，用进行时被动 is being repaired。"
+    },
+    {
+      "type": "choice",
+      "stem": "All the preparations for the task ___, and we're ready to start.",
+      "options": ["completed", "complete", "had been completed", "have been completed"],
+      "answer": 3,
+      "explain": "preparations「被完成」；and we're ready 说明对现在的影响，用现在完成时被动 have been completed。"
+    },
+    {
+      "type": "choice",
+      "stem": "— Do you like the material? — Yes, it ___ very soft.",
+      "options": ["is feeling", "felt", "feels", "is felt"],
+      "answer": 2,
+      "explain": "feel 是系动词，没有被动语态，主动形式 feels 表示「摸起来」。"
+    },
+    {
+      "type": "choice",
+      "stem": "There are a lot of problems ___ at the meeting.",
+      "options": ["to discuss", "to be discussed", "discussing", "discussed"],
+      "answer": 1,
+      "explain": "problems 是「被讨论」的对象且尚未发生，用不定式被动 to be discussed。"
+    },
+    {
+      "type": "fill",
+      "stem": "A new hospital ___ (build) in our town next year.",
+      "answer": ["will be built"],
+      "explain": "hospital「被建」+ next year 将来，用将来时被动 will be built。"
+    },
+    {
+      "type": "fill",
+      "stem": "Look! The house ___ (paint) by the workers now.",
+      "answer": ["is being painted"],
+      "explain": "Look! + now 表示「正被刷漆」，用进行时被动 is being painted。"
+    },
+    {
+      "type": "correct",
+      "stem": "The road is repaired now, so we have to take another way.",
+      "answer": "is repaired → is being repaired",
+      "explain": "now 说明「正在被修」，进行时被动必须带 being：is being repaired。"
+    },
+    {
+      "type": "translate",
+      "stem": "明年我们学校将建一座新的教学楼。（翻译整句）",
+      "answer": ["a new teaching building will be built in our school next year.", "a new classroom building will be built in our school next year."],
+      "explain": "教学楼「被建」+ next year 将来，用将来时被动 will be built。"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "id": "h13",
+  "level": "high",
+  "grade": "必修一 ~ 选修",
+  "unit": "时态进阶 · 过去完成时",
+  "topic": "过去完成时",
+  "summary": "表示「过去的过去」：had + 过去分词。以过去某一时间为参照，在此之前已经完成的动作，是语篇填空与完形填空的高频考点。",
+  "signals": ["by the time + 过去时", "by the end of last...", "before + 过去动作", "said/told/found + had done", "hardly...when / no sooner...than"],
+  "rules": [
+    {
+      "title": "结构与含义：「过去的过去」",
+      "detail": "had + 过去分词（had 不随人称变化）。表示在过去某个时间或动作之前已经完成的动作，必须有一个「过去参照点」。",
+      "examples": [
+        {"en": "By the time he arrived, the train had already left.", "zh": "他到达时，火车已经开走了。", "highlight": "had already left"},
+        {"en": "She had learned English for five years before she went abroad.", "zh": "出国之前她已经学了五年英语。", "highlight": "had learned"}
+      ]
+    },
+    {
+      "title": "常用时间标志：by / before / when",
+      "detail": "by the time + 过去时、by the end of + 过去时间、before + 过去动作，都提示「到过去某时为止已完成」，用 had done。",
+      "examples": [
+        {"en": "By the end of last term, we had learned about 3,000 English words.", "zh": "到上学期末为止，我们已经学了大约 3000 个英语单词。", "highlight": "had learned"},
+        {"en": "He had finished his homework before his mother came back.", "zh": "在他妈妈回来之前，他就已经写完作业了。", "highlight": "had finished"}
+      ]
+    },
+    {
+      "title": "宾语从句中的过去完成时",
+      "detail": "主句用过去时（said / told / found / realized...），从句动作发生得更早时用 had done；in the past few years 等完成时标志在从句中也随之变为过去完成时。",
+      "examples": [
+        {"en": "She told me that she had read the book twice.", "zh": "她告诉我那本书她读过两遍了。", "highlight": "had read"},
+        {"en": "He realized that he had taken the wrong road.", "zh": "他意识到自己走错了路。", "highlight": "had taken"}
+      ]
+    },
+    {
+      "title": "固定句型：hardly...when / no sooner...than",
+      "detail": "hardly had + 主语 + done...when + 一般过去时；no sooner had...than...。都表示「刚……就……」，前半句用过去完成时并倒装。",
+      "examples": [
+        {"en": "Hardly had I got home when it began to rain.", "zh": "我一到家就下起雨来了。", "highlight": "Hardly had I got"},
+        {"en": "No sooner had she sat down than the phone rang.", "zh": "她刚坐下电话就响了。", "highlight": "No sooner had she sat down"}
+      ]
+    }
+  ],
+  "pitfalls": [
+    "by the end of last year 用现在完成时：❌ has finished → ✓ had finished",
+    "过去完成时滥用：没有「过去的过去」参照点就不用 had done，只出现 yesterday 等一般过去时间时仍用一般过去时",
+    "hardly...when 前后时态颠倒：❌ Hardly I had got home when it began to rain. → ✓ Hardly had I got home when it began to rain."
+  ],
+  "compare": {
+    "left": "一般过去时 did",
+    "right": "过去完成时 had done",
+    "rows": [
+      {"l": "过去某时发生的动作本身", "r": "过去某时之前已完成的动作（过去的过去）"},
+      {"l": "When I arrived, the meeting started.（我到了，会议才开始）", "r": "When I arrived, the meeting had started.（我到之前会议就开始了）"},
+      {"l": "yesterday / last week / in 2010", "r": "by then / by the end of last... / before + 过去动作"}
+    ]
+  },
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "By the end of last month, they ___ over 2,000 words.",
+      "options": ["have learned", "had learned", "learned", "would learn"],
+      "answer": 1,
+      "explain": "by the end of last month 表示到过去某时为止，用过去完成时 had learned。"
+    },
+    {
+      "type": "choice",
+      "stem": "She told me that she ___ the book twice before she was fifteen.",
+      "options": ["read", "has read", "had read", "would read"],
+      "answer": 2,
+      "explain": "「读」发生在 was fifteen（过去）之前，是「过去的过去」，用过去完成时。"
+    },
+    {
+      "type": "choice",
+      "stem": "— Did you meet Mr. Smith in his office? — No, he ___ by the time I got there.",
+      "options": ["had left", "left", "has left", "was leaving"],
+      "answer": 0,
+      "explain": "「离开」发生在「我到那儿」之前，过去的过去，用 had left。"
+    },
+    {
+      "type": "choice",
+      "stem": "Hardly ___ the classroom when the bell rang.",
+      "options": ["had he entered", "he had entered", "did he enter", "he entered"],
+      "answer": 0,
+      "explain": "hardly...when 句型：hardly 置于句首时用倒装 had he entered，且用过去完成时。"
+    },
+    {
+      "type": "fill",
+      "stem": "When I got to the cinema, the film ___ (be) on for ten minutes.",
+      "answer": ["had been"],
+      "explain": "got to 是过去，电影「已经开始十分钟」发生在它之前，用过去完成时 had been。"
+    },
+    {
+      "type": "fill",
+      "stem": "He said that great changes ___ (take) place in his hometown in the past few years.",
+      "answer": ["had taken"],
+      "explain": "in the past few years 常配完成时；主句 said 是过去时，从句用过去完成时 had taken。"
+    },
+    {
+      "type": "fill",
+      "stem": "By the time the police arrived, the thief ___ (run) away.",
+      "answer": ["had run"],
+      "explain": "小偷逃跑发生在警察到达之前，过去的过去，用 had run。"
+    },
+    {
+      "type": "correct",
+      "stem": "When she rushed into the station, the train has left.",
+      "answer": "has left → had left",
+      "explain": "火车开走发生在「她冲进车站」之前，是过去的过去，用 had left。"
+    },
+    {
+      "type": "translate",
+      "stem": "到上周为止，我们已经完成了这个项目。（翻译整句）",
+      "answer": ["we had finished the project by last week.", "we had completed the project by last week."],
+      "explain": "by last week 提示到过去某时为止，用过去完成时 had finished。"
+    }
+  ]
+}

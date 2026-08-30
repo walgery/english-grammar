@@ -1,0 +1,102 @@
+{
+  "id": "h14",
+  "level": "high",
+  "grade": "必修一 ~ 选修",
+  "unit": "时态进阶 · 过去将来时",
+  "topic": "过去将来时",
+  "summary": "站在过去看将来：would / was going to + 动词原形，常用于宾语从句与记叙文，是直接引语变间接引语的必考时态。",
+  "signals": ["said/told/promised + 过去时", "would + 动词原形", "was/were going to do", "was/were about to do", "the next day / the following week"],
+  "rules": [
+    {
+      "title": "would + 动词原形：宾语从句中的将来",
+      "detail": "主句是过去时（said / told / promised / thought...），从句表示「从过去看将要发生」的动作，用 would do。",
+      "examples": [
+        {"en": "They said they would visit us the following week.", "zh": "他们说下一周会来看我们。", "highlight": "would visit"},
+        {"en": "He promised that he would never make the same mistake again.", "zh": "他保证再也不犯同样的错误。", "highlight": "would never make"}
+      ]
+    },
+    {
+      "title": "was/were going to + 动词原形：过去的打算",
+      "detail": "表示过去某时的计划、打算或即将发生的事；也常表示「本来打算（却没做成）」。",
+      "examples": [
+        {"en": "I didn't know you were going to leave so soon.", "zh": "我不知道你这么快就要走。", "highlight": "were going to leave"},
+        {"en": "She was going to tell him the truth, but she changed her mind.", "zh": "她本打算告诉他真相，但改变了主意。", "highlight": "was going to tell"}
+      ]
+    },
+    {
+      "title": "was/were about to do 与 was/were to do",
+      "detail": "was/were about to do 表示「正要、即将」（常与 when 连用）；was/were to do 表示按过去安排或注定要发生的事。",
+      "examples": [
+        {"en": "We were about to leave when the phone rang.", "zh": "我们正要离开，电话响了。", "highlight": "were about to leave"},
+        {"en": "The meeting was to be held the following week.", "zh": "会议定在下一周举行。", "highlight": "was to be held"}
+      ]
+    }
+  ],
+  "pitfalls": [
+    "间接引语漏变时态：❌ He said he will come the next day. → ✓ He said he would come the next day.",
+    "时间状语忘跟着变：直接引语中的 tomorrow / next week 在间接引语中要变 the next day / the following week",
+    "「正要……这时……」用 was about to...when...：when 后的句子用一般过去时（when it began to rain）"
+  ],
+  "compare": {
+    "left": "一般将来时 will do",
+    "right": "过去将来时 would do",
+    "rows": [
+      {"l": "站在现在看将来", "r": "站在过去看将来"},
+      {"l": "He says he will come tomorrow.", "r": "He said he would come the next day."},
+      {"l": "tomorrow / next week", "r": "the next day / the following week"}
+    ]
+  },
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "He said he ___ me as soon as he arrived in Beijing.",
+      "options": ["will call", "would call", "called", "has called"],
+      "answer": 1,
+      "explain": "主句 said 是过去时，从句的「将打电话」用过去将来时 would call。"
+    },
+    {
+      "type": "choice",
+      "stem": "I ___ tell her the news, but she had already known it.",
+      "options": ["will", "would", "was going to", "am going to"],
+      "answer": 2,
+      "explain": "「本打算告诉她」用 was going to tell，表示过去未实现的打算。"
+    },
+    {
+      "type": "choice",
+      "stem": "We were about to leave ___ it began to rain.",
+      "options": ["when", "while", "after", "until"],
+      "answer": 0,
+      "explain": "be about to do...when... 表示「正要……这时……」，when 引出突然发生的事。"
+    },
+    {
+      "type": "fill",
+      "stem": "She promised that she ___ (send) me an email the next week.",
+      "answer": ["would send"],
+      "explain": "promised 过去时，从句用过去将来时 would send；the next week 也是过去语境的「下周」。"
+    },
+    {
+      "type": "fill",
+      "stem": "They said there ___ (be) a football match the following day.",
+      "answer": ["would be"],
+      "explain": "站在 said 之时看「第二天」的将来，用过去将来时 would be。"
+    },
+    {
+      "type": "correct",
+      "stem": "He told me that he will help me with my English.",
+      "answer": "will help → would help",
+      "explain": "直接引语变间接引语：主句 told 过去时，will 要相应变为 would。"
+    },
+    {
+      "type": "translate",
+      "stem": "她说她第二天要动身去巴黎。（翻译整句，leave for）",
+      "answer": ["she said that she would leave for paris the next day.", "she said she would leave for paris the next day."],
+      "explain": "主句 said 过去时，从句用过去将来时 would leave；the next day 是过去的「第二天」。"
+    },
+    {
+      "type": "translate",
+      "stem": "我们不知道他们下一步打算做什么。（翻译整句）",
+      "answer": ["we didn't know what they were going to do next.", "we did not know what they were going to do next."],
+      "explain": "didn't know 过去时，宾语从句中的「打算做」用过去将来时 were going to do。"
+    }
+  ]
+}
