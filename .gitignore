@@ -6,3 +6,5 @@ data/
 .streamlit/secrets.toml
 .env
 .streamlit_home/
+stats.json
+wrong_book.json
