@@ -8,3 +8,4 @@ data/
 .streamlit_home/
 stats.json
 wrong_book.json
+*.code-workspace
