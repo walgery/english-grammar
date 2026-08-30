@@ -49,12 +49,19 @@ def _client():
     api_key = cfg["api_key"] or os.getenv("OPENAI_API_KEY") or os.getenv("LLM_API_KEY")
     if not api_key:
         raise RuntimeError("未配置 API 密钥（请在侧边栏填写并保存）")
+    base_url = cfg["base_url"]
+    # 密钥/接口地址含非 ASCII 字符（中文、全角符号等）时，HTTP 头编码会直接失败
+    try:
+        api_key.encode("ascii")
+        (base_url or "").encode("ascii")
+    except UnicodeEncodeError:
+        raise RuntimeError("大模型参数不正确，请联系作者")
     kwargs: dict = {"api_key": api_key, "timeout": TIMEOUT}
-    if cfg["base_url"]:
-        kwargs["base_url"] = cfg["base_url"]
+    if base_url:
+        kwargs["base_url"] = base_url
     model = cfg["model"] or os.getenv("LLM_MODEL", "gpt-4o-mini")
     extra_body = None
-    if cfg["base_url"] and "bigmodel" in cfg["base_url"]:
+    if base_url and "bigmodel" in base_url:
         extra_body = {"thinking": {"type": "enabled", "effort": "low"}}
     return OpenAI(**kwargs), model, extra_body
 
@@ -89,16 +96,22 @@ def _extract_json(text: str) -> list:
 
 def _chat(system: str, user: str) -> str:
     client, model, extra_body = _client()
-    resp = client.chat.completions.create(
-        model=model,
-        temperature=0.6,
-        messages=[
-            {"role": "system", "content": system},
-            {"role": "user", "content": user},
-        ],
-        extra_body=extra_body,
-    )
-    return resp.choices[0].message.content or ""
+    try:
+        resp = client.chat.completions.create(
+            model=model,
+            temperature=0.6,
+            messages=[
+                {"role": "system", "content": system},
+                {"role": "user", "content": user},
+            ],
+            extra_body=extra_body,
+        )
+        return resp.choices[0].message.content or ""
+    except Exception as e:
+        # 认证 / 参数 / 地址类错误统一转为友好提示（401 密钥无效、404 模型名错误、400 请求不合法等）
+        if type(e).__name__ in ("AuthenticationError", "NotFoundError", "BadRequestError", "PermissionDeniedError"):
+            raise RuntimeError("大模型参数不正确，请联系作者") from e
+        raise
 
 
 def _level_label(level: str) -> str:
