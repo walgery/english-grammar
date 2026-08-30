@@ -748,6 +748,19 @@ def page_result(topic: dict) -> None:
 # —— 页面：错题本 ——
 
 
+def _choice_text(q: dict, val) -> str:
+    """choice 题的序号答案转成「A. 选项」友好文本；其他情况原样返回。"""
+    if val is None or val == "":
+        return ""
+    s = str(val)
+    if q.get("type") == "choice" and s.isdigit():
+        i = int(s)
+        opts = q.get("options") or []
+        if 0 <= i < len(opts):
+            return f"{chr(65 + i)}. {opts[i]}"
+    return s
+
+
 def _book_to_markdown(book: dict, topic_map: dict) -> str:
     """导出为 Markdown 复习文档：人读内容 + 每题内嵌可再导入的数据块。"""
     lines = [
@@ -765,10 +778,10 @@ def _book_to_markdown(book: dict, topic_map: dict) -> str:
             ans = f"{chr(65 + i4)}. {opts[i4] if i4 < len(opts) else ''}"
         lines.append(f"## {tname}")
         lines.append(f"- **题目**：{q.get('stem', '')}")
-        lines.append(f"- **正确答案**：{ans}")
+        lines.append(f"- **正确答案**：{_choice_text(q, ans)}")
         lines.append(f"- **错误次数**：{rec.get('wrong_times', 1)}")
         if rec.get("last_user_answer"):
-            lines.append(f"- **上次答案**：{rec['last_user_answer']}")
+            lines.append(f"- **上次答案**：{_choice_text(q, rec['last_user_answer'])}")
         if q.get("explain"):
             lines.append(f"- **解析**：{q['explain']}")
         meta = json.dumps({
@@ -797,14 +810,10 @@ def _book_to_html(book: dict, topic_map: dict) -> str:
         q = rec.get("question", {})
         t = topic_map.get(rec.get("topic_id", ""))
         tname = html_mod.escape(t["topic"] if t else rec.get("topic_id", "未知专题"))
-        ans = q.get("answer")
-        if q.get("type") == "choice" and str(ans).isdigit():
-            i4 = int(ans)
-            opts = q.get("options") or []
-            ans = f"{chr(65 + i4)}. {html_mod.escape(str(opts[i4])) if i4 < len(opts) else ''}"
+        ans = _choice_text(q, q.get("answer"))
         extra = ""
         if rec.get("last_user_answer"):
-            extra += f'<p class="muted">上次答案：{html_mod.escape(str(rec["last_user_answer"]))}</p>'
+            extra += f'<p class="muted">上次答案：{html_mod.escape(_choice_text(q, rec["last_user_answer"]))}</p>'
         if q.get("explain"):
             extra += f'<p class="explain">解析：{html_mod.escape(str(q["explain"]))}</p>'
         cards.append(
@@ -994,12 +1003,8 @@ def page_wrong() -> None:
             c1, c2 = st.columns([5, 1])
             with c1:
                 st.markdown(f"**[{tname}]** {q.get('stem', '')}")
-                ua = rec.get("last_user_answer", "")
-                ans = q.get("answer")
-                if q.get("type") == "choice" and str(ans).isdigit():
-                    i3 = int(ans)
-                    opts = q.get("options") or []
-                    ans = f"{chr(65 + i3)}. {opts[i3] if i3 < len(opts) else ''}"
+                ua = _choice_text(q, rec.get("last_user_answer", ""))
+                ans = _choice_text(q, q.get("answer"))
                 st.caption(f"上次答案：{ua or '（空）'} ｜ 正确答案：{ans} ｜ 错过 {rec.get('wrong_times', 1)} 次")
                 if q.get("explain"):
                     st.caption(f"解析：{q['explain']}")
