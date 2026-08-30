@@ -94,6 +94,17 @@ div[data-testid="stButton"] > button[kind="primary"] {
   background: linear-gradient(135deg, #4a7d5b, #2f6142);
   border: none;
 }
+/* 顶部用户栏 */
+.user-bar {
+  display: flex; align-items: center; gap: .5rem;
+  background: #fff; border: 1px solid #dfe9e2; border-radius: 999px;
+  padding: .38rem 1rem; margin-bottom: .8rem;
+  font-size: .92rem; color: #2a3b47;
+  box-shadow: 0 1px 4px rgba(30, 58, 76, .06);
+}
+.ub-avatar { font-size: 1rem; }
+.ub-hint { color: #8a97a5; font-size: .82rem; margin-left: auto; }
+@media (max-width: 640px) { .ub-hint { display: none; } }
 /* 专题学习页横幅 */
 .study-hero {
   background: linear-gradient(135deg, #16324a 0%, #24523f 55%, #4a7d5b 100%);
@@ -1093,6 +1104,14 @@ def main() -> None:
     if not st.session_state.student:
         _student_gate()
         return
+
+    # 顶部用户栏：所有页面可见
+    st.markdown(
+        f'<div class="user-bar"><span class="ub-avatar">👤</span>'
+        f'<span>当前学生：<b>{st.session_state.student}</b></span>'
+        f'<span class="ub-hint">进度已自动保存，下次登录输入同一姓名即可继续</span></div>',
+        unsafe_allow_html=True,
+    )
     sidebar()
 
     page = st.radio(
