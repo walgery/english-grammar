@@ -1,0 +1,101 @@
+{
+  "id": "m05",
+  "level": "middle",
+  "grade": "七年级上 ~ 七年级下",
+  "unit": "Unit 3 / Unit 6 特殊疑问句专题",
+  "topic": "特殊疑问句与疑问词",
+  "summary": "以疑问词（what / where / when / who / why / how...）开头的问句，不能用 Yes/No 回答。",
+  "signals": ["what 问事物/职业", "where 问地点", "when 问时间", "how much 问价格/不可数量", "how often 问频率", "how long 问时长"],
+  "rules": [
+    {
+      "title": "常见疑问词及用途",
+      "detail": "what（什么）where（哪里）when（何时）who（谁）whose（谁的）why（为什么）how（怎样）how many（多少-可数）how much（多少-不可数/价格）how often（多久一次）how long（多久/多长）。",
+      "examples": [
+        {"en": "What is your favorite subject?", "zh": "你最喜欢的科目是什么？", "highlight": "What"},
+        {"en": "Where does he live?", "zh": "他住在哪里？", "highlight": "Where does he live"},
+        {"en": "Why are you late?", "zh": "你为什么迟到？", "highlight": "Why are you late"}
+      ]
+    },
+    {
+      "title": "语序：疑问词 + 一般疑问句（助动词提前）",
+      "detail": "有 be 动词直接把 be 提前：Where is he?；有实义动词要借助 do/does/did：What does she want?；疑问词作主语时语序不变：Who likes music?",
+      "examples": [
+        {"en": "What does your father do?", "zh": "你爸爸是做什么工作的？", "highlight": "What does"},
+        {"en": "Who broke the window?", "zh": "谁打碎了窗户？", "highlight": "Who broke"}
+      ]
+    },
+    {
+      "title": "how 词组的用法区分",
+      "detail": "how many + 可数名词复数；how much + 不可数名词 / 问价格；how often 问频率（回答 often, twice a week）；how long 问时间段或多长（回答 for two hours, 2 meters）。",
+      "examples": [
+        {"en": "How often do you exercise? — Three times a week.", "zh": "你多久锻炼一次？——一周三次。", "highlight": "How often"},
+        {"en": "How long did you stay there? — For two hours.", "zh": "你在那儿待了多久？——两个小时。", "highlight": "How long"}
+      ]
+    }
+  ],
+  "pitfalls": [
+    "忘记借助动词：❌ Where he lives? → ✓ Where does he live?",
+    "疑问词选错：问价格用 how much 不是 how many；问可数数量用 how many",
+    "Who 作主语时误加 does：❌ Who does like music? → ✓ Who likes music?"
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "— ___ is the T-shirt? — It's 50 yuan.",
+      "options": ["How many", "How much", "How often", "How old"],
+      "answer": 1,
+      "explain": "问价格用 how much，回答 50 yuan。"
+    },
+    {
+      "type": "choice",
+      "stem": "— ___ do you go to the library? — Twice a month.",
+      "options": ["How long", "How soon", "How often", "How far"],
+      "answer": 2,
+      "explain": "Twice a month（一月两次）表示频率，用 how often 提问。"
+    },
+    {
+      "type": "choice",
+      "stem": "— ___ does your brother do? — He is a doctor.",
+      "options": ["What", "Who", "Which", "How"],
+      "answer": 0,
+      "explain": "问职业用 What does he do? 句型。"
+    },
+    {
+      "type": "choice",
+      "stem": "___ water ___ you need every day?",
+      "options": ["How many; do", "How much; do", "How many; does", "How much; does"],
+      "answer": 1,
+      "explain": "water 不可数用 how much；主语 you 是第二人称，借助动词用 do。"
+    },
+    {
+      "type": "fill",
+      "stem": "— ___ ___ is the river? — About 100 kilometers long. (two words: 多长)",
+      "answer": ["how long"],
+      "explain": "问长度/时间段用 how long。"
+    },
+    {
+      "type": "fill",
+      "stem": "___ ___ students are there in your grade? (two words: 多少)",
+      "answer": ["how many"],
+      "explain": "students 可数，问数量用 how many。"
+    },
+    {
+      "type": "correct",
+      "stem": "Where does he lives?",
+      "answer": "lives → live",
+      "explain": "特殊疑问句中 does 已经体现三单，后面的动词还原为原形 live。"
+    },
+    {
+      "type": "translate",
+      "stem": "你为什么喜欢熊猫？（翻译整句）",
+      "answer": ["why do you like pandas?"],
+      "explain": "why + do + 主语 + 动词原形；panda 用复数表示类别。"
+    },
+    {
+      "type": "translate",
+      "stem": "她通常几点去上学？（翻译整句）",
+      "answer": ["what time does she usually go to school?", "when does she usually go to school?"],
+      "explain": "问具体时刻用 what time；does 后用动词原形 go。"
+    }
+  ]
+}

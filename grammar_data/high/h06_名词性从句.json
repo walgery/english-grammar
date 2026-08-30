@@ -1,0 +1,100 @@
+{
+  "id": "h06",
+  "level": "high",
+  "grade": "必修三 ~ 必修四",
+  "unit": "名词性从句专题",
+  "topic": "名词性从句",
+  "summary": "在句中作主语、宾语、表语、同位语的从句。三原则：引导词恰当 + 陈述句语序 + 时态呼应。",
+  "signals": ["It is + adj/noun + that", "whether 可放句首，if 不行", "The reason why...is that...", "同位语从句解释内容"],
+  "rules": [
+    {
+      "title": "四类名词性从句",
+      "detail": "主语从句（What he said is true.）、宾语从句（I know that he is honest.）、表语从句（The problem is that we lack money.）、同位语从句（The news that we won made us excited. 说明 news 的内容）。",
+      "examples": [
+        {"en": "What surprised me most was his attitude.", "zh": "最让我惊讶的是他的态度。", "highlight": "What surprised me most"},
+        {"en": "The fact that light travels faster than sound is known to us.", "zh": "光比声音传播得快，这个事实我们都知道。", "highlight": "The fact that"}
+      ]
+    },
+    {
+      "title": "that 与 what 的区别",
+      "detail": "what 在从句中充当成分（主语/宾语），含义是「……的东西」；that 不充当任何成分，无实义，宾语从句中可省略（其他从句不可省）。",
+      "examples": [
+        {"en": "I can't understand what he is talking about.（about 的宾语）", "zh": "我不明白他在说什么。", "highlight": "what he is talking"},
+        {"en": "The reason is that he missed the bus.", "zh": "原因是他错过了公交车。", "highlight": "that"}
+      ]
+    },
+    {
+      "title": "it 作形式主语与 whether/if 区别",
+      "detail": "主语从句太长时用 it 作形式主语：It is said that...；whether 可引导主语从句（放句首），if 不行；介词后用 whether；whether...or not 搭配。",
+      "examples": [
+        {"en": "It is certain that hard work leads to success.", "zh": "努力一定通向成功。", "highlight": "It is certain that"},
+        {"en": "Whether he will attend the meeting is unknown.", "zh": "他是否参加会议还不得而知。", "highlight": "Whether he will attend"}
+      ]
+    }
+  ],
+  "pitfalls": [
+    "what/that 混用：❌ The news that he told me is true（told 缺宾语 → what）→ ✓ The news that he won is true（不缺成分用 that）",
+    "从句用疑问语序：❌ The question is where will we go. → ✓ ...where we will go.",
+    "主语从句误用 if：❌ If he will come is unknown. → ✓ Whether he will come is unknown."
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "___ we need most is more time and practice.",
+      "options": ["That", "What", "Which", "Whether"],
+      "answer": 1,
+      "explain": "从句中 need 缺宾语，用 what（= the thing that）。"
+    },
+    {
+      "type": "choice",
+      "stem": "The news ___ our team won the match spread quickly.",
+      "options": ["which", "that", "what", "when"],
+      "answer": 1,
+      "explain": "同位语从句解释 news 的内容，从句成分完整，用 that。"
+    },
+    {
+      "type": "choice",
+      "stem": "___ the meeting will be held hasn't been decided yet.",
+      "options": ["If", "Whether", "That", "What"],
+      "answer": 1,
+      "explain": "主语从句放句首表「是否」只能用 whether。"
+    },
+    {
+      "type": "choice",
+      "stem": "The reason ___ he was late was ___ he missed the early bus.",
+      "options": ["why; because", "that; why", "why; that", "because; that"],
+      "answer": 2,
+      "explain": "The reason why...is that... 固定句型：表语从句用 that 不用 because。"
+    },
+    {
+      "type": "fill",
+      "stem": "It is clear ___ he is the right person for the job.",
+      "answer": ["that"],
+      "explain": "It 作形式主语，真正主语从句成分完整，用 that。"
+    },
+    {
+      "type": "fill",
+      "stem": "I have no idea ___ ___ the meeting will begin. (two words: 什么时候)",
+      "answer": ["when the", "what time the"],
+      "explain": "同位语从句保留疑问词 when/what time，但用陈述语序：when the meeting will begin。"
+    },
+    {
+      "type": "correct",
+      "stem": "The problem is if we can finish the work on time.",
+      "answer": "if → whether",
+      "explain": "表语从句表「是否」用 whether，不用 if。"
+    },
+    {
+      "type": "translate",
+      "stem": "他是否会对这个决定感到后悔还是个问题。（翻译整句）",
+      "answer": ["whether he will regret the decision is still a question.", "it is still a question whether he will regret the decision."],
+      "explain": "whether 引导主语从句；也可用 it 作形式主语。"
+    },
+    {
+      "type": "translate",
+      "stem": "我们要去哪里度假取决于天气。（翻译整句）",
+      "answer": ["where we will spend our holiday depends on the weather.", "where we will go for the holiday depends on the weather."],
+      "explain": "where 引导主语从句，陈述语序；depend on 取决于。"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "m12",
+  "level": "middle",
+  "grade": "八年级下",
+  "unit": "Unit 8 ~ Unit 10 现在完成时专题",
+  "topic": "现在完成时",
+  "summary": "表示过去发生的动作对现在造成影响，或从过去持续到现在的状态：have / has + 过去分词。",
+  "rules": [
+    {
+      "title": "结构：have / has + 过去分词",
+      "detail": "第三人称单数用 has，其余用 have。过去分词：规则动词同过去式（+ed），不规则要记（go → gone，see → seen，do → done，be → been）。",
+      "examples": [
+        {"en": "I have finished my homework already.", "zh": "我已经完成作业了。", "highlight": "have finished"},
+        {"en": "She has lived here since 2015.", "zh": "自从 2015 年她就住在这里。", "highlight": "has lived"}
+      ]
+    },
+    {
+      "title": "两大用法",
+      "detail": "① 影响用法：过去做的事对现在有影响（I have lost my key. 我把钥匙丢了——所以现在进不去门）。② 持续用法：动作从过去开始延续到现在，常与 for + 时间段、since + 时间点 连用。",
+      "examples": [
+        {"en": "He has gone to Shanghai.", "zh": "他去上海了（人现在不在这里）。", "highlight": "has gone"},
+        {"en": "We have known each other for ten years.", "zh": "我们认识十年了。", "highlight": "have known"}
+      ]
+    },
+    {
+      "title": "have been to 与 have gone to 的区别",
+      "detail": "have been to：去过（已回来）；have gone to：去了（还没回来）。He has been to Beijing twice. 他去过北京两次；He has gone to Beijing. 他去北京了。",
+      "examples": [
+        {"en": "Have you ever been to the Great Wall?", "zh": "你去过长城吗？", "highlight": "Have you ever been to"},
+        {"en": "Tom has gone to the library, so he isn't here.", "zh": "汤姆去图书馆了，所以他不在这儿。", "highlight": "has gone to"}
+      ]
+    }
+  ],
+  "signals": ["already", "yet", "just", "ever", "never", "for + 时间段", "since + 时间点", "so far", "recently"],
+  "pitfalls": [
+    "for / since 混淆：for + 时间段（for three years）；since + 时间点（since 2020, since he left）",
+    "非延续动词不能与时间段连用：❌ He has died for two years. → ✓ He has been dead for two years.",
+    "have gone to 和 have been to 混用：have gone to 是「去了没回来」，主语不能是第一/二人称的问句场景"
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "— Where is Mr. Green? — He ___ to London on business.",
+      "options": ["has been", "has gone", "went", "will go"],
+      "answer": 1,
+      "explain": "他不在现场说明「去了还没回来」，用 has gone to。"
+    },
+    {
+      "type": "choice",
+      "stem": "My parents ___ in this city since they got married.",
+      "options": ["lived", "have lived", "live", "will live"],
+      "answer": 1,
+      "explain": "since 从句提示从过去持续到现在，用现在完成时 have lived。"
+    },
+    {
+      "type": "choice",
+      "stem": "— Have you ___ been to Hong Kong? — No, never.",
+      "options": ["already", "yet", "ever", "just"],
+      "answer": 2,
+      "explain": "问「曾经是否去过」用 ever；never 对应回答。"
+    },
+    {
+      "type": "choice",
+      "stem": "His grandfather has ___ for five years.",
+      "options": ["died", "been dead", "dead", "dying"],
+      "answer": 1,
+      "explain": "die 是非延续动词，不能与 for five years 连用；要转成延续状态 been dead。"
+    },
+    {
+      "type": "fill",
+      "stem": "I ___ already ___ (read) this book twice.",
+      "answer": ["have read"],
+      "explain": "already 提示现在完成时；read 的过去分词仍是 read。"
+    },
+    {
+      "type": "fill",
+      "stem": "She has ___ (be) a nurse for ten years.",
+      "answer": ["been"],
+      "explain": "for ten years 持续用法：has been a nurse。"
+    },
+    {
+      "type": "correct",
+      "stem": "They have knew each other since childhood.",
+      "answer": "knew → known",
+      "explain": "现在完成时要用过去分词：know → knew → known。"
+    },
+    {
+      "type": "translate",
+      "stem": "我已经学英语五年了。（翻译整句）",
+      "answer": ["i have learned english for five years.", "i have studied english for five years.", "i have learnt english for five years."],
+      "explain": "for + 时间段用现在完成时；learn 过去分词 learned / learnt 均可。"
+    },
+    {
+      "type": "translate",
+      "stem": "你曾经去过上海吗？（翻译整句）",
+      "answer": ["have you ever been to shanghai?"],
+      "explain": "「去过（已回来）」用 have been to；ever 加强语气。"
+    }
+  ]
+}

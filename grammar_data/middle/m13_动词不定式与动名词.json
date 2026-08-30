@@ -1,0 +1,102 @@
+{
+  "id": "m13",
+  "level": "middle",
+  "grade": "八年级下",
+  "unit": "Unit 1 ~ Unit 6 非谓语基础专题",
+  "topic": "动词不定式与动名词",
+  "summary": "动词不作谓语时的两种常见形态：to do（不定式，表目的/具体动作）和 doing（动名词，表习惯/泛指）。",
+  "signals": ["want/decide/hope + to do", "enjoy/finish/practice + doing", "介词后 + doing", "remember to do 记得做", "stop doing 停止做"],
+  "rules": [
+    {
+      "title": "常见接 to do 的动词",
+      "detail": "want, hope, decide, plan, agree, learn, would like + to do。表目的也用 to do：He got up early to catch the bus.",
+      "examples": [
+        {"en": "I want to be a doctor in the future.", "zh": "我将来想当一名医生。", "highlight": "want to be"},
+        {"en": "She decided to study harder.", "zh": "她决定更努力学习。", "highlight": "decided to study"},
+        {"en": "He ran fast to catch the early bus.", "zh": "他跑得很快以便赶上早班车。", "highlight": "to catch"}
+      ]
+    },
+    {
+      "title": "常见接 doing 的动词与词组",
+      "detail": "enjoy, finish, practice, mind, keep + doing；be good at / be interested in / how about / thank you for + doing。",
+      "examples": [
+        {"en": "I enjoy reading books in my free time.", "zh": "空闲时我喜欢读书。", "highlight": "enjoy reading"},
+        {"en": "He keeps practicing English every morning.", "zh": "他坚持每天早上练习英语。", "highlight": "practicing"},
+        {"en": "How about going swimming this afternoon?", "zh": "今天下午去游泳怎么样？", "highlight": "going"}
+      ]
+    },
+    {
+      "title": "既可接 to do 又可接 doing，但意思不同",
+      "detail": "like/love/start/begin 两者均可，意思相近；但 remember to do（记得要做）≠ remember doing（记得做过）；stop to do（停下来去做另一件事）≠ stop doing（停止做某事）；forget 同理。",
+      "examples": [
+        {"en": "Remember to close the window when you leave.", "zh": "离开时记得关窗（还没关）。", "highlight": "Remember to close"},
+        {"en": "The teacher stopped talking and looked at us.", "zh": "老师停止讲话，看着我们。", "highlight": "stopped talking"}
+      ]
+    }
+  ],
+  "pitfalls": [
+    "enjoy 后接 to do：❌ I enjoy to read. → ✓ I enjoy reading.",
+    "forget to do / doing 混淆：❌ Don't forget closing the door.（已关过才对）→ 表「别忘了关」用 Don't forget to close the door.",
+    "介词后接 to do：❌ Thank you for to help me. → ✓ Thank you for helping me."
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "My parents hope ___ a big house near the sea.",
+      "options": ["have", "to have", "having", "has"],
+      "answer": 1,
+      "explain": "hope 后接 to do：hope to have。"
+    },
+    {
+      "type": "choice",
+      "stem": "The little boy is interested in ___ model planes.",
+      "options": ["make", "makes", "making", "to make"],
+      "answer": 2,
+      "explain": "介词 in 后接动名词 making。"
+    },
+    {
+      "type": "choice",
+      "stem": "It's too noisy. Please stop ___ and listen to me.",
+      "options": ["to talk", "talking", "talk", "talks"],
+      "answer": 1,
+      "explain": "stop doing = 停止正在做的事（别讲话了）；stop to talk 是停下来去讲话，不合语境。"
+    },
+    {
+      "type": "choice",
+      "stem": "Remember ___ the lights when you leave the classroom.",
+      "options": ["turning off", "to turn off", "turn off", "turned off"],
+      "answer": 1,
+      "explain": "remember to do = 记得去做（还没做）。"
+    },
+    {
+      "type": "fill",
+      "stem": "He got up early ___ (catch) the first bus.",
+      "answer": ["to catch"],
+      "explain": "表目的用不定式 to catch。"
+    },
+    {
+      "type": "fill",
+      "stem": "Thank you for ___ (help) me with my English.",
+      "answer": ["helping"],
+      "explain": "介词 for 后接动名词 helping。"
+    },
+    {
+      "type": "correct",
+      "stem": "We decided going to the museum instead of staying at home.",
+      "answer": "going → to go",
+      "explain": "decide 后接 to do：decided to go。"
+    },
+    {
+      "type": "translate",
+      "stem": "我的梦想是当一名老师。（翻译整句）",
+      "answer": ["my dream is to be a teacher.", "my dream is to become a teacher."],
+      "explain": "表身份、愿望用 to be a teacher。"
+    },
+    {
+      "type": "translate",
+      "stem": "练习弹钢琴需要时间。（翻译整句，practice）",
+      "answer": ["practicing the piano takes time.", "practicing playing the piano takes time.", "practising the piano takes time."],
+      "explain": "动名词短语作主语，谓语用单数 takes。"
+    }
+  ]
+}

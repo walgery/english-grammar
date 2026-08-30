@@ -1,0 +1,101 @@
+{
+  "id": "h09",
+  "level": "high",
+  "grade": "选修（高二）",
+  "unit": "倒装句专题",
+  "topic": "倒装句",
+  "summary": "把谓语（或助动词）放到主语前面：完全倒装与部分倒装。部分倒装只把助动词/情态动词提前。",
+  "signals": ["never/seldom/hardly 开头", "only + 状语开头", "so/neither 开头", "not until 主句倒装"],
+  "rules": [
+    {
+      "title": "部分倒装（只提前助动词）",
+      "detail": "① 否定副词开头：never, seldom, hardly, little, not only, no sooner...than, by no means；② Only + 状语开头；③ So/Neither/Nor 开头的「也/也不」。",
+      "examples": [
+        {"en": "Never have I seen such a beautiful sunset.", "zh": "我从未见过如此美丽的日落。", "highlight": "Never have I seen"},
+        {"en": "Only in this way can we make progress.", "zh": "只有这样我们才能进步。", "highlight": "can we make"},
+        {"en": "He can swim, and so can I.", "zh": "他会游泳，我也会。", "highlight": "so can I"}
+      ]
+    },
+    {
+      "title": "完全倒装（整个谓语提前）",
+      "detail": "① 表示地点的副词/介词短语开头（here, there, up, down, in the room），谓语是 come/go/lie/stand/be 等不及物动词；② 表语提前（So beautiful is the scenery that...）。",
+      "examples": [
+        {"en": "Here comes the bus.", "zh": "公交车来了。", "highlight": "Here comes the bus"},
+        {"en": "On the wall hangs a famous painting.", "zh": "墙上挂着一幅名画。", "highlight": "hangs a famous painting"}
+      ]
+    },
+    {
+      "title": "注意事项",
+      "detail": "主语是人称代词时完全倒装不提前（Here comes the bus. 但 Here he comes.）；not until 开头只倒装主句；so...that 中 so + 形容词提前时主句部分倒装。",
+      "examples": [
+        {"en": "Not until midnight did he come back.", "zh": "直到半夜他才回来。", "highlight": "did he come back"},
+        {"en": "So loudly did he speak that everyone heard him.", "zh": "他讲话声音那么大，大家都听见了。", "highlight": "So loudly did he speak"}
+      ]
+    }
+  ],
+  "pitfalls": [
+    "部分倒装漏助动词：❌ Never I have seen... → ✓ Never have I seen...",
+    "人称代词还搞完全倒装：❌ Here comes he. → ✓ Here he comes.",
+    "not until 从句也倒装：❌ Not until he came did I left...（从句不倒装，主句倒装）"
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "— I have never been to Tibet. — ___.",
+      "options": ["So have I", "Neither have I", "So do I", "Neither do I"],
+      "answer": 1,
+      "explain": "前句是否定句，「我也不」用 Neither + 助动词 + 主语，时态是现在完成时用 have。"
+    },
+    {
+      "type": "choice",
+      "stem": "Only when you lose something ___ its value.",
+      "options": ["you realize", "do you realize", "you will realize", "realize you"],
+      "answer": 1,
+      "explain": "Only + 时间状语从句开头，主句部分倒装：do you realize。"
+    },
+    {
+      "type": "choice",
+      "stem": "___ that we all went out to enjoy it.",
+      "options": ["Such fine weather was it", "So fine was the weather", "The weather was so fine", "So fine the weather was"],
+      "answer": 1,
+      "explain": "So + 形容词提前引起部分倒装：So fine was the weather that...。"
+    },
+    {
+      "type": "choice",
+      "stem": "Not until the child fell asleep ___ the room.",
+      "options": ["the mother left", "did the mother leave", "the mother did leave", "left the mother"],
+      "answer": 1,
+      "explain": "not until 开头，主句部分倒装：did the mother leave；从句不倒装。"
+    },
+    {
+      "type": "fill",
+      "stem": "Look! There ___ (go) the last bus!（用所给动词适当形式，完全倒装）",
+      "answer": ["goes"],
+      "explain": "There/Here 开头主语是名词时完全倒装：There goes the last bus。"
+    },
+    {
+      "type": "fill",
+      "stem": "Hardly ___ he ___ home when it began to rain. (two words: arrive 关系缺失—用 get；填 had, got)",
+      "answer": ["had got", "had gotten"],
+      "explain": "Hardly had sb done... when...（刚……就……）固定倒装结构。"
+    },
+    {
+      "type": "correct",
+      "stem": "Seldom he goes to the movies on weekdays.",
+      "answer": "he goes → does he go",
+      "explain": "seldom 否定副词开头引起部分倒装：Seldom does he go...。"
+    },
+    {
+      "type": "translate",
+      "stem": "他不仅会说英语，还会说法语。（翻译整句，not only）",
+      "answer": ["not only can he speak english, but he can also speak french.", "not only does he speak english, but he also speaks french."],
+      "explain": "not only 开头前半句部分倒装：not only can he speak...。"
+    },
+    {
+      "type": "translate",
+      "stem": "我从来没有听说过这样的事情。（翻译整句）",
+      "answer": ["never have i heard of such a thing.", "never have i heard of such things."],
+      "explain": "never 开头部分倒装：Never have I heard of...。"
+    }
+  ]
+}

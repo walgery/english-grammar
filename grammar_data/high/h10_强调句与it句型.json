@@ -1,0 +1,99 @@
+{
+  "id": "h10",
+  "level": "high",
+  "grade": "选修（高二）",
+  "unit": "强调句与 it 句型专题",
+  "topic": "强调句与 it 的用法",
+  "summary": "It is/was + 被强调部分 + that/who + 其余部分，可强调主语、宾语、状语；另掌握 it 作形式主语/宾语、指时间天气等用法。",
+  "signals": ["It is/was...that 去框架仍完整", "It is no use doing", "find it + adj + to do", "It is...since..."],
+  "rules": [
+    {
+      "title": "强调句型：It is/was + 强调部分 + that/who + 其余",
+      "detail": "强调人可用 who；强调物只用 that；去掉 It is/was...that 句子仍然完整成立——这是判断强调句的金标准。",
+      "examples": [
+        {"en": "It was Tom that/who broke the window.", "zh": "是汤姆打碎了窗户。", "highlight": "It was Tom that"},
+        {"en": "It was in this room that the meeting was held.", "zh": "会议就是在这个房间举行的。", "highlight": "It was in this room that"}
+      ]
+    },
+    {
+      "title": "强调句的疑问形式",
+      "detail": "一般疑问：Was it Tom that broke the window?；特殊疑问：Who was it that...? / What was it that...?",
+      "examples": [
+        {"en": "Who was it that called me last night?", "zh": "昨晚到底是谁给我打电话？", "highlight": "Who was it that"}
+      ]
+    },
+    {
+      "title": "it 的其他常见用法",
+      "detail": "① 形式主语/宾语：It is no use crying. / We find it hard to understand him. ② 指时间、距离、天气：It is 5 km from here. ③ It is/was + 时间点 + since/when/before 句型辨析。",
+      "examples": [
+        {"en": "We find it difficult to get along with him.", "zh": "我们发现很难与他相处。", "highlight": "find it difficult"},
+        {"en": "It is/has been three years since he left.", "zh": "他离开已经三年了。", "highlight": "It is three years since"}
+      ]
+    }
+  ],
+  "pitfalls": [
+    "强调句与定语从句混淆：It was the house where I lived.（定从，where）vs It was the house that I visited.（强调句，去框架仍完整）",
+    "强调时间/地点误用 when/where：强调句一律用 that（强调人还可用 who）",
+    "It is no use 后接 to do：应用 doing（It is no use crying.）"
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "It was in the lab ___ the experiment was carried out.",
+      "options": ["where", "that", "which", "in which"],
+      "answer": 1,
+      "explain": "强调地点状语 in the lab，强调句框架用 that（即使强调的是地点也不用 where）。"
+    },
+    {
+      "type": "choice",
+      "stem": "___ was it ___ made the school famous?",
+      "options": ["What; that", "That; what", "Who; which", "Which; who"],
+      "answer": 0,
+      "explain": "强调主语 what（作 made 的主语）的特殊疑问强调句：What was it that...?"
+    },
+    {
+      "type": "choice",
+      "stem": "We all consider ___ our duty to protect the environment.",
+      "options": ["that", "this", "it", "one"],
+      "answer": 2,
+      "explain": "it 作形式宾语，真正的宾语是不定式 to protect...。"
+    },
+    {
+      "type": "choice",
+      "stem": "___ two years ___ we last met in Beijing.",
+      "options": ["It is; that", "It was; since", "It is; since", "It was; when"],
+      "answer": 2,
+      "explain": "It is/has been + 时间段 + since + 过去时：自上次见面已两年。"
+    },
+    {
+      "type": "fill",
+      "stem": "___ ___ no use arguing with him. (two words)",
+      "answer": ["it is", "it's"],
+      "explain": "It is no use doing sth 固定句型：和某人争辩没用。"
+    },
+    {
+      "type": "fill",
+      "stem": "It was because of the heavy rain ___ the sports meeting was put off.",
+      "answer": ["that"],
+      "explain": "强调原因状语 because of the heavy rain，框架用 that。"
+    },
+    {
+      "type": "correct",
+      "stem": "It was last night when I heard the strange noise.",
+      "answer": "when → that",
+      "explain": "强调时间状语 last night 用 that；如果去掉框架句子完整（I heard the noise last night），就是强调句。"
+    },
+    {
+      "type": "translate",
+      "stem": "就是在那个小村庄里度过了他的童年。（翻译整句，spend his childhood）",
+      "answer": ["it was in that small village that he spent his childhood.", "it was in the small village that he spent his childhood."],
+      "explain": "强调地点 in that small village，用 It was...that...框架。"
+    },
+    {
+      "type": "translate",
+      "stem": "你到底是什么意思？（翻译整句，mean）",
+      "answer": ["what on earth do you mean?", "what do you mean exactly?", "what is it that you mean?"],
+      "explain": "可用强调句特殊疑问 What is it that you mean? 或加 on earth 加强语气。"
+    }
+  ]
+}

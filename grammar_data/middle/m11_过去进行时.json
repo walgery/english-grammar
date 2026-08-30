@@ -1,0 +1,92 @@
+{
+  "id": "m11",
+  "level": "middle",
+  "grade": "八年级上",
+  "unit": "Unit 4 ~ 过去进行时专题",
+  "topic": "过去进行时",
+  "summary": "表示过去某一时刻或某段时间正在进行的动作：was / were + 动词-ing。",
+  "rules": [
+    {
+      "title": "结构：was / were + 动词-ing",
+      "detail": "第一人称单数和第三人称单数用 was；其余用 were。常与 at that time、at 8:00 yesterday、this morning 等表示过去具体时刻的时间连用。",
+      "examples": [
+        {"en": "I was doing my homework at 8:00 last night.", "zh": "昨晚八点我正在做作业。", "highlight": "was doing"},
+        {"en": "They were having dinner when I arrived.", "zh": "我到达时他们正在吃晚饭。", "highlight": "were having"}
+      ]
+    },
+    {
+      "title": "when / while 引导的时间状语",
+      "detail": "while + 过去进行时（延续动作作背景），when + 一般过去时（短暂动作）。句式：while sb was doing..., ... did sth。",
+      "examples": [
+        {"en": "While I was walking in the street, I met an old friend.", "zh": "我正在街上走时，遇到了一位老朋友。", "highlight": "was walking"},
+        {"en": "When the phone rang, she was cooking.", "zh": "电话响的时候，她正在做饭。", "highlight": "was cooking"}
+      ]
+    }
+  ],
+  "signals": ["at that time", "at 8:00 yesterday", "this time yesterday", "when", "while", "the whole morning"],
+  "pitfalls": [
+    "was/were 混用：❌ We was playing chess. → ✓ We were playing chess.",
+    "漏掉-ing：❌ I was read a book at nine. → ✓ I was reading a book at nine.",
+    "while 后用短暂动词：❌ While I got there, he was sleeping. → ✓ When I got there, he was sleeping."
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "This time yesterday Jack ___ a bike in the yard.",
+      "options": ["repairs", "repaired", "was repairing", "were repairing"],
+      "answer": 2,
+      "explain": "this time yesterday（昨天这个时候）是过去进行时标志；Jack 单数用 was repairing。"
+    },
+    {
+      "type": "choice",
+      "stem": "___ I was cooking, the phone rang.",
+      "options": ["When", "While", "Before", "If"],
+      "answer": 1,
+      "explain": "while + 过去进行时（延续动作作背景），从句用进行时首选 while。"
+    },
+    {
+      "type": "choice",
+      "stem": "— I called you at 9:00 last night, but nobody answered. — Sorry, I ___ a shower.",
+      "options": ["took", "take", "was taking", "am taking"],
+      "answer": 2,
+      "explain": "昨晚 9 点那一刻「正在洗澡」，用过去进行时 was taking。"
+    },
+    {
+      "type": "choice",
+      "stem": "What ___ you ___ at this time yesterday?",
+      "options": ["did; do", "were; doing", "are; doing", "do; do"],
+      "answer": 1,
+      "explain": "this time yesterday 提示过去进行时：were you doing。"
+    },
+    {
+      "type": "fill",
+      "stem": "They ___ (clean) the classroom at 5:00 yesterday afternoon.",
+      "answer": ["were cleaning"],
+      "explain": "过去某时刻正在进行的动作，they 用 were cleaning。"
+    },
+    {
+      "type": "fill",
+      "stem": "He ___ (not sleep) when his mother came back.",
+      "answer": ["wasn't sleeping", "was not sleeping"],
+      "explain": "he 用 was；否定 was not sleeping。"
+    },
+    {
+      "type": "correct",
+      "stem": "While we was having lunch, someone knocked at the door.",
+      "answer": "was → were",
+      "explain": "we 是复数，过去进行时用 were having。"
+    },
+    {
+      "type": "translate",
+      "stem": "昨天下午四点，爷爷正在浇花。（翻译整句）",
+      "answer": ["grandpa was watering the flowers at four yesterday afternoon.", "grandfather was watering the flowers at four yesterday afternoon."],
+      "explain": "过去某时刻正在发生：was watering；grandpa 单数用 was。"
+    },
+    {
+      "type": "translate",
+      "stem": "当她进来的时候，我们正在讨论这个问题。（翻译整句）",
+      "answer": ["we were discussing the problem when she came in.", "we were talking about the problem when she came in."],
+      "explain": "主句过去进行时（我们正在讨论），when 从句用一般过去时（came in）。"
+    }
+  ]
+}

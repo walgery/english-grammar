@@ -1,0 +1,101 @@
+{
+  "id": "h04",
+  "level": "high",
+  "grade": "必修二 ~ 必修四",
+  "unit": "非谓语动词（三）分词",
+  "topic": "现在分词与过去分词",
+  "summary": "分词作定语、状语、表语和宾补。核心区别：现在分词（doing）表主动/进行，过去分词（done）表被动/完成。",
+  "signals": ["主动/进行 → doing", "被动/完成 → done", "感官动词 + 宾补", "have sth done"],
+  "rules": [
+    {
+      "title": "作定语：单个分词前置，短语后置",
+      "detail": "a sleeping baby（睡着的宝宝，主动） vs a fallen leaf（落叶，已完成）；a broken window（被打碎的窗，被动）。",
+      "examples": [
+        {"en": "The sleeping baby looks lovely.", "zh": "熟睡的宝宝看起来很可爱。", "highlight": "sleeping"},
+        {"en": "The window broken by the boys needs repairing.", "zh": "被男孩们打碎的窗户需要修理。", "highlight": "broken by the boys"}
+      ]
+    },
+    {
+      "title": "作状语：逻辑主语 = 主句主语",
+      "detail": "分词短语作状语表示时间、原因、伴随等。主语主动发作用 doing，被动承受用 done。",
+      "examples": [
+        {"en": "Hearing the news, she jumped with joy.", "zh": "听到消息，她高兴得跳了起来。", "highlight": "Hearing the news"},
+        {"en": "Seen from the hill, the town looks beautiful.", "zh": "从山上看，小镇很美。", "highlight": "Seen from the hill"},
+        {"en": "He sat there, reading a novel.", "zh": "他坐在那里，读着一本小说。", "highlight": "reading a novel"}
+      ]
+    },
+    {
+      "title": "作宾补：see / hear / find / keep / have + 宾语 + 分词",
+      "detail": "现在分词表主动进行（I saw him crossing the street. 他正在过马路）；过去分词表被动完成（I had my hair cut. 我剪了头发）。",
+      "examples": [
+        {"en": "We heard her singing in the next room.", "zh": "我们听到她在隔壁唱歌。", "highlight": "singing"},
+        {"en": "He spoke loudly to make himself heard.", "zh": "他大声说话好让别人听见。", "highlight": "himself heard"}
+      ]
+    }
+  ],
+  "pitfalls": [
+    "主动被动用反：❌ the story interesting by him → 他讲的故事用 told by him；被讲的故事不说 interesting by",
+    "悬垂分词：分词的逻辑主语必须 = 主句主语。❌ Walking in the street, a car hit him. → ✓ While he was walking..., a car hit him.",
+    "have sb do / have sb doing / have sth done 混淆"
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "The ___ girl sat in the corner, saying nothing.",
+      "options": ["frightening", "frightened", "frighten", "frightens"],
+      "answer": 1,
+      "explain": "女孩「感到害怕」用过去分词 frightened（人作主语表感受）。"
+    },
+    {
+      "type": "choice",
+      "stem": "___ from space, the earth looks like a blue ball.",
+      "options": ["Seeing", "Seen", "To see", "See"],
+      "answer": 1,
+      "explain": "地球是「被看」，逻辑主语 the earth 与 see 是被动关系，用过去分词 Seen。"
+    },
+    {
+      "type": "choice",
+      "stem": "The teacher came in, ___ by a group of students.",
+      "options": ["following", "followed", "follow", "to follow"],
+      "answer": 1,
+      "explain": "老师是「被跟着」，用过去分词 followed。"
+    },
+    {
+      "type": "choice",
+      "stem": "My car broke down, so I had it ___ at once.",
+      "options": ["repair", "repairing", "repaired", "to repair"],
+      "answer": 2,
+      "explain": "have sth done = 让某物被（别人）做：车被修。"
+    },
+    {
+      "type": "fill",
+      "stem": "___ (work) hard, you will make great progress. （用所给词的适当形式）",
+      "answer": ["working"],
+      "explain": "you 与 work 是主动关系，分词作条件状语：Working hard。"
+    },
+    {
+      "type": "fill",
+      "stem": "The film ___ (show) last week was a great success.",
+      "answer": ["shown"],
+      "explain": "电影「被放映」，用过去分词 shown 作后置定语。"
+    },
+    {
+      "type": "correct",
+      "stem": "Walking along the lake, the flowers looked very beautiful.",
+      "answer": "Walking along the lake, we found the flowers very beautiful.（或：Walking along the lake 逻辑主语与主句不一致，需改写）",
+      "explain": "主句主语是 flowers，但 flowers 不会「走在湖边」，分词逻辑主语与主句主语不一致（悬垂分词）。"
+    },
+    {
+      "type": "translate",
+      "stem": "这是一部由真实故事改编的电影。（翻译整句，base）",
+      "answer": ["this is a film based on a true story.", "this is a movie based on a true story."],
+      "explain": "电影「被基于」，用过去分词 based on 作后置定语。"
+    },
+    {
+      "type": "translate",
+      "stem": "听到这个好消息，我们都欢呼起来。（翻译整句）",
+      "answer": ["hearing the good news, we all cheered.", "when we heard the good news, we all cheered."],
+      "explain": "we 与 hear 是主动关系，用现在分词短语作时间状语。"
+    }
+  ]
+}

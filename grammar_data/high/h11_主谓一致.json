@@ -1,0 +1,101 @@
+{
+  "id": "h11",
+  "level": "high",
+  "grade": "必修二",
+  "unit": "主谓一致专题",
+  "topic": "主谓一致",
+  "summary": "谓语动词的单复数要与主语在语法、意义或就近原则上一致。三大原则：语法一致、意义一致、就近一致。",
+  "signals": ["a number of + 复数动词", "the number of + 单数动词", "either...or 就近", "news/maths 单数", "police 复数"],
+  "rules": [
+    {
+      "title": "语法一致：主语单复数决定谓语",
+      "detail": "单个主语用单数；and 连接两个主语用复数；each/every/no + 单数名词作主语时谓语用单数。",
+      "examples": [
+        {"en": "The number of students is increasing.", "zh": "学生的数量在增加。", "highlight": "The number of students is"},
+        {"en": "Every student and every teacher was invited.", "zh": "每个学生和每位老师都受到邀请。", "highlight": "was invited"}
+      ]
+    },
+    {
+      "title": "意义一致：看含义不看形式",
+      "detail": "集体名词（family, team, class, government）表整体用单数，表成员用复数；police, cattle 恒复数；news, physics, maths 形复实单；表示时间、金钱、距离的复数名词作整体看用单数。",
+      "examples": [
+        {"en": "My family is a big one. / My family are all football fans.", "zh": "我家是个大家庭。/ 我家人都是球迷。", "highlight": "is,are"},
+        {"en": "Ten years is a long time.", "zh": "十年是很长的时间。", "highlight": "Ten years is"},
+        {"en": "The police are searching for the thief.", "zh": "警察正在搜捕小偷。", "highlight": "are searching"}
+      ]
+    },
+    {
+      "title": "就近一致与特定结构",
+      "detail": "either...or / neither...nor / not only...but also / there be 句型遵循就近原则；as well as / together with / along with 前面的主语决定谓语；a number of + 复数（谓语复数），the number of + 复数（谓语单数）。",
+      "examples": [
+        {"en": "Neither the students nor the teacher knows the answer.", "zh": "学生们和老师都不知道答案。", "highlight": "nor the teacher knows"},
+        {"en": "The teacher as well as the students likes the film.", "zh": "老师和学生都喜欢这部电影。", "highlight": "The teacher likes"}
+      ]
+    }
+  ],
+  "pitfalls": [
+    "a number of 与 the number of 混淆：前者「许多」谓语复数，后者「……的数量」谓语单数",
+    "as well as 后的名词误作主语核心：谓语跟随前面的主语",
+    "each/every 并列结构仍用单数"
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "A number of students ___ interested in computer games.",
+      "options": ["is", "are", "was", "has been"],
+      "answer": 1,
+      "explain": "a number of = 许多，谓语用复数 are。"
+    },
+    {
+      "type": "choice",
+      "stem": "The number of the workers in this factory ___ about 500.",
+      "options": ["are", "is", "were", "have been"],
+      "answer": 1,
+      "explain": "the number of = ……的数量，谓语用单数 is。"
+    },
+    {
+      "type": "choice",
+      "stem": "Either you or the headmaster ___ the prizes at the meeting.",
+      "options": ["is handing out", "are to give out", "hands out", "hand out"],
+      "answer": 0,
+      "explain": "either...or 就近原则：靠近谓语的是 the headmaster（单数）。"
+    },
+    {
+      "type": "choice",
+      "stem": "Physics ___ my favorite subject when I was at school.",
+      "options": ["are", "is", "was", "were"],
+      "answer": 2,
+      "explain": "physics 形复实单，作一门学科看待；was at school 提示过去时。"
+    },
+    {
+      "type": "fill",
+      "stem": "Nobody but Jane ___ (know) the secret.",
+      "answer": ["knows"],
+      "explain": "but Jane 是介词短语，真正主语是 nobody（单数），谓语 knows。"
+    },
+    {
+      "type": "fill",
+      "stem": "Not only the students but also the teacher ___ (be) invited to the party.",
+      "answer": ["was"],
+      "explain": "not only...but also 就近原则：the teacher 单数，用 was。"
+    },
+    {
+      "type": "correct",
+      "stem": "Mr. Smith as well as his children were invited to the ball.",
+      "answer": "were → was",
+      "explain": "as well as 连接时谓语跟随前面的主语 Mr. Smith（单数），用 was。"
+    },
+    {
+      "type": "translate",
+      "stem": "这个班的每个学生都有一本词典。（翻译整句）",
+      "answer": ["every student in this class has a dictionary.", "each student in the class has a dictionary."],
+      "explain": "every/each + 单数名词作主语，谓语用单数 has。"
+    },
+    {
+      "type": "translate",
+      "stem": "骑自行车是一种很好的锻炼方式。（翻译整句）",
+      "answer": ["riding a bike is a good way to exercise.", "cycling is a good way to exercise."],
+      "explain": "动名词短语作主语谓语用单数 is。"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "m08",
+  "level": "middle",
+  "grade": "七年级下 ~ 八年级上",
+  "unit": "Unit 7 ~ 一般将来时专题",
+  "topic": "一般将来时",
+  "summary": "表示将来要发生的动作或状态：will + 动词原形，或 be going to + 动词原形。",
+  "rules": [
+    {
+      "title": "will + 动词原形",
+      "detail": "所有人称都用 will，没有人称和数的变化。否定 will not = won't；疑问把 will 提前。常与 tomorrow, next week, in the future, in + 时间段 连用。",
+      "examples": [
+        {"en": "I will visit Beijing next month.", "zh": "下个月我将去北京。", "highlight": "will visit"},
+        {"en": "Robots won't replace teachers completely.", "zh": "机器人不会完全取代老师。", "highlight": "won't replace"},
+        {"en": "Will it rain tomorrow? — Yes, it will.", "zh": "明天会下雨吗？——会的。", "highlight": "Will it rain"}
+      ]
+    },
+    {
+      "title": "be going to + 动词原形：计划、打算，或看迹象将要发生",
+      "detail": "表示事先计划好的事（I'm going to study abroad）或有迹象表明要发生（Look at the clouds! It's going to rain.）。be 随主语变化。",
+      "examples": [
+        {"en": "We are going to have a picnic this Sunday.", "zh": "这周日我们打算去野餐。", "highlight": "are going to have"},
+        {"en": "Look at the black clouds! It is going to rain.", "zh": "看那些乌云！要下雨了。", "highlight": "is going to rain"}
+      ]
+    },
+    {
+      "title": "There will be：there be 句型的将来时",
+      "detail": "「将来会有……」用 There will be...，不分单复数。",
+      "examples": [
+        {"en": "There will be more trees in our city in ten years.", "zh": "十年后我们城市会有更多树木。", "highlight": "There will be"}
+      ]
+    }
+  ],
+  "signals": ["tomorrow", "next week", "next year", "in the future", "soon", "in + 一段时间"],
+  "pitfalls": [
+    "will 后动词加变化：❌ She will comes. → ✓ She will come.",
+    "be going to 漏 be：❌ I going to swim. → ✓ I am going to swim.",
+    "next week 前加介词：❌ I'll go next the week. → ✓ I'll go next week."
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "There ___ a sports meeting in our school next week.",
+      "options": ["is", "will have", "will be", "is going to have"],
+      "answer": 2,
+      "explain": "there be 的将来时是 There will be，不能说 there will have。"
+    },
+    {
+      "type": "choice",
+      "stem": "Look at the sky! It ___ rain soon.",
+      "options": ["is going to", "will be", "goes to", "is raining"],
+      "answer": 0,
+      "explain": "有迹象表明将要发生（乌云密布），用 be going to。"
+    },
+    {
+      "type": "choice",
+      "stem": "— Will you come to my birthday party? — ___.",
+      "options": ["Yes, I won't", "No, I will", "Yes, I will", "No, I don't"],
+      "answer": 2,
+      "explain": "Will 开头的一般疑问句，肯定回答 Yes, I will。"
+    },
+    {
+      "type": "choice",
+      "stem": "I think people ___ more free time in the future.",
+      "options": ["have", "had", "will have", "are having"],
+      "answer": 2,
+      "explain": "in the future 提示将来时，will + 动词原形。"
+    },
+    {
+      "type": "fill",
+      "stem": "They ___ (move) to a new house next month. （已计划好的事，用 be going to）",
+      "answer": ["are going to move"],
+      "explain": "主语 they → are going to move，表示计划好的安排。"
+    },
+    {
+      "type": "fill",
+      "stem": "Don't worry! I ___ (help) you with your English.",
+      "answer": ["will help", "'ll help"],
+      "explain": "临时决定或承诺帮对方，用 will help。"
+    },
+    {
+      "type": "correct",
+      "stem": "She will goes to Shanghai with her parents tomorrow.",
+      "answer": "goes → go",
+      "explain": "will 后动词用原形 go。"
+    },
+    {
+      "type": "translate",
+      "stem": "明天天气将会晴朗。（翻译整句）",
+      "answer": ["the weather will be sunny tomorrow.", "it will be sunny tomorrow."],
+      "explain": "will + be + 形容词；the weather 或 it 作主语均可。"
+    },
+    {
+      "type": "translate",
+      "stem": "我打算今晚上完成作业。（翻译整句）",
+      "answer": ["i am going to finish my homework tonight.", "i'm going to finish my homework tonight."],
+      "explain": "be going to + 动词原形表示打算；主语 I 用 am。"
+    }
+  ]
+}

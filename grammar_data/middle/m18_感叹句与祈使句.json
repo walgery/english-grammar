@@ -1,0 +1,102 @@
+{
+  "id": "m18",
+  "level": "middle",
+  "grade": "八年级上",
+  "unit": "感叹句 / 祈使句 / 倒装句型专题",
+  "topic": "感叹句与祈使句",
+  "summary": "感叹句用 What / How 表达强烈感情；祈使句表示请求、命令、建议，以动词原形开头。",
+  "signals": ["What + (a/an) + 形容词 + 名词", "How + 形容词/副词", "Don't + 动词原形", "Let's + 动词原形"],
+  "rules": [
+    {
+      "title": "What 引导的感叹句：What + (a/an) + 形容词 + 名词 (+ 主谓)!",
+      "detail": "名词是可数单数用 What a/an；复数或不可数用 What。",
+      "examples": [
+        {"en": "What a beautiful girl she is!", "zh": "她是一个多么漂亮的女孩啊！", "highlight": "What a beautiful girl"},
+        {"en": "What delicious food it is!", "zh": "多么美味的食物啊！", "highlight": "What delicious food"},
+        {"en": "What interesting books they are!", "zh": "多么有趣的书啊！", "highlight": "What interesting books"}
+      ]
+    },
+    {
+      "title": "How 引导的感叹句：How + 形容词/副词 (+ 主谓)!",
+      "detail": "How 直接修饰形容词或副词，后面没有名词。",
+      "examples": [
+        {"en": "How fast he runs!", "zh": "他跑得多快啊！", "highlight": "How fast"},
+        {"en": "How beautiful the city is!", "zh": "这座城市多美啊！", "highlight": "How beautiful"}
+      ]
+    },
+    {
+      "title": "祈使句：动词原形开头；否定加 Don't",
+      "detail": "表示请求、命令、建议。Let's 开头表示「让我们」。回答 Let's 开头的建议用 OK / Good idea。",
+      "examples": [
+        {"en": "Open the door, please.", "zh": "请打开门。", "highlight": "Open"},
+        {"en": "Don't be late for school.", "zh": "上学不要迟到。", "highlight": "Don't be late"},
+        {"en": "Let's go to the zoo, shall we?", "zh": "我们去动物园吧，好吗？", "highlight": "Let's go"}
+      ]
+    }
+  ],
+  "pitfalls": [
+    "What / How 选择：中心词是名词用 What；中心词是形容词/副词用 How",
+    "祈使句否定漏 Don't：❌ Not run in the hall. → ✓ Don't run in the hall.",
+    "Let's 反义疑问用 shall we；Let us 用 will you"
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "___ bad weather it is today!",
+      "options": ["How", "What a", "What", "How a"],
+      "answer": 2,
+      "explain": "weather 不可数，用 What + 形容词 + 不可数名词。"
+    },
+    {
+      "type": "choice",
+      "stem": "___ clever the boy is!",
+      "options": ["What", "What a", "How", "How a"],
+      "answer": 2,
+      "explain": "中心词是形容词 clever（无名词），用 How。"
+    },
+    {
+      "type": "choice",
+      "stem": "___ in bed. It's bad for your eyes.",
+      "options": ["Not read", "Don't read", "Read not", "Don't reading"],
+      "answer": 1,
+      "explain": "祈使句否定形式：Don't + 动词原形。"
+    },
+    {
+      "type": "choice",
+      "stem": "Let's ___ football after school, ___?",
+      "options": ["play; shall we", "to play; will you", "playing; shall we", "play; will you"],
+      "answer": 0,
+      "explain": "Let's 后用动词原形；反义疑问用 shall we。"
+    },
+    {
+      "type": "fill",
+      "stem": "___ ___ interesting movie it is! (two words)",
+      "answer": ["what an"],
+      "explain": "movie 是可数单数，interesting 以元音音素开头，用 What an。"
+    },
+    {
+      "type": "fill",
+      "stem": "___ hard all the students are working! (感叹词)",
+      "answer": ["how"],
+      "explain": "hard 是副词，中心词是副词用 How。"
+    },
+    {
+      "type": "correct",
+      "stem": "What a sweet music it is!",
+      "answer": "去掉 a",
+      "explain": "music 是不可数名词，What 后不加 a/an：What sweet music!"
+    },
+    {
+      "type": "translate",
+      "stem": "别在街上踢球！（翻译整句）",
+      "answer": ["don't play soccer in the street.", "don't play football in the street."],
+      "explain": "祈使句否定：Don't + 动词原形。"
+    },
+    {
+      "type": "translate",
+      "stem": "他跑得多么快啊！（翻译整句）",
+      "answer": ["how fast he runs!"],
+      "explain": "How + 副词 fast + 主谓。"
+    }
+  ]
+}

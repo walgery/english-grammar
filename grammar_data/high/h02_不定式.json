@@ -1,0 +1,100 @@
+{
+  "id": "h02",
+  "level": "high",
+  "grade": "必修一 ~ 必修三",
+  "unit": "非谓语动词（一）不定式",
+  "topic": "动词不定式 to do",
+  "summary": "不定式可作主语、宾语、表语、定语、状语和宾补，表目的、将来或具体某次动作。",
+  "signals": ["It is + adj + to do", "want/decide/refuse + to do", "tell/advise sb + to do", "make/see + 省略 to"],
+  "rules": [
+    {
+      "title": "作主语：常用 it 作形式主语",
+      "detail": "It is + 形容词/noun + to do。真正的主语是后面的不定式。",
+      "examples": [
+        {"en": "It is important to learn from mistakes.", "zh": "从错误中学习很重要。", "highlight": "to learn"},
+        {"en": "It took me two hours to finish the report.", "zh": "完成报告花了我两个小时。", "highlight": "to finish"}
+      ]
+    },
+    {
+      "title": "常见接不定式的动词与句型",
+      "detail": "afford, agree, decide, expect, fail, hope, manage, offer, plan, promise, refuse, want + to do；be able to / have to / used to + do。",
+      "examples": [
+        {"en": "They managed to solve the problem in time.", "zh": "他们设法及时解决了问题。", "highlight": "to solve"},
+        {"en": "He promised to keep it a secret.", "zh": "他答应保守秘密。", "highlight": "to keep"}
+      ]
+    },
+    {
+      "title": "不定式的否定式与省略 to",
+      "detail": "否定式在 to 前加 not：Tell him not to be late. 使役/感官动词（make, let, have, see, hear, watch, feel）后接省 to 不定式：I saw him enter the room.（被动语态中 to 要还原：He was seen to enter the room.）",
+      "examples": [
+        {"en": "The teacher made us retell the story.", "zh": "老师让我们复述故事。", "highlight": "made us retell"},
+        {"en": "He was made to work all night.", "zh": "他被迫整夜工作。", "highlight": "was made to work"}
+      ]
+    }
+  ],
+  "pitfalls": [
+    "make/see 等被动后漏 to：❌ He was seen cross the road. → ✓ He was seen to cross the road.",
+    "not 位置错误：❌ to not be late → ✓ not to be late",
+    "it 形式主语结构分裂：❌ To finish it is took two hours. → ✓ It took two hours to finish it."
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "It's very kind of you ___ me with the luggage.",
+      "options": ["help", "helping", "to help", "helped"],
+      "answer": 2,
+      "explain": "It is + 形容词 + of sb + to do 固定句型，用 to help。"
+    },
+    {
+      "type": "choice",
+      "stem": "The doctor advised him ___ smoking immediately.",
+      "options": ["to give up", "giving up", "give up", "gave up"],
+      "answer": 0,
+      "explain": "advise sb to do sth：建议某人做某事。"
+    },
+    {
+      "type": "choice",
+      "stem": "We saw him ___ the building and then take a taxi.",
+      "options": ["to leave", "leave", "left", "leaves"],
+      "answer": 1,
+      "explain": "感官动词 see 后接省 to 不定式：saw him leave。"
+    },
+    {
+      "type": "choice",
+      "stem": "He was often made ___ overtime by his boss.",
+      "options": ["work", "to work", "working", "worked"],
+      "answer": 1,
+      "explain": "make 变为被动语态后要还原 to：be made to work。"
+    },
+    {
+      "type": "fill",
+      "stem": "My mother told me ___ (not stay) up too late.",
+      "answer": ["not to stay"],
+      "explain": "tell sb not to do：不定式否定式 not to do。"
+    },
+    {
+      "type": "fill",
+      "stem": "It takes about 30 minutes ___ (get) to the airport by taxi.",
+      "answer": ["to get"],
+      "explain": "It takes + 时间 + to do 固定句型。"
+    },
+    {
+      "type": "correct",
+      "stem": "He refused answering the question in public.",
+      "answer": "answering → to answer",
+      "explain": "refuse 后接不定式：refused to answer。"
+    },
+    {
+      "type": "translate",
+      "stem": "学好一门外语需要耐心。（翻译整句）",
+      "answer": ["learning a foreign language well takes patience.", "it takes patience to learn a foreign language well.", "to learn a foreign language well takes patience."],
+      "explain": "可用动名词或不定式作主语；It takes... to do 更常见。"
+    },
+    {
+      "type": "translate",
+      "stem": "为了不吵醒孩子，她轻手轻脚地走进了房间。（翻译整句，wake）",
+      "answer": ["she entered the room quietly so as not to wake the child.", "she walked into the room quietly in order not to wake up the child."],
+      "explain": "不定式否定 so as not to / in order not to 表示「为了不……」。"
+    }
+  ]
+}

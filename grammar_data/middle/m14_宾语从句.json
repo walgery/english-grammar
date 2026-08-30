@@ -1,0 +1,101 @@
+{
+  "id": "m14",
+  "level": "middle",
+  "grade": "九年级全一册",
+  "unit": "Unit 3 ~ Unit 8 宾语从句专题",
+  "topic": "宾语从句",
+  "summary": "用一个句子作宾语。三要素：① 引导词 ② 陈述句语序 ③ 时态呼应（主句过去时，从句用相应过去时态）。",
+  "signals": ["I think/believe/know + 从句", "asked/wanted to know + 从句", "陈述语序（非疑问语序）", "主句过去时 → 从句过去时态"],
+  "rules": [
+    {
+      "title": "引导词的选择",
+      "detail": "从句是陈述句用 that（可省略）；一般疑问句用 if / whether（是否）；特殊疑问句用原疑问词（what, where, when, why, how...）。",
+      "examples": [
+        {"en": "I believe (that) you are right.", "zh": "我相信你是对的。", "highlight": "that"},
+        {"en": "I want to know if it will rain tomorrow.", "zh": "我想知道明天是否下雨。", "highlight": "if"},
+        {"en": "Do you know where the station is?", "zh": "你知道车站在哪里吗？", "highlight": "where the station is"}
+      ]
+    },
+    {
+      "title": "从句必须用陈述句语序",
+      "detail": "不管原句是疑问句还是陈述句，从句一律「主语 + 谓语」。❌ Do you know where is the station? → ✓ Do you know where the station is?",
+      "examples": [
+        {"en": "Can you tell me how I can get to the hospital?", "zh": "你能告诉我怎么去医院吗？", "highlight": "how I can get"},
+        {"en": "He asked what my name was.", "zh": "他问我的名字是什么。", "highlight": "what my name was"}
+      ]
+    },
+    {
+      "title": "时态呼应",
+      "detail": "主句是现在时，从句时态随意（按实际）；主句是过去时（asked, said, wanted to know），从句要用相应的过去时态（一般过去时/过去进行时/过去将来时/过去完成时）。",
+      "examples": [
+        {"en": "He said (that) he was doing his homework.", "zh": "他说他正在做作业。", "highlight": "said,was doing"},
+        {"en": "She asked if I had seen the film.", "zh": "她问我是否看过那部电影。", "highlight": "asked,had seen"}
+      ]
+    }
+  ],
+  "pitfalls": [
+    "从句用疑问语序：❌ I don't know where is he. → ✓ I don't know where he is.",
+    "主句过去时从句不呼应：❌ He said he will come. → ✓ He said he would come.",
+    "if/whether 后直接接 or not 时用 whether：whether or not"
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "I want to know ___.",
+      "options": ["where does he live", "where he lives", "where he live", "where is he living"],
+      "answer": 1,
+      "explain": "宾语从句用陈述语序：where + he + lives；主句现在时，从句按实际用一般现在时。"
+    },
+    {
+      "type": "choice",
+      "stem": "She asked me ___ I could help her with the box.",
+      "options": ["that", "what", "if", "which"],
+      "answer": 2,
+      "explain": "原句是「你能帮我吗？」一般疑问句，用 if（是否）引导。"
+    },
+    {
+      "type": "choice",
+      "stem": "He said that he ___ the movie before.",
+      "options": ["saw", "has seen", "had seen", "sees"],
+      "answer": 2,
+      "explain": "主句 said 是过去时，「看电影」发生在说的之前，用过去完成时 had seen。"
+    },
+    {
+      "type": "choice",
+      "stem": "Do you know ___?",
+      "options": ["what time will the train leave", "what time the train will leave", "what time the train leaves will", "the train will leave what time"],
+      "answer": 1,
+      "explain": "用陈述语序：疑问词 + 主语 + will + 动词原形。"
+    },
+    {
+      "type": "fill",
+      "stem": "Could you tell me ___ ___ the bank is? (two words: 在哪里)",
+      "answer": ["where the"],
+      "explain": "陈述语序：where + the bank + is；「在哪里」用 where。"
+    },
+    {
+      "type": "fill",
+      "stem": "I believe ___ (that / if) you can pass the exam.",
+      "answer": ["that"],
+      "explain": "从句是陈述句，引导词用 that（也可省略）；if 表示「是否」，意思不通。"
+    },
+    {
+      "type": "correct",
+      "stem": "He told me that he will visit the Great Wall the next week.",
+      "answer": "will visit → would visit",
+      "explain": "主句 told 是过去时，从句的将来要变成过去将来时 would visit。"
+    },
+    {
+      "type": "translate",
+      "stem": "我想知道你为什么迟到了。（翻译整句）",
+      "answer": ["i want to know why you were late.", "i wonder why you were late."],
+      "explain": "why 引导宾语从句，用陈述语序：why + you + were late。"
+    },
+    {
+      "type": "translate",
+      "stem": "请告诉我他是否已经完成了作业。（翻译整句）",
+      "answer": ["please tell me if he has finished his homework.", "please tell me whether he has finished his homework."],
+      "explain": "「是否」用 if/whether 引导；has finished 表示已完成。"
+    }
+  ]
+}

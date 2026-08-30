@@ -1,0 +1,100 @@
+{
+  "id": "h12",
+  "level": "high",
+  "grade": "选修（高二）",
+  "unit": "情态动词表推测专题",
+  "topic": "情态动词表推测",
+  "summary": "must（肯定）may/might（可能）can't/couldn't（不可能）+ 动词原形/进行式/完成式，表示不同程度的推测。",
+  "signals": ["must + do 一定", "may/might 可能", "can't 不可能", "must have done 过去肯定", "must be doing 正在"],
+  "rules": [
+    {
+      "title": "对现在的推测",
+      "detail": "must + do（一定，肯定语气）；may/might + do（可能，may 比 might 确定）；can't + do（不可能）。",
+      "examples": [
+        {"en": "The light is on. He must be at home.", "zh": "灯亮着，他肯定在家。", "highlight": "must be"},
+        {"en": "She can't be at school—it's Sunday today.", "zh": "她不可能在学校——今天是周日。", "highlight": "can't be"}
+      ]
+    },
+    {
+      "title": "对过去的推测：情态动词 + have done",
+      "detail": "must have done（过去肯定做了）；may have done（过去可能做了）；can't have done（过去不可能做了）。",
+      "examples": [
+        {"en": "The ground is wet. It must have rained last night.", "zh": "地面是湿的，昨晚肯定下雨了。", "highlight": "must have rained"},
+        {"en": "He can't have finished it so quickly.", "zh": "他不可能这么快就完成了。", "highlight": "can't have finished"}
+      ]
+    },
+    {
+      "title": "对正在进行的推测：情态动词 + be doing",
+      "detail": "must/may/can't + be + doing 表示推测此刻正在进行。",
+      "examples": [
+        {"en": "It's 10 o'clock. They must be having a meeting now.", "zh": "十点了，他们现在一定在开会。", "highlight": "must be having"}
+      ]
+    }
+  ],
+  "signals": ["must（90% 确定）", "may/might（50% 可能）", "can't（90% 不可能）", "should（按理应该）"],
+  "pitfalls": [
+    "推测句中用 very much 修饰：must 表推测不加 very",
+    "can 表推测一般用于否定和疑问，肯定句用 must/may",
+    "must have done 的否定是 can't have done，不是 mustn't have done"
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "He ___ be at home now—the door is locked from outside.",
+      "options": ["mustn't", "can't", "may not", "shouldn't"],
+      "answer": 1,
+      "explain": "有明确证据否定推测用 can't be（不可能在家）。"
+    },
+    {
+      "type": "choice",
+      "stem": "She looks happy. She ___ have passed the exam.",
+      "options": ["can't", "must", "should", "need"],
+      "answer": 1,
+      "explain": "根据表情推断「肯定通过了」，对过去的肯定推测用 must have done。"
+    },
+    {
+      "type": "choice",
+      "stem": "The light in his room is on. He ___ reading now.",
+      "options": ["must be", "must have been", "can be", "should have been"],
+      "answer": 0,
+      "explain": "对「此刻正在进行」的肯定推测：must be doing。"
+    },
+    {
+      "type": "choice",
+      "stem": "It ___ be Tom. He called me from London just now.",
+      "options": ["mustn't", "can't", "needn't", "may not"],
+      "answer": 1,
+      "explain": "证据表明「不可能是汤姆」，can't 表否定推测。"
+    },
+    {
+      "type": "fill",
+      "stem": "He looks sleepy. He ___ (stay) up late last night. (must + 动词完成式)",
+      "answer": ["must have stayed"],
+      "explain": "对过去行为的肯定推测：must have stayed up。"
+    },
+    {
+      "type": "fill",
+      "stem": "She ___ (not; 可能) have heard the news, or she would have called you.",
+      "answer": ["can't", "couldn't"],
+      "explain": "对过去的否定推测用 can't/couldn't have done。"
+    },
+    {
+      "type": "correct",
+      "stem": "You mustn't have met him before, for he just came here last week.",
+      "answer": "mustn't have → can't have",
+      "explain": "must 表推测的否定式是 can't have done，mustn't 只表示「禁止」。"
+    },
+    {
+      "type": "translate",
+      "stem": "他现在肯定正在飞往纽约的飞机上。（翻译整句）",
+      "answer": ["he must be on the plane to new york now.", "he must be on a plane to new york now."],
+      "explain": "must + be 表示对现在状态的肯定推测。"
+    },
+    {
+      "type": "translate",
+      "stem": "这个错误不可能是你弟弟犯的。（翻译整句，make the mistake）",
+      "answer": ["your brother can't have made this mistake.", "your little brother can't have made the mistake."],
+      "explain": "对过去的否定推测：can't have done。"
+    }
+  ]
+}

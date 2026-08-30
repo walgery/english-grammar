@@ -1,0 +1,109 @@
+{
+  "id": "m07",
+  "level": "middle",
+  "grade": "七年级下",
+  "unit": "Unit 9 ~ Unit 12",
+  "topic": "一般过去时",
+  "summary": "表示过去某个时间发生的动作或状态：昨天、上周、去年……动词要用过去式。",
+  "rules": [
+    {
+      "title": "动词过去式的构成",
+      "detail": "规则变化：一般加 ed（work → worked）；以 e 结尾加 d（live → lived）；辅音字母+y 结尾变 y 为 i 加 ed（study → studied）；重读闭音节双写末尾辅音加 ed（stop → stopped）。不规则变化需要单独记忆：go → went，have → had，see → saw 等。",
+      "examples": [
+        {"en": "I visited my grandparents last weekend.", "zh": "上周末我看望了祖父母。", "highlight": "visited"},
+        {"en": "She studied hard last term.", "zh": "上学期她学习很努力。", "highlight": "studied"},
+        {"en": "We went to the beach yesterday.", "zh": "昨天我们去了海滩。", "highlight": "went"}
+      ]
+    },
+    {
+      "title": "否定句与疑问句：借助 did",
+      "detail": "did 后面的动词要还原为原形！否定：didn't + 动词原形；疑问：Did + 主语 + 动词原形？be 动词除外：was / were 直接变否定和疑问。",
+      "examples": [
+        {"en": "I didn't watch TV last night.", "zh": "昨晚我没看电视。", "highlight": "didn't watch"},
+        {"en": "Did you play soccer yesterday afternoon?", "zh": "昨天下午你踢足球了吗？", "highlight": "Did you play"},
+        {"en": "She was at home yesterday.", "zh": "昨天她在家。", "highlight": "was"}
+      ]
+    }
+  ],
+  "signals": ["yesterday", "last week", "last year", "two days ago", "in 2020", "just now"],
+  "pitfalls": [
+    "did 后动词没还原：❌ Did you went there? → ✓ Did you go there?",
+    "yesterday 出现还用原形：❌ I see a film yesterday. → ✓ I saw a film yesterday.",
+    "was / were 混用：❌ They was happy. → ✓ They were happy."
+  ],
+  "compare": {
+    "left": "一般现在时",
+    "right": "一般过去时",
+    "rows": [
+      {"l": "I play soccer every day.", "r": "I played soccer yesterday."},
+      {"l": "She doesn't like milk.", "r": "She didn't like milk."},
+      {"l": "标志词：every day, often", "r": "标志词：yesterday, last week, ago"}
+    ]
+  },
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "I ___ my homework an hour ago.",
+      "options": ["finish", "finishes", "finished", "finishing"],
+      "answer": 2,
+      "explain": "an hour ago（一小时前）是一般过去时标志词，finish 变 finished。"
+    },
+    {
+      "type": "choice",
+      "stem": "— Where ___ you go last summer? — I ___ to Qingdao.",
+      "options": ["did; went", "do; go", "did; go", "was; went"],
+      "answer": 0,
+      "explain": "last summer 是过去时，疑问句用 did + 原形 go；回答用过去式 went。"
+    },
+    {
+      "type": "choice",
+      "stem": "There ___ a lot of people in the park last Sunday.",
+      "options": ["are", "were", "was", "is"],
+      "answer": 1,
+      "explain": "people 是复数，last Sunday 是过去时间，be 动词用 were。"
+    },
+    {
+      "type": "choice",
+      "stem": "___ your mother at home yesterday evening?",
+      "options": ["Did", "Was", "Were", "Does"],
+      "answer": 1,
+      "explain": "your mother 是单数，且句中无行为动词，用 be 动词过去式 was。"
+    },
+    {
+      "type": "fill",
+      "stem": "We ___ (buy) some books in the bookstore last Friday.",
+      "answer": ["bought"],
+      "explain": "buy 是不规则动词，过去式为 bought。"
+    },
+    {
+      "type": "fill",
+      "stem": "She didn't ___ (come) to school yesterday because she was ill.",
+      "answer": ["come"],
+      "explain": "didn't 后动词用原形 come。"
+    },
+    {
+      "type": "fill",
+      "stem": "He ___ (stop) smoking two years ago.",
+      "answer": ["stopped"],
+      "explain": "stop 是重读闭音节，双写 p 再加 ed：stopped。"
+    },
+    {
+      "type": "correct",
+      "stem": "Did you saw the new movie last night?",
+      "answer": "saw → see",
+      "explain": "did 后面的动词必须还原为原形 see。"
+    },
+    {
+      "type": "translate",
+      "stem": "昨天我给我的朋友写了一封信。（翻译整句）",
+      "answer": ["I wrote a letter to my friend yesterday.", "Yesterday I wrote a letter to my friend."],
+      "explain": "write 的过去式是 wrote；yesterday 可放句首或句尾。"
+    },
+    {
+      "type": "translate",
+      "stem": "上周末他们没有去野餐。（翻译整句，picnic 野餐，go for a picnic）",
+      "answer": ["They didn't go for a picnic last weekend.", "They did not go for a picnic last weekend."],
+      "explain": "didn't + 动词原形 go；picnic 前习惯用 go for a picnic。"
+    }
+  ]
+}

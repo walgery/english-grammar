@@ -1,0 +1,107 @@
+{
+  "id": "m03",
+  "level": "middle",
+  "grade": "七年级上",
+  "unit": "Unit 5 ~ Unit 8",
+  "topic": "名词复数与可数 / 不可数名词",
+  "summary": "可数名词有单复数之分，不可数名词没有复数、不能用 a/an，也不能直接加数词。",
+  "rules": [
+    {
+      "title": "规则复数：加 -s / -es",
+      "detail": "一般加 s（books）；以 s、x、ch、sh 结尾加 es（boxes，watches）；辅音字母+y 结尾变 y 为 i 加 es（city → cities）；以 f/fe 结尾多变 f 为 v 加 es（knife → knives）。",
+      "examples": [
+        {"en": "I have two watches.", "zh": "我有两块手表。", "highlight": "watches"},
+        {"en": "There are many cities in China.", "zh": "中国有许多城市。", "highlight": "cities"},
+        {"en": "Please wash these knives.", "zh": "请洗这些刀。", "highlight": "knives"}
+      ]
+    },
+    {
+      "title": "常见不规则复数",
+      "detail": "man → men，woman → women，child → children，foot → feet，tooth → teeth，mouse → mice；sheep、deer 单复数同形。",
+      "examples": [
+        {"en": "There are forty students in our class.", "zh": "我们班有四十名学生。", "highlight": "students"},
+        {"en": "How many children does she have?", "zh": "她有几个孩子？", "highlight": "children"}
+      ]
+    },
+    {
+      "title": "不可数名词：water, milk, rice, bread, meat, paper, homework...",
+      "detail": "没有复数形式，不能用 a/an 或数词直接修饰；表示数量用「a / 数字 + 量词 + of」：a glass of milk，two cups of tea。",
+      "examples": [
+        {"en": "I'd like some bread and milk.", "zh": "我想要一些面包和牛奶。", "highlight": "bread and milk"},
+        {"en": "There are two bottles of water on the desk.", "zh": "桌上有两瓶水。", "highlight": "two bottles of water"}
+      ]
+    }
+  ],
+  "signals": ["how many + 可数复数", "how much + 不可数", "a lot of 两者皆可", "a glass of + 不可数"],
+  "pitfalls": [
+    "不可数名词加 s：❌ two milks → ✓ two glasses of milk",
+    "how many / how much 混用：how many + 可数复数（How many books?）；how much + 不可数（How much water?）",
+    "some / any：some 用于肯定句，any 常用于否定句和疑问句"
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "There are three ___ and five ___ in the picture.",
+      "options": ["sheeps; cows", "sheep; cows", "sheep; cowes", "sheeps; cowes"],
+      "answer": 1,
+      "explain": "sheep 单复数同形；cow 的复数是 cows。"
+    },
+    {
+      "type": "choice",
+      "stem": "How many ___ are there in the room?",
+      "options": ["woman", "womans", "women", "womens"],
+      "answer": 2,
+      "explain": "woman 的复数是不规则变化 women。"
+    },
+    {
+      "type": "choice",
+      "stem": "I want to drink ___.",
+      "options": ["two glass of orange", "two glasses of oranges", "two glasses of orange", "two glass of oranges"],
+      "answer": 2,
+      "explain": "orange（橙汁）不可数，不加 s；量词 glass 要变复数：two glasses of orange。"
+    },
+    {
+      "type": "choice",
+      "stem": "___ rice would you like? — Two bowls, please.",
+      "options": ["How many", "How much", "How often", "How long"],
+      "answer": 1,
+      "explain": "rice 是不可数名词，用 how much 提问数量。"
+    },
+    {
+      "type": "fill",
+      "stem": "Look! There are many ___ (child) playing in the park.",
+      "answer": ["children"],
+      "explain": "child 的复数是不规则变化 children。"
+    },
+    {
+      "type": "fill",
+      "stem": "My aunt has two ___ (baby).",
+      "answer": ["babies"],
+      "explain": "辅音字母+y 结尾，变 y 为 i 加 es：babies。"
+    },
+    {
+      "type": "fill",
+      "stem": "Would you like some ___ (tomato)?",
+      "answer": ["tomatoes"],
+      "explain": "tomato 以 o 结尾，复数加 es：tomatoes（类似 potato → potatoes）。"
+    },
+    {
+      "type": "correct",
+      "stem": "There are five people in my family and we often eat fishes together.",
+      "answer": "fishes → fish",
+      "explain": "fish 表示「鱼肉」（不可数）或同种鱼（单复数同形），此处指吃的鱼，用 fish。"
+    },
+    {
+      "type": "translate",
+      "stem": "桌上有三杯果汁。（翻译整句）",
+      "answer": ["there are three glasses of juice on the table.", "there are three cups of juice on the table."],
+      "explain": "juice 不可数；数量用「数词 + 量词复数 + of」。"
+    },
+    {
+      "type": "translate",
+      "stem": "我妈妈每天买很多蔬菜。（翻译整句）",
+      "answer": ["my mother buys a lot of vegetables every day.", "my mom buys a lot of vegetables every day.", "my mother buys many vegetables every day."],
+      "explain": "vegetable 可数，常用复数 vegetables；a lot of / many 修饰可数复数。"
+    }
+  ]
+}

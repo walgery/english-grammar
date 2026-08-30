@@ -1,0 +1,100 @@
+{
+  "id": "m17",
+  "level": "middle",
+  "grade": "九年级全一册",
+  "unit": "Unit 7 ~ 定语从句专题",
+  "topic": "定语从句",
+  "summary": "修饰名词的从句：先行词是人用 who/whom/that，是物用 which/that，关系词在从句中作定语用 whose。",
+  "signals": ["先行词是人 → who/that", "先行词是物 → which/that", "whose + 名词 表所属", "最高级/the only + that"],
+  "rules": [
+    {
+      "title": "先行词是人：who / that（作宾语可用 whom / who / that）",
+      "detail": "关系词指代先行词 the girl，在从句中作主语，后面直接跟谓语动词。注意：用了关系词就不能再重复出现 he/she/it 等代词。",
+      "examples": [
+        {"en": "The girl who is wearing a red coat is my sister.", "zh": "穿红外套的那个女孩是我妹妹。", "highlight": "who is wearing"},
+        {"en": "The man that you met yesterday is our new teacher.", "zh": "你昨天遇见的那个人是我们的新老师。", "highlight": "that you met"}
+      ]
+    },
+    {
+      "title": "先行词是物：which / that",
+      "detail": "The book which/that lies on the desk is mine. 关系词在从句中作主语或宾语；作宾语时关系词可省略。",
+      "examples": [
+        {"en": "I like the photos which were taken in Yunnan.", "zh": "我喜欢那些在云南拍的照片。", "highlight": "which were taken"},
+        {"en": "The song (that) we heard just now is very popular.", "zh": "我们刚才听的那首歌非常流行。", "highlight": "that we heard"}
+      ]
+    },
+    {
+      "title": "whose 表所属 + 只能用 that 的情况",
+      "detail": "whose + 名词 表示「……的」；先行词被序数词、最高级、the only、all 等修饰时，关系词只用 that。",
+      "examples": [
+        {"en": "I know the boy whose father is a policeman.", "zh": "我认识那个爸爸是警察的男孩。", "highlight": "whose father"},
+        {"en": "This is the best movie that I have ever seen.", "zh": "这是我看过的最好的电影。", "highlight": "that I have ever seen"}
+      ]
+    }
+  ],
+  "pitfalls": [
+    "从句谓语单复数看先行词：❌ The books which is on the desk... → ✓ The books which are on the desk...",
+    "that 和 which 混用限制：介词后只用 which（the house in which...），不能用 that",
+    "关系词重复：❌ The book that I bought it is good. → ✓ The book that I bought is good.（关系词已替代 it）"
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "The teacher ___ is standing there is our headmaster.",
+      "options": ["which", "who", "whose", "whom"],
+      "answer": 1,
+      "explain": "先行词 the teacher 是人，且在从句中作主语，用 who。"
+    },
+    {
+      "type": "choice",
+      "stem": "I still remember the factory ___ we visited ten years ago.",
+      "options": ["where", "who", "which", "what"],
+      "answer": 2,
+      "explain": "先行词 factory 是物，从句中 visit 缺宾语，用 which/that。"
+    },
+    {
+      "type": "choice",
+      "stem": "Do you know the girl ___ mother is a nurse?",
+      "options": ["who", "which", "whose", "that"],
+      "answer": 2,
+      "explain": "从句中 mother 前缺定语「……的」，用 whose。"
+    },
+    {
+      "type": "choice",
+      "stem": "This is the most exciting film ___ I have ever watched.",
+      "options": ["which", "who", "that", "whom"],
+      "answer": 2,
+      "explain": "先行词被最高级修饰，关系词只能用 that。"
+    },
+    {
+      "type": "fill",
+      "stem": "The photos ___ were taken in Beijing are beautiful. (关系代词，指物)",
+      "answer": ["which", "that"],
+      "explain": "先行词 photos 是物且在从句中作主语，用 which/that。"
+    },
+    {
+      "type": "fill",
+      "stem": "The boy ___ is reading under the tree is my brother. (关系代词，指人)",
+      "answer": ["who", "that"],
+      "explain": "先行词 the boy 是人且作从句主语，用 who/that。"
+    },
+    {
+      "type": "correct",
+      "stem": "The shoes which I bought it yesterday are too small.",
+      "answer": "去掉 it",
+      "explain": "关系词 which 已经替代先行词在从句中作宾语，不能再出现 it。"
+    },
+    {
+      "type": "translate",
+      "stem": "正在唱歌的那个女孩是我的好朋友。（翻译整句）",
+      "answer": ["the girl who is singing is my good friend.", "the girl that is singing is my good friend."],
+      "explain": "先行词 the girl 是人，用 who/that 引导定语从句。"
+    },
+    {
+      "type": "translate",
+      "stem": "这就是我们去年种的那棵树。（翻译整句）",
+      "answer": ["this is the tree that we planted last year.", "this is the tree which we planted last year."],
+      "explain": "先行词 the tree 是物，关系词 that/which 作从句宾语，也可省略。"
+    }
+  ]
+}

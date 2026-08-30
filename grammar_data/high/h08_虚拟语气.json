@@ -1,0 +1,101 @@
+{
+  "id": "h08",
+  "level": "high",
+  "grade": "选修（高二）",
+  "unit": "虚拟语气专题",
+  "topic": "虚拟语气",
+  "summary": "表达假设、愿望、建议等「非真实」情况。核心三种：与现在、过去、将来事实相反。",
+  "signals": ["If I were you", "wish + 过去式", "had done, would have done", "suggest/insist + (should) do"],
+  "rules": [
+    {
+      "title": "if 虚拟条件句三种基本形态",
+      "detail": "与现在相反：If + 过去式（be 用 were），主句 would/could/might + do；与过去相反：If + had done，主句 would have done；与将来相反：If + should/were to do，主句 would do。",
+      "examples": [
+        {"en": "If I were you, I would take the chance.", "zh": "如果我是你，我会抓住机会。（与现在相反）", "highlight": "were,would take"},
+        {"en": "If he had studied harder, he would have passed the exam.", "zh": "如果他当时更努力，就能通过考试。（与过去相反）", "highlight": "had studied,would have passed"},
+        {"en": "If it were to snow tomorrow, we would cancel the trip.", "zh": "如果明天下雪，我们会取消旅行。（与将来相反）", "highlight": "were to snow"}
+      ]
+    },
+    {
+      "title": "wish 后的虚拟",
+      "detail": "wish + 过去式（现在不可实现的愿望）；wish + had done（过去没实现的遗憾）；wish + would do（希望将来改变）。",
+      "examples": [
+        {"en": "I wish I were a bird.", "zh": "真希望我是一只鸟。", "highlight": "were"},
+        {"en": "She wishes she hadn't said that.", "zh": "她真希望自己没说过那话。", "highlight": "hadn't said"}
+      ]
+    },
+    {
+      "title": "建议类虚拟：should + 动词原形（should 可省略）",
+      "detail": "suggest, insist, demand, require, order, advise 等动词后的宾语从句，以及 It is suggested/important/necessary that... 结构，谓语用 (should) do。",
+      "examples": [
+        {"en": "The doctor suggested that he (should) rest for a week.", "zh": "医生建议他休息一周。", "highlight": "rest"},
+        {"en": "It is necessary that every student (should) master a foreign language.", "zh": "每个学生掌握一门外语是必要的。", "highlight": "master"}
+      ]
+    }
+  ],
+  "pitfalls": [
+    "if 虚拟句中用 will：❌ If I would be you... → ✓ If I were you...",
+    "suggest 表「表明」时不用虚拟：The smile suggested that he was satisfied.（真实语气）",
+    "混合虚拟：从句过去、主句现在：If I had taken the medicine, I would be fine now."
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "If I ___ ten years younger, I would learn dancing.",
+      "options": ["am", "was", "were", "will be"],
+      "answer": 2,
+      "explain": "与现在事实相反的虚拟，be 一律用 were。"
+    },
+    {
+      "type": "choice",
+      "stem": "If you ___ harder last term, you wouldn't be so worried now.",
+      "options": ["studied", "had studied", "study", "would study"],
+      "answer": 1,
+      "explain": "从句与过去相反用 had studied；主句与现在相反 would be（混合虚拟）。"
+    },
+    {
+      "type": "choice",
+      "stem": "I wish I ___ how to swim, but I don't.",
+      "options": ["know", "knew", "will know", "have known"],
+      "answer": 1,
+      "explain": "wish 后与现在相反用过去式 knew。"
+    },
+    {
+      "type": "choice",
+      "stem": "It is required that every member ___ the meeting.",
+      "options": ["attends", "attend", "will attend", "attended"],
+      "answer": 1,
+      "explain": "It is required that 后用 (should) + 动词原形，should 省略后为 attend。"
+    },
+    {
+      "type": "fill",
+      "stem": "If he ___ (take) my advice, he wouldn't have failed the interview.",
+      "answer": ["had taken"],
+      "explain": "与过去事实相反的虚拟条件句：If + had done。"
+    },
+    {
+      "type": "fill",
+      "stem": "The teacher insisted that the homework ___ (hand) in before Friday.",
+      "answer": ["be handed", "should be handed"],
+      "explain": "insist 表「坚决要求」时从句用 (should) + 动词原形；作业是被交，用 be handed。"
+    },
+    {
+      "type": "correct",
+      "stem": "If it will snow tomorrow, we would stay at home.",
+      "answer": "will snow → snowed / were to snow / should snow",
+      "explain": "与将来相反的虚拟条件句用过去式（snowed）、were to do 或 should do。"
+    },
+    {
+      "type": "translate",
+      "stem": "要是当时有你的帮助，我就不会成功了。（翻译整句，without 也可以）",
+      "answer": ["without your help, i couldn't have succeeded.", "if it hadn't been for your help, i couldn't have succeeded.", "but for your help, i couldn't have succeeded."],
+      "explain": "without/but for 短语可代替虚拟条件句；对过去的虚拟主句用 couldn't have done。"
+    },
+    {
+      "type": "translate",
+      "stem": "我倒希望你更细心一些。（翻译整句，wish）",
+      "answer": ["i wish you were more careful."],
+      "explain": "wish 后与现在相反，be 一律用 were。"
+    }
+  ]
+}

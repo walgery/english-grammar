@@ -1,0 +1,118 @@
+{
+  "id": "m01",
+  "level": "middle",
+  "grade": "七年级上",
+  "unit": "Starter Units ~ Unit 3",
+  "topic": "be 动词与一般现在时",
+  "summary": "英语句子的「骨架」：be 动词（am/is/are）表示「是」；一般现在时表示经常性、习惯性的动作或客观事实。",
+  "rules": [
+    {
+      "title": "be 动词的三种形式：am / is / are",
+      "detail": "口诀：我用 am，你用 are，is 跟着他她它；单数 is，复数 are。",
+      "examples": [
+        {"en": "I am a student.", "zh": "我是一名学生。", "highlight": "am"},
+        {"en": "She is my English teacher.", "zh": "她是我的英语老师。", "highlight": "is"},
+        {"en": "They are in the classroom.", "zh": "他们在教室里。", "highlight": "are"}
+      ]
+    },
+    {
+      "title": "一般现在时：主语是第三人称单数时，动词要加 -s / -es",
+      "detail": "he / she / it 或单个人名（Tom、my mother）作主语时，动词词尾加 s 或 es；以 s、x、ch、sh、o 结尾的动词加 es（go → goes，watch → watches）；以辅音字母+y 结尾，变 y 为 i 加 es（study → studies）。",
+      "examples": [
+        {"en": "Tom likes playing football.", "zh": "汤姆喜欢踢足球。", "highlight": "likes"},
+        {"en": "My mother watches TV every evening.", "zh": "我妈妈每天晚上看电视。", "highlight": "watches"},
+        {"en": "He studies hard at school.", "zh": "他在学校努力学习。", "highlight": "studies"}
+      ]
+    },
+    {
+      "title": "否定句与疑问句：借助 do / does",
+      "detail": "主语三单时用 does（does 后动词要还原为原形！），其他人称用 do。否定：don't / doesn't + 动词原形；疑问：Do / Does + 主语 + 动词原形？",
+      "examples": [
+        {"en": "I don't like coffee.", "zh": "我不喜欢咖啡。", "highlight": "don't like"},
+        {"en": "She doesn't eat meat.", "zh": "她不吃肉。", "highlight": "doesn't eat"},
+        {"en": "Does he go to school by bus?", "zh": "他坐公交车上学吗？", "highlight": "Does he go"}
+      ]
+    }
+  ],
+  "signals": ["always", "usually", "often", "sometimes", "every day", "on Sundays"],
+  "pitfalls": [
+    "三单忘加 s：❌ He like English. → ✓ He likes English.",
+    "does 后动词没还原：❌ Does she likes it? → ✓ Does she like it?",
+    "be 动词和行为动词混用：❌ He is go to school. → ✓ He goes to school."
+  ],
+  "compare": {
+    "left": "一般现在时",
+    "right": "现在进行时",
+    "rows": [
+      {"l": "表示习惯、经常的动作", "r": "表示此刻正在进行的动作"},
+      {"l": "I get up at six every day.", "r": "I am getting up now."},
+      {"l": "标志词：every day, usually", "r": "标志词：now, look, listen"}
+    ]
+  },
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "Tom ___ to school by bike every day.",
+      "options": ["go", "goes", "going", "goes to"],
+      "answer": 1,
+      "explain": "Tom 是第三人称单数，every day 是一般现在时标志词，动词用三单形式 goes。"
+    },
+    {
+      "type": "choice",
+      "stem": "— ___ your parents often watch TV in the evening? — Yes, they do.",
+      "options": ["Is", "Are", "Do", "Does"],
+      "answer": 2,
+      "explain": "your parents 是复数，一般现在时的疑问句借助助动词 do；回答用 they do。"
+    },
+    {
+      "type": "choice",
+      "stem": "My sister and I ___ students of No. 1 Middle School.",
+      "options": ["am", "is", "are", "be"],
+      "answer": 2,
+      "explain": "My sister and I 是复数主语，be 动词用 are。"
+    },
+    {
+      "type": "choice",
+      "stem": "She ___ her homework after dinner every evening.",
+      "options": ["do", "does", "doing", "is do"],
+      "answer": 1,
+      "explain": "she 是第三人称单数，do homework 的 do 变 does。"
+    },
+    {
+      "type": "fill",
+      "stem": "Li Ming ___ (have) lunch at school every day.",
+      "answer": ["has"],
+      "explain": "have 是不规则变化：第三人称单数用 has（不是 haves）。"
+    },
+    {
+      "type": "fill",
+      "stem": "They ___ (be) my good friends.",
+      "answer": ["are"],
+      "explain": "they 是复数，be 动词用 are。"
+    },
+    {
+      "type": "fill",
+      "stem": "My father ___ (not watch) TV on weekdays.",
+      "answer": ["doesn't watch", "does not watch"],
+      "explain": "第三人称单数否定用 doesn't + 动词原形 watch。"
+    },
+    {
+      "type": "correct",
+      "stem": "He like playing basketball after class.",
+      "answer": "like → likes",
+      "explain": "he 是第三人称单数，一般现在时动词 like 要加 s。"
+    },
+    {
+      "type": "translate",
+      "stem": "我通常六点半起床。（翻译整句）",
+      "answer": ["I usually get up at six thirty.", "I usually get up at half past six.", "I usually get up at 6:30."],
+      "explain": "「我」是第一人称，get up 用原形；usually 放在实义动词前。"
+    },
+    {
+      "type": "translate",
+      "stem": "Tom 不喜欢鸡蛋。（翻译整句）",
+      "answer": ["Tom doesn't like eggs.", "Tom does not like eggs."],
+      "explain": "第三人称单数否定：doesn't + 动词原形 like；egg 用复数 eggs 表示泛指。"
+    }
+  ]
+}

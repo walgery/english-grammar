@@ -1,0 +1,101 @@
+{
+  "id": "m10",
+  "level": "middle",
+  "grade": "八年级上",
+  "unit": "Unit 3 ~ Unit 4 比较级最高级专题",
+  "topic": "形容词与副词的比较级、最高级",
+  "summary": "两者比较用比较级（-er / more），三者及以上用最高级（-est / most）。",
+  "rules": [
+    {
+      "title": "比较级、最高级的构成",
+      "detail": "单音节词：加 er/est（tall → taller → tallest）；以 e 结尾加 r/st（nice → nicer → nicest）；重读闭音节双写（big → bigger → biggest，hot → hotter）；辅音+y 变 i 加 er/est（easy → easier → easiest）。多音节词：more/most + 原级（more beautiful，most beautiful）。",
+      "examples": [
+        {"en": "Tom is taller than his brother.", "zh": "汤姆比他哥哥高。", "highlight": "taller than"},
+        {"en": "This street is much busier than that one.", "zh": "这条街比那条街繁忙得多。", "highlight": "busier"},
+        {"en": "English is the most interesting subject.", "zh": "英语是最有趣的科目。", "highlight": "the most interesting"}
+      ]
+    },
+    {
+      "title": "比较级句型：A + be/动词 + 比较级 + than + B",
+      "detail": "than 后比较的对象要一致。much / even / a little 可以修饰比较级（加强程度），但 very 不能修饰比较级！",
+      "examples": [
+        {"en": "This room is much bigger than that one.", "zh": "这个房间比那个大得多。", "highlight": "much bigger"},
+        {"en": "He runs faster than me.", "zh": "他跑得比我快。", "highlight": "faster than me"}
+      ]
+    },
+    {
+      "title": "最高级句型：the + 最高级 + 比较范围（in/of）",
+      "detail": "in 后接范围（in our class）；of 后接同类事物（of all the subjects）。",
+      "examples": [
+        {"en": "Li Lei is the tallest in our class.", "zh": "李磊是我们班最高的。", "highlight": "the tallest in"},
+        {"en": "Spring is the best season of the year.", "zh": "春天是一年中最好的季节。", "highlight": "the best of the year"}
+      ]
+    }
+  ],
+  "signals": ["than（比较级）", "in/of + 范围（最高级）", "much/even + 比较级", "one of the + 最高级 + 复数"],
+  "pitfalls": [
+    "very 修饰比较级：❌ much very better → ✓ much better（very 不能修饰比较级）",
+    "比较对象不一致：❌ The weather in Beijing is colder than Guangzhou. → ✓ ... colder than that in Guangzhou.",
+    "最高级漏 the：❌ He is tallest in our class. → ✓ He is the tallest in our class."
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "The Yangtze River is ___ than any other river in China.",
+      "options": ["long", "longer", "longest", "the longest"],
+      "answer": 1,
+      "explain": "than 提示用比较级 longer。"
+    },
+    {
+      "type": "choice",
+      "stem": "Li Ming is one of ___ students in our class.",
+      "options": ["the best", "the better", "best", "better"],
+      "answer": 0,
+      "explain": "one of the + 最高级 + 复数名词：最好的学生之一。"
+    },
+    {
+      "type": "choice",
+      "stem": "The box is ___ heavier than I thought.",
+      "options": ["very", "much", "more", "most"],
+      "answer": 1,
+      "explain": "much/even 可修饰比较级，very 不能。"
+    },
+    {
+      "type": "choice",
+      "stem": "Who runs ___, Tom or Jim?",
+      "options": ["fast", "faster", "fastest", "the fastest"],
+      "answer": 1,
+      "explain": "两者比较（Tom or Jim）用比较级 faster。"
+    },
+    {
+      "type": "fill",
+      "stem": "Winter is the ___ (cold) season of the year.",
+      "answer": ["coldest"],
+      "explain": "of the year 给出比较范围，用最高级 coldest。"
+    },
+    {
+      "type": "fill",
+      "stem": "This story is ___ (interesting) than that one.",
+      "answer": ["more interesting"],
+      "explain": "interesting 是多音节词，比较级用 more interesting。"
+    },
+    {
+      "type": "correct",
+      "stem": "My room is more bigger than yours.",
+      "answer": "more bigger → much bigger / bigger",
+      "explain": "bigger 已是比较级，不能用 more 修饰；加强程度用 much bigger。"
+    },
+    {
+      "type": "translate",
+      "stem": "她比我更擅长游泳。（翻译整句）",
+      "answer": ["she is better at swimming than me.", "she is better at swimming than i am.", "she is better at swimming than i."],
+      "explain": "be good at 的比较级是 be better at；than me 口语常用。"
+    },
+    {
+      "type": "translate",
+      "stem": "语文和数学哪个更重要？（翻译整句）",
+      "answer": ["which is more important, chinese or math?", "which subject is more important, chinese or math?"],
+      "explain": "两者比较用 more important；which 引出选择疑问。"
+    }
+  ]
+}

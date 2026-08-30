@@ -1,0 +1,101 @@
+{
+  "id": "h03",
+  "level": "high",
+  "grade": "必修一 ~ 必修三",
+  "unit": "非谓语动词（二）动名词",
+  "topic": "动名词 doing",
+  "summary": "动名词具有名词性质，可作主语、宾语、表语和介词宾语，表示抽象、习惯性动作。",
+  "signals": ["enjoy/mind/avoid/finish + doing", "be worth doing", "look forward to doing", "介词后一律 doing"],
+  "rules": [
+    {
+      "title": "作主语与表语",
+      "detail": "动名词短语作主语谓语用单数；表语说明主语的内容。",
+      "examples": [
+        {"en": "Reading aloud is a good way to learn English.", "zh": "朗读是学英语的好方法。", "highlight": "Reading aloud"},
+        {"en": "His hobby is collecting stamps.", "zh": "他的爱好是集邮。", "highlight": "collecting stamps"}
+      ]
+    },
+    {
+      "title": "只接动名词的动词与短语",
+      "detail": "admit, avoid, consider, delay, deny, enjoy, escape, finish, imagine, keep, mind, miss, practice, risk, suggest + doing；be worth doing；can't help doing；be busy doing；look forward to / devote to / be used to / object to + doing（to 是介词）。",
+      "examples": [
+        {"en": "Would you mind opening the window?", "zh": "你介意打开窗户吗？", "highlight": "opening"},
+        {"en": "I'm looking forward to hearing from you.", "zh": "我期待收到你的来信。", "highlight": "to hearing"},
+        {"en": "The novel is worth reading again.", "zh": "这部小说值得再读一遍。", "highlight": "worth reading"}
+      ]
+    },
+    {
+      "title": "介词后一律用动名词",
+      "detail": "be good at / be afraid of / instead of / succeed in / apologize for + doing。",
+      "examples": [
+        {"en": "He left without saying goodbye.", "zh": "他没道别就离开了。", "highlight": "without saying"},
+        {"en": "She is good at solving problems.", "zh": "她擅长解决问题。", "highlight": "solving"}
+      ]
+    }
+  ],
+  "pitfalls": [
+    "look forward to 后接 to do：❌ look forward to see you → ✓ look forward to seeing you（to 是介词）",
+    "be used to do 与 be used to doing 混淆：前者「被用来做」，后者「习惯于做」",
+    "suggest/advise 后接 to do：❌ suggest to go → ✓ suggest going"
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "We should avoid ___ too much time on mobile phones.",
+      "options": ["spend", "to spend", "spending", "spent"],
+      "answer": 2,
+      "explain": "avoid 后只接动名词 spending。"
+    },
+    {
+      "type": "choice",
+      "stem": "The old man is used to ___ early in the morning.",
+      "options": ["exercise", "exercising", "exercised", "exercises"],
+      "answer": 1,
+      "explain": "be used to doing = 习惯于做，to 是介词。"
+    },
+    {
+      "type": "choice",
+      "stem": "___ is believing.",
+      "options": ["See", "To see", "Seeing", "Seen"],
+      "answer": 2,
+      "explain": "谚语 Seeing is believing（眼见为实），动名词作主语。"
+    },
+    {
+      "type": "choice",
+      "stem": "The problem is worth ___ again.",
+      "options": ["to discuss", "discussing", "discussed", "discuss"],
+      "answer": 1,
+      "explain": "be worth doing 固定搭配，用动名词。"
+    },
+    {
+      "type": "fill",
+      "stem": "He apologized for ___ (be) late again.",
+      "answer": ["being"],
+      "explain": "介词 for 后用动名词 being。"
+    },
+    {
+      "type": "fill",
+      "stem": "Instead of ___ (complain), we should take action.",
+      "answer": ["complaining"],
+      "explain": "instead of 中 of 是介词，后接动名词。"
+    },
+    {
+      "type": "correct",
+      "stem": "She suggested to hold a class meeting to discuss the problem.",
+      "answer": "to hold → holding",
+      "explain": "suggest 后接动名词：suggested holding。"
+    },
+    {
+      "type": "translate",
+      "stem": "在阳光下看书对眼睛有害。（翻译整句）",
+      "answer": ["reading in the sun is bad for your eyes.", "reading books in the sun is bad for the eyes."],
+      "explain": "动名词短语作主语；be bad for 对……有害。"
+    },
+    {
+      "type": "translate",
+      "stem": "他习惯于每天查字典。（翻译整句）",
+      "answer": ["he is used to looking up words in the dictionary every day.", "he is used to consulting the dictionary every day."],
+      "explain": "be used to doing 习惯于做；look up 查阅。"
+    }
+  ]
+}

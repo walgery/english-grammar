@@ -1,0 +1,107 @@
+{
+  "id": "m02",
+  "level": "middle",
+  "grade": "七年级上",
+  "unit": "Unit 2 ~ Unit 4",
+  "topic": "人称代词与物主代词",
+  "summary": "「我、你、他」和「我的、你的、他的」——人称代词做主语/宾语，物主代词表示所属关系。",
+  "signals": ["动词后用宾格 (me/him/us)", "介词后用宾格", "名词前用 my/his/their", "名词后用 mine/his/theirs"],
+  "rules": [
+    {
+      "title": "人称代词：主格 vs 宾格",
+      "detail": "主格（I, you, he, she, it, we, they）作主语；宾格（me, you, him, her, it, us, them）作动词或介词的宾语。",
+      "examples": [
+        {"en": "I like him.", "zh": "我喜欢他。", "highlight": "I,him"},
+        {"en": "Please help us.", "zh": "请帮助我们。", "highlight": "us"},
+        {"en": "This gift is for her.", "zh": "这份礼物是给她的。", "highlight": "her"}
+      ]
+    },
+    {
+      "title": "形容词性物主代词：my / your / his / her / its / our / their",
+      "detail": "后面必须跟名词，表示「谁的」：my book（我的书）、his bag（他的包）。",
+      "examples": [
+        {"en": "My school is big.", "zh": "我的学校很大。", "highlight": "My"},
+        {"en": "Her English is very good.", "zh": "她的英语很好。", "highlight": "Her"}
+      ]
+    },
+    {
+      "title": "名词性物主代词：mine / yours / his / hers / ours / theirs",
+      "detail": "单独使用，后面不跟名词 = 形容词性物主代词 + 名词。my book = mine；her bag = hers。",
+      "examples": [
+        {"en": "This is my pen. That is yours.", "zh": "这是我的钢笔。那是你的（钢笔）。", "highlight": "yours"},
+        {"en": "The red bike is his.", "zh": "那辆红色自行车是他的。", "highlight": "his"}
+      ]
+    }
+  ],
+  "pitfalls": [
+    "介词后误用主格：❌ between you and I → ✓ between you and him（介词后用宾格）",
+    "her / hers 混用：❌ This is her book = This is hers book. → ✓ This is hers.（hers 后不能加名词）",
+    "it's 和 its 混淆：it's = it is；its 是「它的」"
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "___ am a new student in Class 3.",
+      "options": ["Me", "My", "I", "Mine"],
+      "answer": 2,
+      "explain": "作主语用主格 I。"
+    },
+    {
+      "type": "choice",
+      "stem": "Miss Gao teaches ___ English. We all like her classes.",
+      "options": ["we", "us", "our", "ours"],
+      "answer": 1,
+      "explain": "teach 是动词，后面用宾格 us（我们）。"
+    },
+    {
+      "type": "choice",
+      "stem": "— Is this ___ schoolbag? — No, it's ___.",
+      "options": ["your; his", "yours; his", "your; him", "yours; him"],
+      "answer": 0,
+      "explain": "schoolbag 是名词，前面用形容词性 your；第二空后面没有名词，用名词性 his。"
+    },
+    {
+      "type": "choice",
+      "stem": "The cat is cute. ___ name is Mimi.",
+      "options": ["It's", "Its", "It", "Its'"],
+      "answer": 1,
+      "explain": "its 表示「它的」；it's = it is，意思是「它是」，此处不通。"
+    },
+    {
+      "type": "fill",
+      "stem": "These books are ___ (they). They bought them yesterday.",
+      "answer": ["theirs"],
+      "explain": "后面没有名词，用名词性物主代词 theirs = their books。"
+    },
+    {
+      "type": "fill",
+      "stem": "___ (we) English teacher is very kind.",
+      "answer": ["our"],
+      "explain": "后面有名词 English teacher，用形容词性物主代词 our。"
+    },
+    {
+      "type": "fill",
+      "stem": "Can you help ___ (I) with my math?",
+      "answer": ["me"],
+      "explain": "help 是动词，后接宾格 me。"
+    },
+    {
+      "type": "correct",
+      "stem": "Her and me are in the same class.",
+      "answer": "Her and me → She and I",
+      "explain": "作主语要用主格：she 和 I。"
+    },
+    {
+      "type": "translate",
+      "stem": "这个书包是我的，那个是他的。（翻译整句）",
+      "answer": ["this schoolbag is mine and that one is his.", "this schoolbag is mine, and that one is his."],
+      "explain": "mine = my schoolbag；his 既可作形容词性也可作名词性。"
+    },
+    {
+      "type": "translate",
+      "stem": "他经常帮助我们学英语。（翻译整句）",
+      "answer": ["he often helps us with our english.", "he often helps us learn english.", "he often helps us to learn english."],
+      "explain": "help sb with sth / help sb (to) do sth；us 是宾格。"
+    }
+  ]
+}

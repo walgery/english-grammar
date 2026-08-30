@@ -1,0 +1,107 @@
+{
+  "id": "m06",
+  "level": "middle",
+  "grade": "七年级下",
+  "unit": "Unit 6 ~ Unit 8",
+  "topic": "现在进行时",
+  "summary": "表示「此时此刻正在做」的动作：be (am/is/are) + 动词-ing。",
+  "rules": [
+    {
+      "title": "结构：be 动词 + 动词-ing（现在分词）",
+      "detail": "be 动词随主语变化（I am / he is / they are），动词一律加 ing。看now、Look!、Listen! 这些词，就优先考虑现在进行时。",
+      "examples": [
+        {"en": "Look! The children are playing games.", "zh": "看！孩子们正在做游戏。", "highlight": "are playing"},
+        {"en": "Listen! Someone is singing.", "zh": "听！有人在唱歌。", "highlight": "is singing"},
+        {"en": "I am doing my homework now.", "zh": "我现在正在做作业。", "highlight": "am doing"}
+      ]
+    },
+    {
+      "title": "动词-ing 的构成规则",
+      "detail": "一般直接加 ing（read → reading）；以不发音的 e 结尾去 e 加 ing（write → writing，make → making）；重读闭音节双写末尾辅音再加 ing（run → running，swim → swimming，sit → sitting）。",
+      "examples": [
+        {"en": "She is making a cake in the kitchen.", "zh": "她正在厨房做蛋糕。", "highlight": "making"},
+        {"en": "The boys are swimming in the river.", "zh": "男孩们正在河里游泳。", "highlight": "swimming"}
+      ]
+    },
+    {
+      "title": "否定句与疑问句",
+      "detail": "在 be 动词后加 not 构成否定；把 be 动词提前构成疑问句。不需要借助 do/does！",
+      "examples": [
+        {"en": "He isn't reading a book; he is watching TV.", "zh": "他没在看书，他在看电视。", "highlight": "isn't reading"},
+        {"en": "Are you listening to me? — Yes, I am.", "zh": "你在听我说话吗？——是的。", "highlight": "Are you listening"}
+      ]
+    }
+  ],
+  "signals": ["now", "look", "listen", "at the moment", "these days", "it's 8:00 and..."],
+  "pitfalls": [
+    "漏掉 be 动词：❌ I reading a book. → ✓ I am reading a book.",
+    "双写错误：❌ He is runing. → ✓ He is running.",
+    "去 e 错误：❌ She is writeing. → ✓ She is writing."
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "Listen! Someone ___ in the next room.",
+      "options": ["sings", "is singing", "sing", "are singing"],
+      "answer": 1,
+      "explain": "Listen! 提示动作正在发生；someone 是单数，用 is singing。"
+    },
+    {
+      "type": "choice",
+      "stem": "— What are you doing now? — I ___ my room.",
+      "options": ["clean", "cleans", "am cleaning", "cleaning"],
+      "answer": 2,
+      "explain": "问句是现在进行时，回答用 am cleaning。注意不能只答 cleaning，必须带 be 动词。"
+    },
+    {
+      "type": "choice",
+      "stem": "The students ___ ___ basketball on the playground now. (选择正确的动词形式)",
+      "options": ["is play", "are playing", "play", "plays"],
+      "answer": 1,
+      "explain": "students 复数用 are；now 提示进行时，play 加 ing。"
+    },
+    {
+      "type": "choice",
+      "stem": "It's seven o'clock. Mr. Wang ___ breakfast with his family.",
+      "options": ["have", "has", "is having", "having"],
+      "answer": 2,
+      "explain": "具体时刻点 + 正在进行的动作，用现在进行时 is having。"
+    },
+    {
+      "type": "fill",
+      "stem": "Look! The girl ___ (run) on the playground.",
+      "answer": ["is running"],
+      "explain": "run 是重读闭音节，双写 n 加 ing：running。"
+    },
+    {
+      "type": "fill",
+      "stem": "They ___ (not do) their homework at the moment.",
+      "answer": ["aren't doing", "are not doing"],
+      "explain": "现在进行时否定：are + not + doing。"
+    },
+    {
+      "type": "fill",
+      "stem": "— Where is Tom? — He ___ (write) a letter in his room.",
+      "answer": ["is writing"],
+      "explain": "write 以不发音 e 结尾，去 e 加 ing：writing。"
+    },
+    {
+      "type": "correct",
+      "stem": "The children is flying kites in the park now.",
+      "answer": "is → are",
+      "explain": "The children 是复数，be 动词要用 are。"
+    },
+    {
+      "type": "translate",
+      "stem": "她现在正在图书馆看书。（翻译整句）",
+      "answer": ["she is reading books in the library now.", "she is reading a book in the library now."],
+      "explain": "「正在看」用 is reading；books 或 a book 均可。"
+    },
+    {
+      "type": "translate",
+      "stem": "听！他们在教室里唱歌。（翻译整句）",
+      "answer": ["listen! they are singing in the classroom."],
+      "explain": "Listen! 是现在进行时的典型标志；they 对应 are singing。"
+    }
+  ]
+}

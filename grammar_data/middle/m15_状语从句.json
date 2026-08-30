@@ -1,0 +1,101 @@
+{
+  "id": "m15",
+  "level": "middle",
+  "grade": "九年级全一册",
+  "unit": "Unit 9 ~ 状语从句专题",
+  "topic": "状语从句",
+  "summary": "用连词把两个句子连起来，表示时间、条件、原因、结果等关系。重点：时间（when/while/as soon as）和条件（if/unless）从句中，用一般现在时表将来。",
+  "signals": ["主将从现", "as soon as 一……就", "not...until 直到……才", "if 如果", "unless 除非", "so...that 如此……以至于"],
+  "rules": [
+    {
+      "title": "时间状语从句：when / while / as soon as / before / after / until",
+      "detail": "「主将从现」：主句用将来时，时间从句用一般现在时。as soon as 表示「一……就……」；not...until 表示「直到……才……」。",
+      "examples": [
+        {"en": "I will call you as soon as I get there.", "zh": "我一到那儿就给你打电话。", "highlight": "as soon as I get"},
+        {"en": "He didn't go to bed until his mother came back.", "zh": "直到妈妈回来他才睡觉。", "highlight": "didn't go to bed until"},
+        {"en": "When the bus stops, we can get off.", "zh": "等公交车停下，我们就可以下车。", "highlight": "When the bus stops"}
+      ]
+    },
+    {
+      "title": "条件状语从句：if / unless",
+      "detail": "if 表示「如果」；unless = if not 表示「除非」。同样遵守「主将从现」：从句用一般现在时，主句用 will / be going to。",
+      "examples": [
+        {"en": "If it rains tomorrow, we will stay at home.", "zh": "如果明天下雨，我们就待在家里。", "highlight": "If it rains"},
+        {"en": "You will fail the exam unless you work hard.", "zh": "除非你努力学习，否则考试会不及格。", "highlight": "unless you work"}
+      ]
+    },
+    {
+      "title": "原因 / 结果 / 让步",
+      "detail": "because（因为）so（所以）不能同时用在一个句子里；so...that 表示「如此……以至于」；although/though（虽然）but（但是）也不能同时用。",
+      "examples": [
+        {"en": "He was so tired that he fell asleep at once.", "zh": "他太累了，立刻就睡着了。", "highlight": "so tired that"},
+        {"en": "Although it was raining, we still went out.", "zh": "虽然下着雨，我们还是出去了。", "highlight": "Although"}
+      ]
+    }
+  ],
+  "pitfalls": [
+    "主将从现用错：❌ If it will rain, I won't go. → ✓ If it rains, I won't go.",
+    "because 和 so 连用：❌ Because he was ill, so he stayed home. → 两者只用一个",
+    "until 肯定否定弄反：not...until = 直到……才"
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "I will wait ___ you come back.",
+      "options": ["until", "because", "if", "so"],
+      "answer": 0,
+      "explain": "「我会一直等到你回来」用 until。"
+    },
+    {
+      "type": "choice",
+      "stem": "If it ___ sunny tomorrow, we ___ to the park.",
+      "options": ["is; will go", "will be; go", "will be; will go", "is; go"],
+      "answer": 0,
+      "explain": "主将从现：条件从句用一般现在时 is，主句用将来时 will go。"
+    },
+    {
+      "type": "choice",
+      "stem": "He was ___ excited ___ he couldn't sleep.",
+      "options": ["too; to", "so; that", "such; that", "very; that"],
+      "answer": 1,
+      "explain": "so + 形容词 + that 从句，表示「如此……以至于」。"
+    },
+    {
+      "type": "choice",
+      "stem": "___ he is very young, he knows a lot about science.",
+      "options": ["Because", "Although", "If", "So"],
+      "answer": 1,
+      "explain": "前后是让步关系（虽然年轻但懂得多），用 although；不能再加 but。"
+    },
+    {
+      "type": "fill",
+      "stem": "I'll tell him the news as soon as he ___ (come) back.",
+      "answer": ["comes"],
+      "explain": "主将从现：as soon as 从句中用一般现在时 comes（he 三单）。"
+    },
+    {
+      "type": "fill",
+      "stem": "___ (如果) you don't hurry, you will miss the bus.",
+      "answer": ["if"],
+      "explain": "「如果」用 if 引导条件状语从句。"
+    },
+    {
+      "type": "correct",
+      "stem": "Because he was tired, so he went to bed early.",
+      "answer": "去掉 so（或去掉 because）",
+      "explain": "because 和 so 不能在同一个句子里连用，英语只保留一个。"
+    },
+    {
+      "type": "translate",
+      "stem": "除非你早点出发，否则你会赶不上火车。（翻译整句）",
+      "answer": ["you will miss the train unless you start early.", "unless you start early, you will miss the train."],
+      "explain": "unless = if not；主句用将来时 will miss。"
+    },
+    {
+      "type": "translate",
+      "stem": "当他长大后，他想成为一名科学家。（翻译整句）",
+      "answer": ["he wants to be a scientist when he grows up.", "when he grows up, he wants to be a scientist."],
+      "explain": "主将从现：when 从句用 grows up（三单），主句 wants 用一般现在时（表意愿亦可用 will）。"
+    }
+  ]
+}

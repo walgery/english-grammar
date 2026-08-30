@@ -1,0 +1,107 @@
+{
+  "id": "h05",
+  "level": "high",
+  "grade": "必修二 ~ 必修四",
+  "unit": "定语从句进阶",
+  "topic": "定语从句（进阶）",
+  "summary": "非限制性定语从句、介词 + 关系代词、as 引导的定语从句，以及 that/which 的使用限制。",
+  "signals": ["逗号隔开 → 非限制性（不用 that）", "介词 + which/whom", "as we all know", "the only/最高级 + that"],
+  "rules": [
+    {
+      "title": "限制性 vs 非限制性定语从句",
+      "detail": "非限制性定语从句用逗号与主句隔开，作补充说明，不能用 that 引导，关系词不可省略。",
+      "examples": [
+        {"en": "I have a brother who works in Beijing.（可能有多个兄弟）", "zh": "我有一个在北京工作的哥哥。", "highlight": "who works"},
+        {"en": "I have a brother, who works in Beijing.（只有一个哥哥，补充说明）", "zh": "我有一个哥哥，他在北京工作。", "highlight": ",who works"}
+      ]
+    },
+    {
+      "title": "介词 + 关系代词：in which / of which / with whom...",
+      "detail": "介词的选择取决于从句动词的搭配或先行词。in which = where；for whom = for whom...。介词后不能用 that 和 who。",
+      "examples": [
+        {"en": "This is the house in which Lu Xun once lived. (= where)", "zh": "这是鲁迅曾经住过的房子。", "highlight": "in which"},
+        {"en": "The man to whom you spoke is my uncle.", "zh": "和你说话的那个人是我叔叔。", "highlight": "to whom"}
+      ]
+    },
+    {
+      "title": "只能用 that 的五种情况",
+      "detail": "先行词被 ① 序数词 ② 最高级 ③ the only / the very ④ all / everything / nothing 等不定代词 ⑤ 既有人又有物 修饰时，关系词用 that。",
+      "examples": [
+        {"en": "All that glitters is not gold.", "zh": "发光的未必都是金子。", "highlight": "All that"},
+        {"en": "He talked about the people and the things that interested him.", "zh": "他谈论了让他感兴趣的人和事。", "highlight": "that interested him"}
+      ]
+    },
+    {
+      "title": "as 引导的非限制性定语从句",
+      "detail": "as 可以指代整个主句，位置灵活（句首/句中/句尾），常用于 as we all know, as is often the case。",
+      "examples": [
+        {"en": "As we all know, the earth goes around the sun.", "zh": "众所周知，地球绕着太阳转。", "highlight": "As we all know"}
+      ]
+    }
+  ],
+  "pitfalls": [
+    "非限制性从句用 that：❌ The book, that I bought yesterday, is good. → ✓ The book, which I bought yesterday, is good.",
+    "介词后用 that：❌ the room in that he lives → ✓ the room in which he lives",
+    "that 不能引导非限制性从句，whose 指物时 = of which"
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "Mount Tai, ___ is in Shandong Province, attracts many visitors.",
+      "options": ["that", "which", "where", "it"],
+      "answer": 1,
+      "explain": "非限制性定语从句（有逗号）且先行词是物，用 which，不能用 that。"
+    },
+    {
+      "type": "choice",
+      "stem": "The house ___ roof was damaged has been repaired.",
+      "options": ["which", "whose", "that", "who"],
+      "answer": 1,
+      "explain": "roof 前缺定语「房子的」，用 whose roof = the roof of which。"
+    },
+    {
+      "type": "choice",
+      "stem": "This is the museum ___ we took many photos last year.",
+      "options": ["which", "in which", "that", "at where"],
+      "answer": 1,
+      "explain": "在博物馆里「拍照」用 in the museum，故介词+关系代词 in which = where。"
+    },
+    {
+      "type": "choice",
+      "stem": "___ is often the case, he was late for the meeting again.",
+      "options": ["It", "As", "Which", "That"],
+      "answer": 1,
+      "explain": "as is often the case 固定表达「像往常一样」，as 指代整个主句且可位于句首。"
+    },
+    {
+      "type": "fill",
+      "stem": "Everything ___ can be done has been done. (关系代词)",
+      "answer": ["that"],
+      "explain": "先行词是 everything，关系词只能用 that。"
+    },
+    {
+      "type": "fill",
+      "stem": "The engineer with ___ my father works is about fifty. (关系代词)",
+      "answer": ["whom"],
+      "explain": "介词 with 后指人只能用 whom：with whom my father works。"
+    },
+    {
+      "type": "correct",
+      "stem": "The novel, that was written by Mo Yan, is very popular.",
+      "answer": "that → which",
+      "explain": "非限制性定语从句（有逗号）不能用 that 引导，改为 which。"
+    },
+    {
+      "type": "translate",
+      "stem": "正如报纸上报道的那样，这个城市建造了一座新桥。（翻译整句）",
+      "answer": ["as is reported in the newspaper, a new bridge has been built in the city."],
+      "explain": "as 指代整个主句并置于句首：As is reported...。"
+    },
+    {
+      "type": "translate",
+      "stem": "我们工作的那家公司是三年前成立的。（翻译整句）",
+      "answer": ["the company (that/which) we work for was set up three years ago.", "the company for which we work was set up three years ago."],
+      "explain": "work for 的 for 可提前构成 for which；或用 that/which 并保留介词在后。"
+    }
+  ]
+}

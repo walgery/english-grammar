@@ -1,0 +1,101 @@
+{
+  "id": "m16",
+  "level": "middle",
+  "grade": "九年级全一册",
+  "unit": "Unit 5 ~ 被动语态专题",
+  "topic": "被动语态",
+  "summary": "主语是动作的承受者时用被动语态：be + 过去分词。各种时态的被动通过变化 be 动词实现。",
+  "signals": ["is/are + done", "was/were + done", "must be + done", "by + 执行者", "被/由/受"],
+  "rules": [
+    {
+      "title": "一般现在时与一般过去时的被动",
+      "detail": "am/is/are + 过去分词（一般现在时）；was/were + 过去分词（一般过去时）。动作执行者如需说明，用 by 引出。",
+      "examples": [
+        {"en": "English is spoken by many people.", "zh": "许多人说英语。", "highlight": "is spoken"},
+        {"en": "This school was built in 2010.", "zh": "这所学校建于 2010 年。", "highlight": "was built"},
+        {"en": "The classroom is cleaned every day.", "zh": "教室每天被打扫。", "highlight": "is cleaned"}
+      ]
+    },
+    {
+      "title": "含情态动词的被动：情态动词 + be + 过去分词",
+      "detail": "结构：情态动词（can / must / should...）+ be + 过去分词。be 永远用原形，时态和单复数的变化都由情态动词承担；否定形式在情态动词后加 not（如 can't be done「不可能被做」）。",
+      "examples": [
+        {"en": "Trees must be planted in spring.", "zh": "树必须在春天种植。", "highlight": "must be planted"},
+        {"en": "The problem should be solved right away.", "zh": "这个问题应该立即解决。", "highlight": "should be solved"}
+      ]
+    },
+    {
+      "title": "什么时候用被动？",
+      "detail": "① 不知道谁做的；② 承受者比执行者更重要；③ 客观说明。汉语的「被、由、受」常对应英语被动。",
+      "examples": [
+        {"en": "Paper was invented in China.", "zh": "纸是中国发明的。", "highlight": "was invented"},
+        {"en": "The song is often sung by children.", "zh": "这首歌经常被孩子们唱。", "highlight": "is often sung"}
+      ]
+    }
+  ],
+  "pitfalls": [
+    "漏掉 be 动词：❌ The room cleaned every day. → ✓ The room is cleaned every day.",
+    "该用过去分词却用原形：❌ English is speak here. → ✓ English is spoken here.",
+    "不及物动词不能有被动：❌ The accident was happened yesterday. → ✓ The accident happened yesterday."
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "Chinese ___ by more and more people around the world now.",
+      "options": ["speaks", "spoke", "is spoken", "was spoken"],
+      "answer": 2,
+      "explain": "Chinese 是「被说」，now 提示一般现在时被动：is spoken。"
+    },
+    {
+      "type": "choice",
+      "stem": "The 2022 Winter Olympics ___ in Beijing.",
+      "options": ["held", "was held", "were held", "is held"],
+      "answer": 1,
+      "explain": "运动会「被举办」，2022 年是过去，Olympics 视为单数：was held。"
+    },
+    {
+      "type": "choice",
+      "stem": "The environment must ___ by everyone.",
+      "options": ["protect", "be protected", "protected", "is protected"],
+      "answer": 1,
+      "explain": "情态动词被动语态：must be + 过去分词 protected。"
+    },
+    {
+      "type": "choice",
+      "stem": "Paper ___ by Cai Lun about 2,000 years ago.",
+      "options": ["invented", "is invented", "was invented", "invents"],
+      "answer": 2,
+      "explain": "ago 提示一般过去时被动：was invented。"
+    },
+    {
+      "type": "fill",
+      "stem": "This song ___ (sing) by young people every day.",
+      "answer": ["is sung"],
+      "explain": "一般现在时被动：is + sing 的过去分词 sung。"
+    },
+    {
+      "type": "fill",
+      "stem": "These photos ___ (take) by my father last year.",
+      "answer": ["were taken"],
+      "explain": "photos 复数、last year 过去：were taken。"
+    },
+    {
+      "type": "correct",
+      "stem": "The meat is smell bad. Don't eat it.",
+      "answer": "is smell → smells",
+      "explain": "smell（闻起来）是系动词，没有被动语态，直接 smells。"
+    },
+    {
+      "type": "translate",
+      "stem": "这些书是给孩子们的。（翻译整句：书被送给孩子们）",
+      "answer": ["these books are given to the children.", "these books are given to the kids."],
+      "explain": "give sth to sb 的被动：books are given to...。"
+    },
+    {
+      "type": "translate",
+      "stem": "作业必须按时完成。（翻译整句）",
+      "answer": ["the homework must be finished on time.", "homework must be finished on time."],
+      "explain": "情态动词被动：must be + 过去分词 finished；on time 按时。"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "id": "m04",
+  "level": "middle",
+  "grade": "七年级上 ~ 八年级上",
+  "unit": "Unit 6 ~ There Be 专题",
+  "topic": "there be 句型",
+  "summary": "「某地有某物」：There is + 单数/不可数名词，There are + 复数名词。be 动词遵循「就近原则」。",
+  "signals": ["某地 + 存在物", "就近原则", "some 变 any", "≠ have（拥有）"],
+  "rules": [
+    {
+      "title": "基本结构：There is / are + 名词 + 地点/时间",
+      "detail": "is 后接单数可数名词或不可数名词；are 后接复数名词。表示「存在有」，注意和 have（某人拥有）区分。",
+      "examples": [
+        {"en": "There is a park near my home.", "zh": "我家附近有一个公园。", "highlight": "There is a park"},
+        {"en": "There are 45 desks in our classroom.", "zh": "我们教室里有 45 张课桌。", "highlight": "There are"},
+        {"en": "There is some milk in the fridge.", "zh": "冰箱里有一些牛奶。", "highlight": "There is some milk"}
+      ]
+    },
+    {
+      "title": "就近原则：be 动词由紧挨着它的名词决定",
+      "detail": "be 动词由紧挨着它的名词决定：靠近的是单数名词或不可数名词用 is，靠近复数名词用 are。对比：There is a pen and two books. / There are two books and a pen.（意思相同，be 动词不同）",
+      "examples": [
+        {"en": "There is a pen and two books on the desk.", "zh": "课桌上有一支钢笔和两本书。", "highlight": "There is a pen"},
+        {"en": "There are two books and a pen on the desk.", "zh": "课桌上有两本书和一支钢笔。", "highlight": "There are two books"}
+      ]
+    },
+    {
+      "title": "否定句与疑问句",
+      "detail": "否定：There isn't / aren't any...（some 变 any）；一般疑问句：Is / Are there...? 肯定回答 Yes, there is/are. 否定回答 No, there isn't/aren't.",
+      "examples": [
+        {"en": "There isn't any water in the bottle.", "zh": "瓶子里没有水。", "highlight": "There isn't any water"},
+        {"en": "Are there any apples on the tree? — Yes, there are.", "zh": "树上有苹果吗？——是的，有。", "highlight": "Are there any apples"}
+      ]
+    }
+  ],
+  "pitfalls": [
+    "there be 和 have 混用：❌ There has a book on the desk. → ✓ There is a book on the desk.（There be 表「存在」，have 表「拥有」）",
+    "就近原则没掌握：❌ There is two chairs in the room. → ✓ There are two chairs in the room.",
+    "否定句 some 没变 any：❌ There isn't some milk. → ✓ There isn't any milk."
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "___ a map of China on the wall?",
+      "options": ["Is there", "Are there", "There is", "Have"],
+      "answer": 0,
+      "explain": "a map 是单数，一般疑问句把 is 提前：Is there...?"
+    },
+    {
+      "type": "choice",
+      "stem": "There ___ some bread and three eggs on the table.",
+      "options": ["is", "are", "have", "has"],
+      "answer": 0,
+      "explain": "some bread 不可数且紧挨着 be 动词，遵循就近原则用 is。"
+    },
+    {
+      "type": "choice",
+      "stem": "How many students ___ in your class?",
+      "options": ["is there", "are there", "there are", "have"],
+      "answer": 1,
+      "explain": "students 是复数，How many 后用 are there 提问。"
+    },
+    {
+      "type": "choice",
+      "stem": "___ any milk in the glass?",
+      "options": ["There is", "Is there", "There are", "Are there"],
+      "answer": 1,
+      "explain": "milk 不可数用 is；疑问句把 is 提前，some 需变为 any。"
+    },
+    {
+      "type": "fill",
+      "stem": "There ___ (be) two banks and a supermarket near here.",
+      "answer": ["are"],
+      "explain": "就近原则：紧挨着 be 动词的是 two banks（复数），用 are。"
+    },
+    {
+      "type": "fill",
+      "stem": "There ___ (be not) any juice in the fridge now.",
+      "answer": ["isn't", "is not"],
+      "explain": "juice 不可数用 is；否定形式 isn't。"
+    },
+    {
+      "type": "correct",
+      "stem": "There have many beautiful flowers in the garden.",
+      "answer": "There have → There are",
+      "explain": "「某地有某物」用 there be 句型，many flowers 是复数用 are。"
+    },
+    {
+      "type": "translate",
+      "stem": "教室里有一台电脑和二十张椅子。（翻译整句）",
+      "answer": ["there is a computer and twenty chairs in the classroom.", "there is one computer and twenty chairs in the classroom."],
+      "explain": "就近原则：a computer 单数紧挨 be 动词，用 There is。"
+    },
+    {
+      "type": "translate",
+      "stem": "瓶子里没有水了。（翻译整句）",
+      "answer": ["there isn't any water in the bottle.", "there is no water in the bottle.", "there isn't any water in the bottle now."],
+      "explain": "否定句 some 变 any，也可以用 There is no water。"
+    }
+  ]
+}

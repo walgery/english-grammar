@@ -1,0 +1,100 @@
+{
+  "id": "h01",
+  "level": "high",
+  "grade": "必修一 ~ 选修",
+  "unit": "时态语态综合提升",
+  "topic": "时态与语态综合（进阶）",
+  "summary": "高中阶段要求熟练运用完成进行时、过去将来时、过去完成时等复杂时态，并能在语篇中根据上下文选择正确时态和语态。",
+  "rules": [
+    {
+      "title": "过去完成时：had + 过去分词",
+      "detail": "表示「过去的过去」——过去的某个时间或动作之前已经完成的动作。常与 by the time、before、when 连用。",
+      "examples": [
+        {"en": "By the time he arrived, the train had already left.", "zh": "他到达时，火车已经开走了。", "highlight": "had already left"},
+        {"en": "She had learned English for five years before she went abroad.", "zh": "出国之前她已经学了五年英语。", "highlight": "had learned"}
+      ]
+    },
+    {
+      "title": "过去将来时：would / was going to + 动词原形",
+      "detail": "站在过去看将来，常用于宾语从句中：He said he would come the next day.",
+      "examples": [
+        {"en": "They said they would visit us the following week.", "zh": "他们说下周会来看我们。", "highlight": "would visit"},
+        {"en": "I didn't know you were going to leave so soon.", "zh": "我不知道你这么快就要走。", "highlight": "were going to leave"}
+      ]
+    },
+    {
+      "title": "现在完成进行时：have/has been doing",
+      "detail": "强调动作从过去持续到现在，且可能继续下去，常与 all day、for hours 连用，突出「一直在做」。",
+      "examples": [
+        {"en": "It has been raining since morning.", "zh": "从早上开始一直在下雨。", "highlight": "has been raining"},
+        {"en": "I have been waiting for you for two hours.", "zh": "我已经等了你两个小时了。", "highlight": "have been waiting"}
+      ]
+    }
+  ],
+  "signals": ["by the time（过去完成）", "by the end of last...（过去完成）", "since/for + 完成时态", "said/told + 过去将来", "all day/all night（完成进行）"],
+  "pitfalls": [
+    "by the end of last year 用现在完成：❌ has finished → ✓ had finished",
+    "过去完成时滥用：没有「过去的过去」参照点就不用 had done",
+    "瞬间动词的完成进行：❌ He has been dying... → die 不能用完成进行"
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "By the end of last month, they ___ over 2,000 words.",
+      "options": ["have learned", "had learned", "learned", "would learn"],
+      "answer": 1,
+      "explain": "by the end of last month 表示到过去某时为止，用过去完成时 had learned。"
+    },
+    {
+      "type": "choice",
+      "stem": "She told me that she ___ the book twice before she was fifteen.",
+      "options": ["read", "has read", "had read", "would read"],
+      "answer": 2,
+      "explain": "「读」发生在 was fifteen（过去）之前，是「过去的过去」，用过去完成时。"
+    },
+    {
+      "type": "choice",
+      "stem": "— Why are your hands so dirty? — I ___ the car for the whole morning.",
+      "options": ["repaired", "have been repairing", "was repairing", "will repair"],
+      "answer": 1,
+      "explain": "for the whole morning + 手现在脏（结果延续），强调「一直在修」，用现在完成进行时。"
+    },
+    {
+      "type": "choice",
+      "stem": "The plan ___ at the meeting tomorrow afternoon.",
+      "options": ["will discuss", "will be discussed", "has discussed", "is discussing"],
+      "answer": 1,
+      "explain": "plan 是「被讨论」，tomorrow 是将来，用将来时被动 will be discussed。"
+    },
+    {
+      "type": "fill",
+      "stem": "When I got to the cinema, the film ___ (be) on for ten minutes.",
+      "answer": ["had been"],
+      "explain": "got to 是过去，电影「已经开始十分钟」发生在它之前，用过去完成时 had been。"
+    },
+    {
+      "type": "fill",
+      "stem": "He said that great changes ___ (take) place in his hometown in the past few years.",
+      "answer": ["had taken"],
+      "explain": "in the past few years 常配完成时；主句 said 是过去时，从句用过去完成时 had taken。"
+    },
+    {
+      "type": "correct",
+      "stem": "When she rushed into the station, the train has left.",
+      "answer": "has left → had left",
+      "explain": "火车开走发生在「她冲进车站」之前，是过去的过去，用 had left。"
+    },
+    {
+      "type": "translate",
+      "stem": "到上周为止，我们已经完成了这个项目。（翻译整句）",
+      "answer": ["we had finished the project by last week.", "we had completed the project by last week."],
+      "explain": "by last week 提示到过去某时为止，用过去完成时 had finished。"
+    },
+    {
+      "type": "translate",
+      "stem": "她说她第二天要动身去巴黎。（翻译整句，leave for）",
+      "answer": ["she said that she would leave for paris the next day.", "she said she would leave for paris the next day."],
+      "explain": "主句 said 过去时，从句用过去将来时 would leave；the next day 是过去的「第二天」。"
+    }
+  ]
+}

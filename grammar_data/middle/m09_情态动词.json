@@ -1,0 +1,102 @@
+{
+  "id": "m09",
+  "level": "middle",
+  "grade": "七年级下 ~ 八年级上",
+  "unit": "can / must / should / may 专题",
+  "topic": "情态动词",
+  "summary": "情态动词表示能力、许可、义务、推测等：can（能）、must（必须）、should（应该）、may（可以）。后接动词原形，没有人称和数的变化。",
+  "signals": ["can/could 能力许可", "must 必须义务", "mustn't 禁止", "needn't 不必", "should 建议"],
+  "rules": [
+    {
+      "title": "can：能力与许可",
+      "detail": "表示「能、会」（能力）或「可以」（许可）。否定 can't / cannot。can 后必须用动词原形。",
+      "examples": [
+        {"en": "She can speak three languages.", "zh": "她会说三种语言。", "highlight": "can speak"},
+        {"en": "Can I borrow your pen? — Of course.", "zh": "我能借你的钢笔吗？——当然。", "highlight": "Can I borrow"},
+        {"en": "You can't park here.", "zh": "你不能在这里停车。", "highlight": "can't park"}
+      ]
+    },
+    {
+      "title": "must（必须）与 mustn't（禁止）",
+      "detail": "must 表示义务「必须做」；mustn't 表示强烈禁止「千万别做」。注意：must 的否定回答用 needn't（不必），不用 mustn't！",
+      "examples": [
+        {"en": "You must finish your homework first.", "zh": "你必须先完成作业。", "highlight": "must finish"},
+        {"en": "We mustn't swim in this river. It's dangerous.", "zh": "我们禁止在这条河里游泳，很危险。", "highlight": "mustn't swim"},
+        {"en": "— Must I clean the room now? — No, you needn't.", "zh": "——我现在必须打扫房间吗？——不，不必。", "highlight": "needn't"}
+      ]
+    },
+    {
+      "title": "should（应该）与 may（可以/可能）",
+      "detail": "should 表示建议「应该做」；may 表示许可或可能性。同样后接动词原形。",
+      "examples": [
+        {"en": "You should drink more water when you have a cold.", "zh": "感冒时你应该多喝水。", "highlight": "should drink"},
+        {"en": "May I come in?", "zh": "我可以进来吗？", "highlight": "May I come in"}
+      ]
+    }
+  ],
+  "pitfalls": [
+    "情态动词后动词变形：❌ He can swims. → ✓ He can swim.",
+    "must 问句的否定回答：❌ — Must I go? — No, you mustn't.（意思是「禁止去」）→ ✓ No, you needn't.（不必去）",
+    "两个情态动词连用：❌ He must can do it. → ✓ He must be able to do it."
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "— ___ I take the magazine out of the reading room? — Sorry, you ___.",
+      "options": ["May; can't", "Must; needn't", "May; mustn't", "Can; needn't"],
+      "answer": 2,
+      "explain": "may 表许可提问；拒绝用 mustn't（禁止）。"
+    },
+    {
+      "type": "choice",
+      "stem": "You look tired. You ___ go to bed early tonight.",
+      "options": ["should", "can't", "mustn't", "may not"],
+      "answer": 0,
+      "explain": "给出建议「应该早睡」用 should。"
+    },
+    {
+      "type": "choice",
+      "stem": "Lucy is only five, but she ___ play the piano very well.",
+      "options": ["must", "can", "should", "need"],
+      "answer": 1,
+      "explain": "表示能力「会弹钢琴」用 can。"
+    },
+    {
+      "type": "choice",
+      "stem": "Students ___ talk loudly in the library.",
+      "options": ["mustn't", "needn't", "may not to", "don't can"],
+      "answer": 0,
+      "explain": "图书馆里禁止大声说话，用 mustn't。"
+    },
+    {
+      "type": "fill",
+      "stem": "You ___ (not; 允许) smoke here. It's a school.",
+      "answer": ["can't", "mustn't", "may not"],
+      "explain": "表示「不允许」用 can't / mustn't。"
+    },
+    {
+      "type": "fill",
+      "stem": "— Must I hand in my homework today? — No, you ___ (不必).",
+      "answer": ["needn't", "don't have to"],
+      "explain": "must 问句的否定回答用 needn't（不必），mustn't 是「禁止」。"
+    },
+    {
+      "type": "correct",
+      "stem": "My brother can plays chess very well.",
+      "answer": "plays → play",
+      "explain": "情态动词 can 后接动词原形 play。"
+    },
+    {
+      "type": "translate",
+      "stem": "你应该每天刷牙两次。（翻译整句）",
+      "answer": ["you should brush your teeth twice a day.", "you should brush your teeth two times a day."],
+      "explain": "should + 动词原形 brush；twice a day 表示一天两次。"
+    },
+    {
+      "type": "translate",
+      "stem": "她会说英语，还会一点法语。（翻译整句）",
+      "answer": ["she can speak english, and she can also speak a little french.", "she can speak english and a little french, too."],
+      "explain": "can 后接原形；a little 修饰不可数名词 french（法语）。"
+    }
+  ]
+}

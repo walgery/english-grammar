@@ -1,0 +1,108 @@
+{
+  "id": "h07",
+  "level": "high",
+  "grade": "必修三 ~ 必修五",
+  "unit": "状语从句进阶",
+  "topic": "状语从句（进阶）",
+  "summary": "掌握九大类状语从句的细微差别与易混连词辨析：when/while/as、unless/provided、now that/in case 等。",
+  "signals": ["no matter how = however", "as long as 只要", "in case 以防", "even if 即使", "now that 既然"],
+  "rules": [
+    {
+      "title": "时间：when / while / as 辨析",
+      "detail": "when 既可接短暂动作也可接延续动作；while 只接延续动作且常表对比；as 强调「随着、一边……一边」。",
+      "examples": [
+        {"en": "As time goes by, things will get better.", "zh": "随着时间的推移，情况会好转。", "highlight": "As time goes by"},
+        {"en": "He was reading while his wife was cooking.", "zh": "他在读书，而妻子在做饭。", "highlight": "while"}
+      ]
+    },
+    {
+      "title": "条件：unless / as long as / in case / on condition that",
+      "detail": "unless = if not；as long as 表示「只要」；in case 表示「以防万一」；条件从句仍遵守「主将从现」。",
+      "examples": [
+        {"en": "As long as you keep trying, you will succeed.", "zh": "只要你坚持尝试，就会成功。", "highlight": "As long as you keep"},
+        {"en": "Take an umbrella in case it rains.", "zh": "带把伞以防下雨。", "highlight": "in case it rains"}
+      ]
+    },
+    {
+      "title": "让步：although / even if / no matter + 疑问词",
+      "detail": "although 不与 but 连用；even if 表「即使」（假设）；no matter how + 形容词/副词 = however + 形容词/副词。",
+      "examples": [
+        {"en": "No matter how hard the work is, we must finish it on time.", "zh": "不管工作多难，我们必须按时完成。", "highlight": "No matter how hard"},
+        {"en": "Even if it rains, the match will not be cancelled.", "zh": "即使下雨，比赛也不会取消。", "highlight": "Even if it rains"}
+      ]
+    },
+    {
+      "title": "方式 / 地点：as / as if / where",
+      "detail": "as 表「按照……方式」；as if / as though 表「好像」（可接虚拟语气）；where 引导地点状语从句。",
+      "examples": [
+        {"en": "Do it as I told you.", "zh": "照我告诉你的做。", "highlight": "as I told you"},
+        {"en": "He talks as if he knew everything.", "zh": "他说得好像什么都知道似的。", "highlight": "as if he knew"}
+      ]
+    }
+  ],
+  "pitfalls": [
+    "although 与 but 连用（中式思维陷阱）",
+    "no matter what 与 whatever：引导状语从句两者可换，引导名词性从句只能用 whatever",
+    "in case 后用一般现在时：in case it rains（不是 will rain）"
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "stem": "___ you have made up your mind, don't change it easily.",
+      "options": ["Once", "Until", "Though", "Unless"],
+      "answer": 0,
+      "explain": "once 表示「一旦」，引导条件状语从句，符合句意「一旦下定决心」。"
+    },
+    {
+      "type": "choice",
+      "stem": "No matter ___ hard the task is, we should finish it.",
+      "options": ["what", "how", "which", "when"],
+      "answer": 1,
+      "explain": "no matter how + 形容词/副词：无论任务多么难。"
+    },
+    {
+      "type": "choice",
+      "stem": "He spoke in a low voice ___ he were talking to himself.",
+      "options": ["even if", "as if", "as long as", "now that"],
+      "answer": 1,
+      "explain": "as if/as though 表示「仿佛」，从句可用虚拟语气（were）。"
+    },
+    {
+      "type": "choice",
+      "stem": "___ the weather is bad, the sports meeting will be put off.",
+      "options": ["Now that", "In case", "Even though", "As if"],
+      "answer": 1,
+      "explain": "in case 表示「以防」，主句用将来时 will be put off。"
+    },
+    {
+      "type": "fill",
+      "stem": "___ ___ you are a student, you should follow the school rules. (two words: 既然)",
+      "answer": ["now that"],
+      "explain": "now that 表示显而易见的原因「既然」。"
+    },
+    {
+      "type": "fill",
+      "stem": "___ ___ hard the problem is, never give up. (two words: 无论多么)",
+      "answer": ["no matter", "no matter how"],
+      "explain": "no matter how + 形容词/副词；注：标准答案为 no matter how，仅填 no matter 不完整。"
+    },
+    {
+      "type": "correct",
+      "stem": "Although he works very hard, but he can't support his family.",
+      "answer": "去掉 but（或把 although 改为 /）",
+      "explain": "英语中 although 与 but 不能同时使用。"
+    },
+    {
+      "type": "translate",
+      "stem": "无论你去哪里，我都会跟着你。（翻译整句）",
+      "answer": ["no matter where you go, i will follow you.", "wherever you go, i will follow you."],
+      "explain": "no matter where = wherever，引导让步状语从句。"
+    },
+    {
+      "type": "translate",
+      "stem": "只要你认真学习，就不会落后。（翻译整句，fall behind）",
+      "answer": ["as long as you study hard, you won't fall behind.", "so long as you study hard, you will not fall behind."],
+      "explain": "as long as 表示「只要」，从句用一般现在时，主句将来时。"
+    }
+  ]
+}
