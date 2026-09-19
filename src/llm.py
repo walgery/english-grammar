@@ -159,6 +159,31 @@ def gen_questions(level: str, topic: str, n: int = 5, avoid: list[str] | None = 
     return out
 
 
+def judge_translation(level: str, topic: str, stem: str, references: list, user_answer: str) -> bool:
+    """AI 批改翻译题：同义词/近义表达/语序/标点差异判对，时态、关键词拼错、漏译判错。"""
+    refs = " / ".join(str(r) for r in references if str(r).strip())
+    system = "你是一名既严谨又宽容的中国英语老师，批改学生的汉译英答案。只输出 JSON 对象，不要任何其他文字。"
+    user = f"""学生在学习「{topic}」（{_level_label(level)}）时翻译了这句话：
+
+中文句子：{stem}
+参考答案：{refs}
+学生答案：{user_answer}
+
+判对标准：句意与参考答案一致即可——同义词或近义表达、不同语序、缩写展开（doesn't = does not）、
+标点/大小写/空格差异、用词略有不同但意思相同，都算对。
+判错标准：时态错误、主谓一致等语法错误、关键词拼错、漏译主要信息或改变了句意。
+
+只输出：{{"correct": true}} 或 {{"correct": false}}"""
+    content = _chat(system, user)
+    m = re.search(r"\{[^{}]*\}", content)
+    if not m:
+        return False
+    try:
+        return bool(json.loads(m.group(0)).get("correct"))
+    except json.JSONDecodeError:
+        return False
+
+
 def explain_mistake(level: str, topic: str, question: dict, user_answer: str) -> str:
     """针对一道错题，解释为什么错、正确答案为什么对。"""
     correct = question.get("answer")

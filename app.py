@@ -269,6 +269,7 @@ def init_state() -> None:
         "practice_qs": [],
         "practice_answers": [],
         "practice_checked": [],
+        "practice_llm_ok": {},   # AI 批改判对的题（idx -> True），随现场持久化
         "practice_source": "bank",
         "wrong_practice_keys": [],
         "explain_cache": {},
@@ -291,6 +292,7 @@ def _persist() -> None:
         "practice_qs": st.session_state.practice_qs,
         "practice_answers": st.session_state.practice_answers,
         "practice_checked": st.session_state.practice_checked,
+        "practice_llm_ok": st.session_state.practice_llm_ok,
         "practice_source": st.session_state.practice_source,
         "wrong_practice_keys": st.session_state.wrong_practice_keys,
     })
@@ -307,9 +309,17 @@ def _restore_practice(student: str) -> bool:
     st.session_state.practice_qs = saved.get("practice_qs", [])
     st.session_state.practice_answers = saved.get("practice_answers", [])
     st.session_state.practice_checked = saved.get("practice_checked", [])
+    st.session_state.practice_llm_ok = saved.get("practice_llm_ok", {})
     st.session_state.practice_source = saved.get("practice_source", "bank")
     st.session_state.wrong_practice_keys = saved.get("wrong_practice_keys", [])
     return True
+
+
+def _is_correct(q: dict, idx: int) -> bool:
+    """统一判对入口：本地规则判对，或该题被 AI 批改判对。"""
+    return practice.check_answer(q, st.session_state.practice_answers[idx]) or bool(
+        st.session_state.practice_llm_ok.get(idx)
+    )
 
 
 def _student_gate() -> None:
@@ -551,6 +561,7 @@ def page_study(topic: dict) -> None:
             st.session_state.q_index = 0
             st.session_state.practice_answers = [""] * len(topic["questions"])
             st.session_state.practice_checked = [False] * len(topic["questions"])
+            st.session_state.practice_llm_ok = {}
             st.session_state.mode = "practice"
             st.rerun()
     with col2:
@@ -574,6 +585,7 @@ def page_study(topic: dict) -> None:
             st.session_state.q_index = 0
             st.session_state.practice_answers = [""] * len(merged)
             st.session_state.practice_checked = [False] * len(merged)
+            st.session_state.practice_llm_ok = {}
             st.session_state.mode = "practice"
             st.rerun()
 
@@ -620,7 +632,20 @@ def render_question(topic: dict, idx: int, q: dict) -> None:
 
     if not checked:
         if st.button("提交本题", key=f"check_{idx}", type="primary"):
-            ok = practice.check_answer(q, st.session_state.practice_answers[idx])
+            ans_now = st.session_state.practice_answers[idx]
+            ok = practice.check_answer(q, ans_now)
+            if not ok and q.get("type") == "translate" and str(ans_now or "").strip() and llm.is_configured():
+                with st.spinner("🤖 老师批改中…"):
+                    try:
+                        refs = q.get("answer") if isinstance(q.get("answer"), list) else [q.get("answer")]
+                        ok = llm.judge_translation(
+                            st.session_state.level, topic["topic"], q.get("stem", ""), refs, ans_now
+                        )
+                    except Exception:
+                        ok = False  # AI 批改失败时按本地判分结果
+                    else:
+                        if ok:
+                            st.session_state.practice_llm_ok[idx] = True
             st.session_state.practice_checked[idx] = True
             practice.record_attempt(st.session_state.student, topic["id"], ok)
             if not ok:
@@ -629,7 +654,7 @@ def render_question(topic: dict, idx: int, q: dict) -> None:
             st.rerun()
         return
 
-    correct = practice.check_answer(q, st.session_state.practice_answers[idx])
+    correct = _is_correct(q, idx)
     correct_text = q.get("answer")
     if q.get("type") == "correct":
         correct_text = practice.full_correct_sentence(q) or correct_text
@@ -639,6 +664,8 @@ def render_question(topic: dict, idx: int, q: dict) -> None:
         correct_text = f"{chr(65 + i2)}. {opts[i2] if i2 < len(opts) else ''}"
     if correct:
         st.markdown('<span class="badge-ok">✓ 回答正确</span>', unsafe_allow_html=True)
+        if st.session_state.practice_llm_ok.get(idx):
+            st.caption("🤖 经 AI 老师批改：你的表述与参考答案略有不同，但意思正确。")
     else:
         st.markdown(
             f'<span class="badge-no">✗ 回答错误</span>　你的答案：{user or "（空）"}　｜　正确答案：<b>{correct_text}</b>',
@@ -700,7 +727,7 @@ def page_result(topic: dict) -> None:
     total = len(qs)
     correct = sum(
         1 for i, q in enumerate(qs)
-        if st.session_state.practice_checked[i] and practice.check_answer(q, st.session_state.practice_answers[i])
+        if st.session_state.practice_checked[i] and _is_correct(q, i)
     )
     st.markdown('<div class="main-title">练习结果</div>', unsafe_allow_html=True)
     pct = int(correct / total * 100) if total else 0
@@ -710,7 +737,7 @@ def page_result(topic: dict) -> None:
         st.balloons()
     st.markdown("**逐题回顾**")
     for i, q in enumerate(qs):
-        ok = st.session_state.practice_checked[i] and practice.check_answer(q, st.session_state.practice_answers[i])
+        ok = st.session_state.practice_checked[i] and _is_correct(q, i)
         mark = "✓" if ok else "✗"
         st.markdown(f"- {mark} {q['stem']}" + ("" if ok else f"　正确答案：**{q.get('answer')}**"))
     c1, c2, c3, _ = st.columns([2, 2, 2, 2])
@@ -719,6 +746,7 @@ def page_result(topic: dict) -> None:
             st.session_state.q_index = 0
             st.session_state.practice_answers = [""] * len(qs)
             st.session_state.practice_checked = [False] * len(qs)
+            st.session_state.practice_llm_ok = {}
             st.session_state.mode = "practice"
             st.rerun()
     with c2:
@@ -1026,6 +1054,7 @@ def page_wrong() -> None:
         st.session_state.q_index = 0
         st.session_state.practice_answers = [""] * len(qs)
         st.session_state.practice_checked = [False] * len(qs)
+        st.session_state.practice_llm_ok = {}
         st.session_state.mode = "wrong_practice"
         st.rerun()
 
@@ -1048,7 +1077,7 @@ def page_wrong_practice() -> None:
     topic_id = key.split(":")[0]
     real_topic = content.get_topic(st.session_state.level, topic_id) or {"id": "wrong", "topic": "错题重练"}
     render_question(real_topic, idx, q)
-    if st.session_state.practice_checked[idx] and practice.check_answer(q, st.session_state.practice_answers[idx]):
+    if st.session_state.practice_checked[idx] and _is_correct(q, idx):
         practice.remove_wrong(st.session_state.student, key)
 
 

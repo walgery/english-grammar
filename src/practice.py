@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import difflib
 import json
 import re
 import time
@@ -32,6 +33,18 @@ def _norm(s: str) -> str:
     return s
 
 
+def _norm_loose(s: str) -> str:
+    """翻译题用的宽松规范化：在小写/压缩空格基础上，去掉所有标点（保留撇号）。"""
+    s = _norm(s)
+    s = re.sub(r"[^\w\s']", " ", s)
+    return re.sub(r"\s+", " ", s).strip()
+
+
+def _tokens(s: str) -> list[str]:
+    """切词：按空白拆，词内标点去掉（保留撇号，如 doesn't）。"""
+    return re.sub(r"[^\w\s']", " ", s).split()
+
+
 def full_correct_sentence(q: dict) -> str:
     """改错题：由题干（错句）+ answer（错误词 → 正确词）推出完整正确句子。解析失败返回空串。"""
     ans = q.get("answer")
@@ -47,6 +60,20 @@ def full_correct_sentence(q: dict) -> str:
     return corrected if n else ""
 
 
+def _sentence_close(user_toks: list[str], expect_toks: list[str], key_toks: set[str]) -> bool:
+    """整句逐词对比：词数一致；关键词必须完全一致，其余词允许一个字符以内的笔误。"""
+    if len(user_toks) != len(expect_toks):
+        return False
+    for a, b in zip(user_toks, expect_toks):
+        if a == b:
+            continue
+        if a in key_toks or b in key_toks:  # 考点词必须精确写对
+            return False
+        if difflib.SequenceMatcher(None, a, b).ratio() < 0.8:
+            return False
+    return True
+
+
 def check_answer(q: dict, user_answer: str) -> bool:
     """判分。choice 题的 user_answer 传选项序号字符串。"""
     ans = q.get("answer")
@@ -55,12 +82,18 @@ def check_answer(q: dict, user_answer: str) -> bool:
             return int(user_answer) == int(ans)
         except (TypeError, ValueError):
             return False
+    answers = ans if isinstance(ans, list) else [ans]
+    if q.get("type") == "translate":
+        # 翻译题：大小写、空格、标点差异不扣分（同义表达由 AI 批改兜底）
+        nu = _norm_loose(user_answer)
+        return bool(nu) and any(_norm_loose(a) == nu for a in answers)
     if q.get("type") == "correct":
-        # 改错题要求写出完整的正确句子，整句核对
+        # 改错题要求写出完整的正确句子：考点词精确匹配，其余词容忍笔误
         full = full_correct_sentence(q)
         if full:
-            return _norm(user_answer) == _norm(full)
-    answers = ans if isinstance(ans, list) else [ans]
+            right = str(ans).partition("→")[2]
+            key = set(_tokens(_norm(right)))
+            return _sentence_close(_tokens(_norm(user_answer)), _tokens(_norm(full)), key)
     norm_user = _norm(user_answer)
     return bool(norm_user) and any(_norm(a) == norm_user for a in answers)
 
