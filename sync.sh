@@ -27,6 +27,7 @@ rsync -avz --delete --8-bit-output \
     --exclude 'sync.sh' \
     --exclude '.venv/' \
     --exclude 'data/' \
+    --exclude 'llm_config.json' \
     ./ "$SERVER_USER@$SERVER_HOST:$SERVER_DIR/"
 
 echo "==> 双同步完成"
