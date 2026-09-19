@@ -655,15 +655,7 @@ def render_question(topic: dict, idx: int, q: dict) -> None:
         return
 
     correct = _is_correct(q, idx)
-    correct_text = q.get("answer")
-    if q.get("type") == "correct":
-        fulls = practice.full_correct_sentences(q)
-        if fulls:
-            correct_text = "<br>".join(f"（改法{i+1}）{s}" for i, s in enumerate(fulls)) if len(fulls) > 1 else fulls[0]
-    if q.get("type") == "choice" and str(correct_text).isdigit():
-        i2 = int(correct_text)
-        opts = q.get("options") or []
-        correct_text = f"{chr(65 + i2)}. {opts[i2] if i2 < len(opts) else ''}"
+    correct_text = _answer_text(q)
     if correct:
         st.markdown('<span class="badge-ok">✓ 回答正确</span>', unsafe_allow_html=True)
         if st.session_state.practice_llm_ok.get(idx):
@@ -741,7 +733,7 @@ def page_result(topic: dict) -> None:
     for i, q in enumerate(qs):
         ok = st.session_state.practice_checked[i] and _is_correct(q, i)
         mark = "✓" if ok else "✗"
-        st.markdown(f"- {mark} {q['stem']}" + ("" if ok else f"　正确答案：**{q.get('answer')}**"))
+        st.markdown(f"- {mark} {q['stem']}" + ("" if ok else f"　正确答案：**{_answer_text(q)}**"))
     c1, c2, c3, _ = st.columns([2, 2, 2, 2])
     with c1:
         if st.button("🔄 再练一遍", use_container_width=True):
@@ -792,6 +784,27 @@ def _choice_text(q: dict, val) -> str:
     return s
 
 
+def _answer_text(q: dict) -> str:
+    """把题目的 answer 字段转成人可读的友好文本（用于逐题回顾/错题本展示）。
+    - choice：序号 → "B. 选项内容"
+    - correct：合成完整正确句，多改法用 " 或 " 连接
+    - fill/translate：列表答案用 " 或 " 连接
+    """
+    t = q.get("type")
+    if t == "choice":
+        return _choice_text(q, q.get("answer"))
+    if t == "correct":
+        fulls = practice.full_correct_sentences(q)
+        if fulls:
+            return " 或 ".join(fulls)
+        return str(q.get("answer") or "")
+    # fill / translate：answer 可能是字符串或列表
+    ans = q.get("answer")
+    if isinstance(ans, list):
+        return " 或 ".join(str(a) for a in ans)
+    return str(ans or "")
+
+
 def _book_to_markdown(book: dict, topic_map: dict) -> str:
     """导出为 Markdown 复习文档：人读内容 + 每题内嵌可再导入的数据块。"""
     lines = [
@@ -809,7 +822,7 @@ def _book_to_markdown(book: dict, topic_map: dict) -> str:
             ans = f"{chr(65 + i4)}. {opts[i4] if i4 < len(opts) else ''}"
         lines.append(f"## {tname}")
         lines.append(f"- **题目**：{q.get('stem', '')}")
-        lines.append(f"- **正确答案**：{_choice_text(q, ans)}")
+        lines.append(f"- **正确答案**：{_answer_text(q)}")
         lines.append(f"- **错误次数**：{rec.get('wrong_times', 1)}")
         if rec.get("last_user_answer"):
             lines.append(f"- **上次答案**：{_choice_text(q, rec['last_user_answer'])}")
@@ -841,7 +854,7 @@ def _book_to_html(book: dict, topic_map: dict) -> str:
         q = rec.get("question", {})
         t = topic_map.get(rec.get("topic_id", ""))
         tname = html_mod.escape(t["topic"] if t else rec.get("topic_id", "未知专题"))
-        ans = _choice_text(q, q.get("answer"))
+        ans = html_mod.escape(_answer_text(q))
         extra = ""
         if rec.get("last_user_answer"):
             extra += f'<p class="muted">上次答案：{html_mod.escape(_choice_text(q, rec["last_user_answer"]))}</p>'
@@ -1035,7 +1048,7 @@ def page_wrong() -> None:
             with c1:
                 st.markdown(f"**[{tname}]** {q.get('stem', '')}")
                 ua = _choice_text(q, rec.get("last_user_answer", ""))
-                ans = _choice_text(q, q.get("answer"))
+                ans = _answer_text(q)
                 st.caption(f"上次答案：{ua or '（空）'} ｜ 正确答案：{ans} ｜ 错过 {rec.get('wrong_times', 1)} 次")
                 if q.get("explain"):
                     st.caption(f"解析：{q['explain']}")
