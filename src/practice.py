@@ -32,6 +32,21 @@ def _norm(s: str) -> str:
     return s
 
 
+def full_correct_sentence(q: dict) -> str:
+    """改错题：由题干（错句）+ answer（错误词 → 正确词）推出完整正确句子。解析失败返回空串。"""
+    ans = q.get("answer")
+    if not isinstance(ans, str) or "→" not in ans:
+        return ""
+    wrong, _, right = (s.strip() for s in ans.partition("→"))
+    stem = q.get("stem") or ""
+    if not wrong or not right or not stem:
+        return ""
+    corrected, n = re.subn(re.escape(wrong), lambda m: right, stem, count=1)
+    if n == 0:  # 精确匹配失败时忽略大小写再试一次
+        corrected, n = re.subn(re.escape(wrong), lambda m: right, stem, count=1, flags=re.IGNORECASE)
+    return corrected if n else ""
+
+
 def check_answer(q: dict, user_answer: str) -> bool:
     """判分。choice 题的 user_answer 传选项序号字符串。"""
     ans = q.get("answer")
@@ -40,6 +55,11 @@ def check_answer(q: dict, user_answer: str) -> bool:
             return int(user_answer) == int(ans)
         except (TypeError, ValueError):
             return False
+    if q.get("type") == "correct":
+        # 改错题要求写出完整的正确句子，整句核对
+        full = full_correct_sentence(q)
+        if full:
+            return _norm(user_answer) == _norm(full)
     answers = ans if isinstance(ans, list) else [ans]
     norm_user = _norm(user_answer)
     return bool(norm_user) and any(_norm(a) == norm_user for a in answers)

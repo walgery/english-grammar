@@ -610,7 +610,7 @@ def render_question(topic: dict, idx: int, q: dict) -> None:
             st.session_state.practice_answers[idx] = str(labels.index(chosen))
     else:
         new_val = st.text_input(
-            "你的答案" if q.get("type") != "translate" else "英文翻译",
+            {"translate": "英文翻译", "correct": "改正后的完整句子"}.get(q.get("type"), "你的答案"),
             value=user,
             disabled=checked,
             key=f"ans_{st.session_state.practice_source}_{idx}",
@@ -631,6 +631,8 @@ def render_question(topic: dict, idx: int, q: dict) -> None:
 
     correct = practice.check_answer(q, st.session_state.practice_answers[idx])
     correct_text = q.get("answer")
+    if q.get("type") == "correct":
+        correct_text = practice.full_correct_sentence(q) or correct_text
     if q.get("type") == "choice" and str(correct_text).isdigit():
         i2 = int(correct_text)
         opts = q.get("options") or []
