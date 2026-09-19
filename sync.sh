@@ -30,4 +30,11 @@ rsync -avz --delete --8-bit-output \
     --exclude 'llm_config.json' \
     ./ "$SERVER_USER@$SERVER_HOST:$SERVER_DIR/"
 
+echo "==> [3/2] 重启服务器上的 Streamlit 服务"
+if ssh "$SERVER_USER@$SERVER_HOST" 'sudo -n systemctl restart english-grammar' 2>/dev/null; then
+    echo "    服务已重启"
+else
+    echo "    警告：自动重启失败，请手动执行: sudo systemctl restart english-grammar"
+fi
+
 echo "==> 双同步完成"
