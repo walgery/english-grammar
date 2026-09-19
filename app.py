@@ -685,6 +685,17 @@ def render_question(topic: dict, idx: int, q: dict) -> None:
             f'<span class="badge-no">✗ 回答错误</span>　你的答案：{user or "（空）"}　｜　正确答案：<b>{correct_text}</b>',
             unsafe_allow_html=True,
         )
+    # 翻译题：答完后允许重答（撤销本次判分与错题记录）
+    if q.get("type") == "translate":
+        if st.button("↺ 重答本题", key=f"retry_{idx}"):
+            practice.undo_attempt(st.session_state.student, topic["id"], correct)
+            if not correct:
+                practice.remove_wrong(st.session_state.student, f"{topic['id']}:{idx}")
+            st.session_state.practice_checked[idx] = False
+            st.session_state.practice_llm_ok.pop(idx, None)
+            _persist()
+            st.rerun()
+    if not correct:
         cache_key = f"{topic['id']}:{idx}:{st.session_state.practice_answers[idx]}"
         if cache_key in st.session_state.explain_cache:
             st.info(st.session_state.explain_cache[cache_key])

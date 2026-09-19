@@ -244,6 +244,20 @@ def record_attempt(student: str, topic_id: str, correct: bool) -> None:
     save_stats(stats, student)
 
 
+def undo_attempt(student: str, topic_id: str, was_correct: bool) -> None:
+    """撤销一次判分记录（用于"重答"）：attempted 减 1，若上次判对则 correct 也减 1。"""
+    stats = load_stats(student)
+    rec = stats.get(topic_id)
+    if not rec:
+        return
+    rec["attempted"] = max(0, rec.get("attempted", 0) - 1)
+    if was_correct:
+        rec["correct"] = max(0, rec.get("correct", 0) - 1)
+    if rec["attempted"] == 0:
+        stats.pop(topic_id, None)  # 没有作答记录则移除该专题，避免掌握度显示 0%
+    save_stats(stats, student)
+
+
 # —— 练习现场（按学生，第二天接着做）——
 
 
