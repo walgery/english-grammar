@@ -332,14 +332,15 @@ def _is_correct(q: dict, idx: int) -> bool:
 
 
 def _student_gate() -> None:
-    """学生身份入口：输入姓名/学号后按学生分别加载进度。"""
+    """学生身份入口：输入姓名/学号后按学生分别加载进度。回车即可进入。"""
     st.markdown('<div class="hero"><h1>📐 英语语法学习助手</h1>'
                 '<p>输入你的姓名或学号，进度会自动保存，下次接着学</p></div>',
                 unsafe_allow_html=True)
     with st.container(border=True):
-        name = st.text_input("姓名 / 学号", placeholder="例如：李明 或 20230101", max_chars=30)
-        c1, _ = st.columns([1, 2])
-        go = c1.button("开始学习", type="primary", use_container_width=True)
+        # form 包裹后，输入框内按回车即提交（无需鼠标点按钮）
+        with st.form("student_gate_form"):
+            name = st.text_input("姓名 / 学号", placeholder="例如：李明 或 20230101", max_chars=30)
+            go = st.form_submit_button("开始学习", type="primary", use_container_width=True)
         if not go:
             return
         name = name.strip()
