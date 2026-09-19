@@ -603,6 +603,30 @@ def page_study(topic: dict) -> None:
 # —— 页面：练习 ——
 
 
+def _submit_answer(topic: dict, idx: int, q: dict) -> None:
+    """提交本题：判分（翻译题含 AI 批改兜底）、记进度、答错入错题本，然后刷新。"""
+    ans_now = st.session_state.practice_answers[idx]
+    ok = practice.check_answer(q, ans_now)
+    if not ok and q.get("type") == "translate" and str(ans_now or "").strip() and llm.is_configured():
+        with st.spinner("🤖 老师批改中…"):
+            try:
+                refs = q.get("answer") if isinstance(q.get("answer"), list) else [q.get("answer")]
+                ok = llm.judge_translation(
+                    st.session_state.level, topic["topic"], q.get("stem", ""), refs, ans_now
+                )
+            except Exception:
+                ok = False  # AI 批改失败时按本地判分结果
+            else:
+                if ok:
+                    st.session_state.practice_llm_ok[idx] = True
+    st.session_state.practice_checked[idx] = True
+    practice.record_attempt(st.session_state.student, topic["id"], ok)
+    if not ok:
+        practice.record_wrong(st.session_state.student, topic["id"], idx, q, st.session_state.practice_answers[idx])
+    _persist()
+    st.rerun()
+
+
 def render_question(topic: dict, idx: int, q: dict) -> None:
     n = len(st.session_state.practice_qs)
     type_name = practice.QUESTION_TYPES.get(q.get("type", ""), q.get("type", ""))
@@ -630,39 +654,25 @@ def render_question(topic: dict, idx: int, q: dict) -> None:
         )
         if not checked and chosen is not None:
             st.session_state.practice_answers[idx] = str(labels.index(chosen))
+        if not checked:
+            if st.button("提交本题", key=f"check_{idx}", type="primary"):
+                _submit_answer(topic, idx, q)
+            return
     else:
-        new_val = st.text_input(
-            {"translate": "英文翻译", "correct": "改正后的完整句子"}.get(q.get("type"), "你的答案"),
-            value=user,
-            disabled=checked,
-            key=f"ans_{st.session_state.practice_source}_{idx}",
-        )
+        # 文本输入题（填空/改错/翻译）：form 包裹，回车即提交
+        with st.form(f"ans_form_{st.session_state.practice_source}_{idx}", clear_on_submit=False):
+            new_val = st.text_input(
+                {"translate": "英文翻译", "correct": "改正后的完整句子"}.get(q.get("type"), "你的答案"),
+                value=user,
+                disabled=checked,
+                key=f"ans_{st.session_state.practice_source}_{idx}",
+            )
+            submitted = st.form_submit_button("提交本题", type="primary")
         if not checked:
             st.session_state.practice_answers[idx] = new_val
-
-    if not checked:
-        if st.button("提交本题", key=f"check_{idx}", type="primary"):
-            ans_now = st.session_state.practice_answers[idx]
-            ok = practice.check_answer(q, ans_now)
-            if not ok and q.get("type") == "translate" and str(ans_now or "").strip() and llm.is_configured():
-                with st.spinner("🤖 老师批改中…"):
-                    try:
-                        refs = q.get("answer") if isinstance(q.get("answer"), list) else [q.get("answer")]
-                        ok = llm.judge_translation(
-                            st.session_state.level, topic["topic"], q.get("stem", ""), refs, ans_now
-                        )
-                    except Exception:
-                        ok = False  # AI 批改失败时按本地判分结果
-                    else:
-                        if ok:
-                            st.session_state.practice_llm_ok[idx] = True
-            st.session_state.practice_checked[idx] = True
-            practice.record_attempt(st.session_state.student, topic["id"], ok)
-            if not ok:
-                practice.record_wrong(st.session_state.student, topic["id"], idx, q, st.session_state.practice_answers[idx])
-            _persist()
-            st.rerun()
-        return
+            if submitted:
+                _submit_answer(topic, idx, q)
+            return
 
     correct = _is_correct(q, idx)
     correct_text = _answer_text(q)
