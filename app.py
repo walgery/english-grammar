@@ -28,9 +28,8 @@ st.set_page_config(
 
 CUSTOM_CSS = """
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,700&display=swap');
-html, body, [class*="css"] { font-family: 'Noto Sans SC', sans-serif; -webkit-text-size-adjust: 100%; }
-.main-title { font-family: 'Source Serif 4', serif; font-size: 1.8rem; font-weight: 700; margin-bottom: 0.2rem; }
+html, body, [class*="css"] { font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif; -webkit-text-size-adjust: 100%; }
+.main-title { font-family: Georgia, "Songti SC", "SimSun", serif; font-size: 1.8rem; font-weight: 700; margin-bottom: 0.2rem; }
 .sub-title { color: #5a6570; margin-bottom: 1.2rem; }
 .rule-card {
   background: linear-gradient(145deg, #f7fafc 0%, #eef4f8 100%);
