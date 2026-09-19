@@ -25,6 +25,8 @@ rsync -avz --delete --8-bit-output \
     --exclude '__pycache__/' \
     --exclude '.DS_Store' \
     --exclude 'sync.sh' \
+    --exclude '.venv/' \
+    --exclude 'data/' \
     ./ "$SERVER_USER@$SERVER_HOST:$SERVER_DIR/"
 
 echo "==> 双同步完成"

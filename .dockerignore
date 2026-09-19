@@ -1,0 +1,9 @@
+.git
+.venv
+data
+__pycache__
+*.pyc
+.DS_Store
+sync.sh
+.streamlit_home
+docker-compose.yml
