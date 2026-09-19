@@ -141,7 +141,10 @@
     {
       "type": "correct",
       "stem": "Because he was tired, so he went to bed early.",
-      "answer": "Because he was tired, he went to bed early.",
+      "answer": [
+        "Because he was tired, he went to bed early.",
+        "He was tired, so he went to bed early."
+      ],
       "explain": "because 和 so 不能在同一个句子里连用，英语只保留一个。"
     },
     {

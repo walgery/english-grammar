@@ -152,7 +152,10 @@
     {
       "type": "correct",
       "stem": "Although he works very hard, but he can't support his family.",
-      "answer": "Although he works very hard, he can't support his family.",
+      "answer": [
+        "Although he works very hard, he can't support his family.",
+        "He works very hard, but he can't support his family."
+      ],
       "explain": "英语中 although 与 but 不能同时使用。"
     },
     {

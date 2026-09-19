@@ -657,7 +657,9 @@ def render_question(topic: dict, idx: int, q: dict) -> None:
     correct = _is_correct(q, idx)
     correct_text = q.get("answer")
     if q.get("type") == "correct":
-        correct_text = practice.full_correct_sentence(q) or correct_text
+        fulls = practice.full_correct_sentences(q)
+        if fulls:
+            correct_text = "<br>".join(f"（改法{i+1}）{s}" for i, s in enumerate(fulls)) if len(fulls) > 1 else fulls[0]
     if q.get("type") == "choice" and str(correct_text).isdigit():
         i2 = int(correct_text)
         opts = q.get("options") or []

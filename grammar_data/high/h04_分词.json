@@ -139,7 +139,11 @@
     {
       "type": "correct",
       "stem": "Walking along the lake, the flowers looked very beautiful.",
-      "answer": "Walking along the lake, we found the flowers very beautiful.",
+      "answer": [
+        "Walking along the lake, we found the flowers very beautiful.",
+        "Walking along the lake, we saw the flowers looking very beautiful.",
+        "When we walked along the lake, the flowers looked very beautiful."
+      ],
       "explain": "主句主语是 flowers，但 flowers 不会「走在湖边」，分词逻辑主语与主句主语不一致（悬垂分词）。"
     },
     {
