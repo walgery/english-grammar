@@ -59,18 +59,29 @@ def _tokens(s: str) -> list[str]:
 
 
 def full_correct_sentence(q: dict) -> str:
-    """改错题：由题干（错句）+ answer（错误词 → 正确词）推出完整正确句子。解析失败返回空串。"""
+    """改错题的完整正确句子。两种数据格式：
+    ① "错误词 → 正确词"（替换型）：由题干替换合成整句；
+    ② answer 本身就是完整英文句（删除型/改写型）：直接返回该句。
+    无法确定时返回空串。
+    """
     ans = q.get("answer")
-    if not isinstance(ans, str) or "→" not in ans:
+    if not isinstance(ans, str):
         return ""
-    wrong, _, right = (s.strip() for s in ans.partition("→"))
-    stem = q.get("stem") or ""
-    if not wrong or not right or not stem:
-        return ""
-    corrected, n = re.subn(re.escape(wrong), lambda m: right, stem, count=1)
-    if n == 0:  # 精确匹配失败时忽略大小写再试一次
-        corrected, n = re.subn(re.escape(wrong), lambda m: right, stem, count=1, flags=re.IGNORECASE)
-    return corrected if n else ""
+    ans = ans.strip()
+    if "→" in ans:
+        wrong, _, right = (s.strip() for s in ans.partition("→"))
+        stem = q.get("stem") or ""
+        if not wrong or not right or not stem:
+            return ""
+        corrected, n = re.subn(re.escape(wrong), lambda m: right, stem, count=1)
+        if n == 0:  # 精确匹配失败时忽略大小写再试一次
+            corrected, n = re.subn(re.escape(wrong), lambda m: right, stem, count=1, flags=re.IGNORECASE)
+        return corrected if n else ""
+    # answer 是纯英文完整句（删除型/改写型）：去掉末尾括号注释后使用
+    sentence = re.sub(r"（[^（）]*）\s*$", "", ans).strip()
+    if re.search(r"[A-Za-z]", sentence) and not re.search(r"[\u4e00-\u9fff]", sentence):
+        return sentence
+    return ""
 
 
 def _sentence_close(user_toks: list[str], expect_toks: list[str], key_toks: set[str]) -> bool:
@@ -104,8 +115,15 @@ def check_answer(q: dict, user_answer: str) -> bool:
         # 改错题要求写出完整的正确句子：考点词精确匹配，其余词容忍笔误
         full = full_correct_sentence(q)
         if full:
-            right = str(ans).partition("→")[2]
-            key = set(_tokens(_norm(right)))
+            if "→" in str(ans):
+                # 替换型：考点词 = 箭头右侧的正确词
+                right = str(ans).partition("→")[2]
+                key = set(_tokens(_norm(right)))
+            else:
+                # 删除型/改写型：考点词 = 正确句与题干错句的词汇差异部分
+                stem_toks = set(_tokens(_norm(q.get("stem", ""))))
+                full_toks = set(_tokens(_norm(full)))
+                key = stem_toks.symmetric_difference(full_toks)
             return _sentence_close(_tokens(_norm(user_answer)), _tokens(_norm(full)), key)
     norm_user = _norm(user_answer)
     return bool(norm_user) and any(_norm(a) == norm_user for a in answers)
