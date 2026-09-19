@@ -45,6 +45,15 @@ mark.grammar-hl { background: #ffd9a0; color: #1a2330; padding: 0 0.15em; border
 .q-card { background: #fff; border: 1px solid #dde5ec; border-radius: 12px; padding: 1rem 1.2rem; margin: 0.8rem 0; }
 .badge-ok { color: #2e7d4f; font-weight: 700; }
 .badge-no { color: #c4442a; font-weight: 700; }
+/* 逐题回顾：对错整行着色 */
+.review-row { display: flex; align-items: flex-start; gap: .5rem; padding: .55rem .8rem; border-radius: 8px; margin: .35rem 0; line-height: 1.5; }
+.review-row .rk { font-weight: 700; flex-shrink: 0; }
+.review-ok { background: #eef6f0; border-left: 4px solid #2e7d4f; }
+.review-ok .rk, .review-ok .rq { color: #2e7d4f; }
+.review-bad { background: #fdefec; border-left: 4px solid #c4442a; }
+.review-bad .rk, .review-bad .rq { color: #c4442a; }
+.review-bad .ra { color: #2e7d4f; font-weight: 700; }
+.review-bad .ra-label { color: #8a97a5; font-weight: 400; }
 @media (max-width: 820px) {
   .main-title { font-size: 1.45rem; }
   .example-en { font-size: 1rem; }
@@ -730,10 +739,24 @@ def page_result(topic: dict) -> None:
     if pct == 100:
         st.balloons()
     st.markdown("**逐题回顾**")
+    import html as _html
     for i, q in enumerate(qs):
         ok = st.session_state.practice_checked[i] and _is_correct(q, i)
-        mark = "✓" if ok else "✗"
-        st.markdown(f"- {mark} {q['stem']}" + ("" if ok else f"　正确答案：**{_answer_text(q)}**"))
+        stem = _html.escape(str(q["stem"]))
+        if ok:
+            st.markdown(
+                f'<div class="review-row review-ok"><span class="rk">✓</span>'
+                f'<span class="rq">{stem}</span></div>',
+                unsafe_allow_html=True,
+            )
+        else:
+            ans = _html.escape(_answer_text(q))
+            st.markdown(
+                f'<div class="review-row review-bad"><span class="rk">✗</span>'
+                f'<span class="rq">{stem}　<span class="ra-label">正确答案：</span>'
+                f'<span class="ra">{ans}</span></span></div>',
+                unsafe_allow_html=True,
+            )
     c1, c2, c3, _ = st.columns([2, 2, 2, 2])
     with c1:
         if st.button("🔄 再练一遍", use_container_width=True):
