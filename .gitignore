@@ -9,3 +9,4 @@ data/
 stats.json
 wrong_book.json
 *.code-workspace
+.zshrc

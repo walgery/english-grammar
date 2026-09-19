@@ -20,7 +20,7 @@ else
 fi
 
 echo "==> [2/2] 同步到服务器 $SERVER_HOST:$SERVER_DIR"
-rsync -avz --delete \
+rsync -avz --delete --8-bit-output \
     --exclude '.git/' \
     --exclude '__pycache__/' \
     --exclude '.DS_Store' \
