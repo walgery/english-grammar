@@ -19,9 +19,22 @@ QUESTION_TYPES = {
 
 
 def _dir(student: str = "") -> Path:
-    """某学生的数据目录：data/<姓名>。未指定时用 default（本地单人场景）。"""
-    safe = re.sub(r"[^\w\u4e00-\u9fff-]+", "_", (student or "").strip()) or "default"
-    return ROOT / "data" / safe
+    """某学生的数据目录：data/<姓名>。未指定时用 default（本地单人场景）。
+
+    安全：学生名作为目录名，必须防止路径穿越（如 ".." 洗成 "_" 后仍是合法目录名，
+    但原始输入若含斜杠/点号组合可能逃出 data/）。统一做两步防护。
+    """
+    raw = (student or "").strip()
+    # 第一步：去掉路径分隔符和点号，杜绝 ../、./、a/b 等穿越
+    raw = raw.replace("/", "").replace("\\", "").replace(".", "")
+    # 第二步：仅保留中英文、数字、下划线、连字符，其余洗成 _
+    safe = re.sub(r"[^\w\u4e00-\u9fff-]+", "_", raw) or "default"
+    # 第三步：最终校验——解析后的路径必须仍在 data/ 内
+    d = (ROOT / "data" / safe).resolve()
+    if d.parent != (ROOT / "data").resolve():
+        safe = "default"
+        d = (ROOT / "data" / safe).resolve()
+    return d
 
 
 def _norm(s: str) -> str:
